@@ -8,5 +8,5 @@ Resources of all the hacky
 - [Bypass File Upload Filtering](https://github.com/xapax/security/blob/master/bypass_image_upload.md)
 - [https://redteams.fr/](https://redteams.fr/)
 - [Pentestmonkey](http://pentestmonkey.net/)
-- [Upgrading Shells Interactive TTY](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/_
+- [Upgrading Shells Interactive TTY](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 
