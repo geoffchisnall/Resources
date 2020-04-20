@@ -22,6 +22,7 @@ Resources of all the hacky - Need to clean this up better
 #### Enumeration Tools
 - [pspy](https://github.com/DominicBreuker/pspy)
 - [LinEnum](https://github.com/rebootuser/LinEnum)
+- [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 
