@@ -1,4 +1,4 @@
-#### first start off with NMAP scan
+#### NMAP Scan
 - `sudo nmap -sC -sV -oA testbox 10.0.0.1`
 
 ### Web Directory Enumeration
