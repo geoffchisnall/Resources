@@ -16,6 +16,10 @@
 - `showmount -e 10.0.0.1`
 - `sudo mount -t cifs //10.0.0.1/share$ smb/ -o user="user"`
 
+###LDAP
+
+- `jxplorer`
+
 
 
 
