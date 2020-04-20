@@ -14,3 +14,4 @@ Resources of all the hacky - Need to clean this up better
 - [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 - [Hacktricks](https://book.hacktricks.xyz/)
+- [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
