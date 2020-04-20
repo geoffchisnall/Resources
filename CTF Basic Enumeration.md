@@ -1,4 +1,4 @@
-#Basic Enumeration at the start
+# Basic Enumeration at the start
 #### NMAP Scan
 - `sudo nmap -sC -sV -oA testbox 10.0.0.1`
 
