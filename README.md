@@ -10,3 +10,4 @@ Resources of all the hacky - Need to clean this up better
 - [Pentestmonkey](http://pentestmonkey.net/)
 - [Upgrading Shells Interactive TTY](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 - [pspy](https://github.com/DominicBreuker/pspy)
+- [LinEnum](https://github.com/rebootuser/LinEnum)
