@@ -13,6 +13,7 @@ Resources of all the hacky - Need to clean this up better
 - [https://redteams.fr/](https://redteams.fr/)
 - [Offensive Security Cheet Sheets](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets) 
 - [Pentestmonkey](http://pentestmonkey.net/)
+- [CTF Resources](https://github.com/welchbj/ctf/tree/master/docs)
 
 
 #### Reverse Shells
