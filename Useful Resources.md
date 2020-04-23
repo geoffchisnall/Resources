@@ -30,3 +30,9 @@ Resources of all the hacky - Need to clean this up better
 #### Uncategorised
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
+
+#### Learning
+- [WebGoat](https://github.com/WebGoat/WebGoat)
+- [JuiceShop](https://github.com/bkimminich/juice-shop)
+- [HackTheBox](https://www.hackthebox.eu/)
+- [VulnHub](https://www.vulnhub.com/)
