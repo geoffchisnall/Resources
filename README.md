@@ -1,3 +1,3 @@
 
-- [Useful Resources](Useful Resources.md)
-- [CTF Basic Enumeration](CTF Basic Enumeration.md)
+- [Useful Resources](resources/Useful Resources.md)
+- [CTF Basic Enumeration](resources/CTF Basic Enumeration.md)
