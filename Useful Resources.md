@@ -33,6 +33,24 @@ Resources of all the hacky - Need to clean this up better
 #### Uncategorised
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
+- [truffleHog](https://github.com/dxa4481/truffleHog)
+- [gitrob](https://github.com/michenriksen/gitrob)
+- [gitleaks](https://github.com/zricethezav/gitleaks)
+- [shhgit](https://shhgit.darkport.co.uk/)
+- [PACU](https://github.com/RhinoSecurityLabs/pacu)
+- [cloud_enum](https://github.com/initstring/cloud_enum)
+- [MicroBurst](https://github.com/NetSPI/MicroBurst)
+- [GitGot](https://github.com/BishopFox/GitGot)
+- [Peasant](https://github.com/arch4ngel/peasant)
+- [FOCA](https://github.com/ElevenPaths/FOCA)
+- [dafthack](https://github.com/dafthack)
+
+#### Cloud IP Ranges
+- [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
+- [Azure Public](https://www.microsoft.com/en-us/download/details.aspx?id=56519)
+- [Azure US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
+- [Azure Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
+- [Azure China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 
 #### Learning
 - [WebGoat](https://github.com/WebGoat/WebGoat)
