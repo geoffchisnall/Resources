@@ -44,6 +44,8 @@ Resources of all the hacky - Need to clean this up better
 - [Peasant](https://github.com/arch4ngel/peasant)
 - [FOCA](https://github.com/ElevenPaths/FOCA)
 - [dafthack](https://github.com/dafthack)
+- [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
+- [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
