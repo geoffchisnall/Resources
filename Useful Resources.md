@@ -46,6 +46,8 @@ Resources of all the hacky - Need to clean this up better
 - [dafthack](https://github.com/dafthack)
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
+- [ROADtools](https://github.com/dirkjanm/ROADtools]
+- [PowerZure]9https://github.com/hausec/PowerZure]
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
