@@ -7,11 +7,11 @@
 - `gobuster dir -u http://10.0.0.1 -w /usr/share/wordlists/dirb/big.txt`
 
 #### wfuzz
-directory  
+######  directory    
 - `wfuzz -c -z file,/usr/share/wordlists/dirb/big.txt --hc 404 -u 10.0.0.1/FUZZ`  
-filename + extension  
+###### filename + extension  
 - `wfuzz -c -z file,/usr/share/wordlists/dirb/big.txt -z file,/usr/share/wordlists/dirb/extensions_common.txt --hc 404 -u 10.0.0.1/FUZZ%FUZ2Z`  
-deeper enumeration  
+###### deeper enumeration  
 - `wfuzz -c -z file,/usr/share/wordlists/dirb/big.txt -z file,/usr/share/wordlists/dirb/big.txt -z file,/usr/share/wordlists/dirb/extensions_common.txt --hc 404 -u 10.0.0.1/FUZZ/FU2Z%FUZ3Z`
 
 ### SMB Enumeration
