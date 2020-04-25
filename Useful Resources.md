@@ -47,7 +47,10 @@ Resources of all the hacky - Need to clean this up better
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 - [ROADtools](https://github.com/dirkjanm/ROADtools]
+- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
 - [PowerZure]9https://github.com/hausec/PowerZure]
+- [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
+- [grinder](https://github.com/sdnewhop/grinder)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
@@ -55,6 +58,7 @@ Resources of all the hacky - Need to clean this up better
 - [Azure US Gov](https://www.microsoft.com/en-us/download/details.aspx?id=57063)
 - [Azure Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
 - [Azure China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
+- [parsuite](https://github.com/arch4ngel/parsuite)
 
 #### Learning
 - [WebGoat](https://github.com/WebGoat/WebGoat)
