@@ -27,6 +27,9 @@ Resources of all the hacky - Need to clean this up better
 - [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 
+#### Sec Lists
+- [SecLists](https://github.com/danielmiessler/SecLists)
+
 #### Uncategorised
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
