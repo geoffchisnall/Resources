@@ -48,7 +48,7 @@ Resources of all the hacky - Need to clean this up better
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 - [ROADtools](https://github.com/dirkjanm/ROADtools)
 - [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
-- [PowerZure]9https://github.com/hausec/PowerZure)
+- [PowerZure](https://github.com/hausec/PowerZure)
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - [grinder](https://github.com/sdnewhop/grinder)
 
