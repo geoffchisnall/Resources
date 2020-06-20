@@ -30,6 +30,10 @@ Resources of all the hacky - Need to clean this up better
 #### Sec Lists
 - [SecLists](https://github.com/danielmiessler/SecLists)
 
+#### Decoders
+- [https://www.dcode.fr](https://www.dcode.fr]
+-[https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
+
 #### Uncategorised
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
