@@ -32,7 +32,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Decoders
 - [https://www.dcode.fr](https://www.dcode.fr]
--[https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
+- [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 
 #### Uncategorised
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
