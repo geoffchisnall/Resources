@@ -31,7 +31,7 @@ Resources of all the hacky - Need to clean this up better
 - [SecLists](https://github.com/danielmiessler/SecLists)
 
 #### Decoders
-- [https://www.dcode.fr](https://www.dcode.fr]
+- [https://www.dcode.fr](https://www.dcode.fr)
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 
 #### Uncategorised
