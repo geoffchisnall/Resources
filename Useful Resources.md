@@ -35,6 +35,7 @@ Resources of all the hacky - Need to clean this up better
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 
 #### Uncategorised
+- [CTF-Katana](https://github.com/JohnHammond/ctf-katana)
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
 - [truffleHog](https://github.com/dxa4481/truffleHog)
@@ -55,6 +56,7 @@ Resources of all the hacky - Need to clean this up better
 - [PowerZure](https://github.com/hausec/PowerZure)
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - [grinder](https://github.com/sdnewhop/grinder)
+- [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
