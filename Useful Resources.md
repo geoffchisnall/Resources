@@ -76,3 +76,6 @@ Resources of all the hacky - Need to clean this up better
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OverTheWire](https://overthewire.org)
 
+#### TLS Vulerabilties
+- [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
+
