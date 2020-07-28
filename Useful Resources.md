@@ -58,6 +58,8 @@ Resources of all the hacky - Need to clean this up better
 - [grinder](https://github.com/sdnewhop/grinder)
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
 - [OSCP prep](https://mystiko.sh/?p=532)
+- [Linux GTFOBINS](https://gtfobins.github.io/)
+- [Windows GTFOBINS](https://lolbas-project.github.io)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
