@@ -57,6 +57,7 @@ Resources of all the hacky - Need to clean this up better
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - [grinder](https://github.com/sdnewhop/grinder)
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
+- [OSCP prep](https://mystiko.sh/?p=532)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
