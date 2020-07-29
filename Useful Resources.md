@@ -60,6 +60,7 @@ Resources of all the hacky - Need to clean this up better
 - [OSCP prep](https://mystiko.sh/?p=532)
 - [Linux GTFOBINS](https://gtfobins.github.io/)
 - [Windows GTFOBINS](https://lolbas-project.github.io)
+- [rengine](https://github.com/yogeshojha/rengine)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
