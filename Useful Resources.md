@@ -61,6 +61,8 @@ Resources of all the hacky - Need to clean this up better
 - [Linux GTFOBINS](https://gtfobins.github.io/)
 - [Windows GTFOBINS](https://lolbas-project.github.io)
 - [rengine](https://github.com/yogeshojha/rengine)
+- [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
+- [getsploit](https://github.com/vulnersCom/getsploit)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
