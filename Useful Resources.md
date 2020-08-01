@@ -63,6 +63,7 @@ Resources of all the hacky - Need to clean this up better
 - [rengine](https://github.com/yogeshojha/rengine)
 - [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
 - [getsploit](https://github.com/vulnersCom/getsploit)
+- [RE stuff](https://www.notion.so/806c7afcbce24dc19e26fcd4b9c84f7b?v=21a0d4cde27942c48924ef5b078acc99)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
