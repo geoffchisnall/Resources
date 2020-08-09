@@ -19,6 +19,8 @@ Resources of all the hacky - Need to clean this up better
 #### Reverse Shells
 - [Reverse Shell Cheet Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 - [Upgrading Shells Interactive TTY](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
+- [pwncat - cytopia](https://github.com/cytopia/pwncat)
+- [pwncat - calebsteward](https://github.com/calebstewart/pwncat)
 
 #### Enumeration Tools
 - [pspy](https://github.com/DominicBreuker/pspy)
