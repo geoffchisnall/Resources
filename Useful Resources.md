@@ -77,6 +77,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Learning
 - [WebGoat](https://github.com/WebGoat/WebGoat)
+- [NodeGoat](https://github.com/OWASP/NodeGoat)
 - [JuiceShop](https://github.com/bkimminich/juice-shop)
 - [HackTheBox](https://www.hackthebox.eu/)
 - [TryHackMe](https://tryhackme.com)
