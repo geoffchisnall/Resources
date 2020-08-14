@@ -86,7 +86,7 @@ Resources of all the hacky - Need to clean this up better
 - [Websploit](https://websploit.h4cker.org/)
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OverTheWire](https://overthewire.org)
-- [XSS Trainung]http://xss-game.appspot.com/)
+- [XSS Trainung](http://xss-game.appspot.com/)
 - [AWS security - FLAWS](http://flaws.cloud/)
 - [AWS security = FLAWS2](http://flaws2.cloud/)
 
