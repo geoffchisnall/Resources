@@ -14,6 +14,8 @@ Resources of all the hacky - Need to clean this up better
 - [Offensive Security Cheet Sheets](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets) 
 - [Pentestmonkey](http://pentestmonkey.net/)
 - [CTF Resources](https://github.com/welchbj/ctf/tree/master/docs)
+- [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
+- [OWASP checklist](https://github.com/tanprathan/OWASP-Testing-Checklist)
 
 
 #### Reverse Shells
