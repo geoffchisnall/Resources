@@ -48,7 +48,6 @@ Resources of all the hacky - Need to clean this up better
 - [cloud_enum](https://github.com/initstring/cloud_enum)
 - [MicroBurst](https://github.com/NetSPI/MicroBurst)
 - [GitGot](https://github.com/BishopFox/GitGot)
-- [Peasant](https://github.com/arch4ngel/peasant)
 - [FOCA](https://github.com/ElevenPaths/FOCA)
 - [dafthack](https://github.com/dafthack)
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
