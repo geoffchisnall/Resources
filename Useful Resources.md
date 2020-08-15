@@ -67,6 +67,9 @@ Resources of all the hacky - Need to clean this up better
 - [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
 - [getsploit](https://github.com/vulnersCom/getsploit)
 - [RE stuff](https://www.notion.so/806c7afcbce24dc19e26fcd4b9c84f7b?v=21a0d4cde27942c48924ef5b078acc99)
+- [CWE Mitre](https://cwe.mitre.org/)
+- [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
+- [CVE Mitre](https://cve.mitre.org/)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
