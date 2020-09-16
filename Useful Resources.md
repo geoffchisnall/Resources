@@ -23,6 +23,7 @@ Resources of all the hacky - Need to clean this up better
 - [Upgrading Shells Interactive TTY](https://blog.ropnop.com/upgrading-simple-shells-to-fully-interactive-ttys/)
 - [pwncat - cytopia](https://github.com/cytopia/pwncat)
 - [pwncat - calebsteward](https://github.com/calebstewart/pwncat)
+- [Weevely3](ttps://github.com/epinna/weevely3)
 
 #### Enumeration Tools
 - [pspy](https://github.com/DominicBreuker/pspy)
