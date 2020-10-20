@@ -2,7 +2,7 @@
 Resources of all the hacky - Need to clean this up better
 
 #### OSCP Prep stuff
-- [https://411hall.github.io/OSCP-Preparation/])https://411hall.github.io/OSCP-Preparation/)
+- [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
