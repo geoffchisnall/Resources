@@ -3,6 +3,9 @@ Resources of all the hacky - Need to clean this up better
 
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
+- [OSCP prep](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
+- [OSCP prep](https://mystiko.sh/?p=532)
+- [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
@@ -64,7 +67,6 @@ Resources of all the hacky - Need to clean this up better
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - [grinder](https://github.com/sdnewhop/grinder)
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
-- [OSCP prep](https://mystiko.sh/?p=532)
 - [Linux GTFOBINS](https://gtfobins.github.io/)
 - [Windows GTFOBINS](https://lolbas-project.github.io)
 - [rengine](https://github.com/yogeshojha/rengine)
@@ -91,12 +93,10 @@ Resources of all the hacky - Need to clean this up better
 - [TryHackMe](https://tryhackme.com)
 - [VulnHub](https://www.vulnhub.com/)
 - [Websploit](https://websploit.h4cker.org/)
-- [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OverTheWire](https://overthewire.org)
 - [XSS Training](http://xss-game.appspot.com/)
 - [AWS security - FLAWS](http://flaws.cloud/)
 - [AWS security = FLAWS2](http://flaws2.cloud/)
-- [OSCP prep](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
 
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
