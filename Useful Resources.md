@@ -3,7 +3,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
-- [OSCP prep](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
+- [OSCP like machines](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
 - [OSCP prep](https://mystiko.sh/?p=532)
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 
