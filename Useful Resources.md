@@ -40,6 +40,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Sec Lists
 - [SecLists](https://github.com/danielmiessler/SecLists)
+- [Wordlists](https://wordlists.assetnote.io/)
 
 #### Decoders
 - [https://www.dcode.fr](https://www.dcode.fr)
