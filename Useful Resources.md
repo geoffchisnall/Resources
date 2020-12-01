@@ -7,6 +7,10 @@ Resources of all the hacky - Need to clean this up better
 - [OSCP prep](https://mystiko.sh/?p=532)
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 
+#### OSINT stuff
+- [osintcurio.us](https://osintcurio.us)
+- [twint - twitter scrapeing](https://github.com/twintproject/twint)
+
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
 - [File Upload Restrictions Bypass](https://www.exploit-db.com/docs/english/45074-file-upload-restrictions-bypass.pdf)
