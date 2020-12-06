@@ -26,6 +26,7 @@ Resources of all the hacky - Need to clean this up better
 - [CTF Resources](https://github.com/welchbj/ctf/tree/master/docs)
 - [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
 - [OWASP checklist](https://github.com/tanprathan/OWASP-Testing-Checklist)
+- [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
 
 
 #### Reverse Shells
