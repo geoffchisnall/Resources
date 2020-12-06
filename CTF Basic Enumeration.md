@@ -1,4 +1,14 @@
 # Basic Enumeration at the start
+
+#### NMAP check for live hosts
+- `sudo nmap -sn 10.0.0.0/24 -oN discovery.nmap`
+
+#### sort
+- `cat discovery.nmap | grep "for" | cut -d " " -f 5 > ips.txt` 
+
+#### NMAP scan
+- `sudo nmap -sV -n -v -Pn -p- -T4 -iL ips.txt -A --open`
+
 #### NMAP Scan
 - `sudo nmap -sC -sV -oA testbox 10.0.0.1`
 
