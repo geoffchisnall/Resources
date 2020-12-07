@@ -1,4 +1,4 @@
-# Basic Enumeration at the start
+# Basic Enumeration
 
 #### NMAP check for live hosts
 - `sudo nmap -sn 10.0.0.0/24 -oN discovery.nmap`
