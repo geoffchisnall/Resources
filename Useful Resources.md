@@ -27,6 +27,8 @@ Resources of all the hacky - Need to clean this up better
 - [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
 - [OWASP checklist](https://github.com/tanprathan/OWASP-Testing-Checklist)
 - [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
+- [SQL MAP Cheatsheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet)
+- [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
 
 
 #### Reverse Shells
