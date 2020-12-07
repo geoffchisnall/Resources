@@ -35,6 +35,12 @@
 
 - `jxplorer`
 
+### SQLMAP 
+- if there is a parameter then one could use sqlmap
+- e.g http://10.0.0.1/?id=2
+- use burp to get the request page and save it as req.txt
+- then run
+- `sqlmap -r req.txt --dbms --dump-all`
 
 ### msfvenom and msfconsole reverse shell
 
