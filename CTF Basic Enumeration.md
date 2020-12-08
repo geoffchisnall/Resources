@@ -12,6 +12,9 @@
 #### NMAP Scan
 - `sudo nmap -sC -sV -oA testbox 10.0.0.1`
 
+####Other type scans
+- `nc -nv -u -z -w 1 192.168.1.44 1300-1500`
+
 ### Web Directory Enumeration
 #### gobuster
 - `gobuster dir -u http://10.0.0.1 -w /usr/share/wordlists/dirb/big.txt`
