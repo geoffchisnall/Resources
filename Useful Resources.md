@@ -55,6 +55,7 @@ Resources of all the hacky - Need to clean this up better
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 
 #### Uncategorised
+- [DetectionLab](https://github.com/clong/DetectionLab)
 - [CTF-Katana](https://github.com/JohnHammond/ctf-katana)
 - [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
