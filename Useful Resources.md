@@ -86,6 +86,8 @@ Resources of all the hacky - Need to clean this up better
 - [CWE Mitre](https://cwe.mitre.org/)
 - [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
 - [CVE Mitre](https://cve.mitre.org/)
+- [WADComs](https://wadcoms.github.io/)
+- [LOLBAS](https://lolbas-project.github.io)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
