@@ -83,7 +83,95 @@ Module 2 - Footprinting and Reconaisance
                - run
                - os_flavor
                
-               
+Module 4 - Enumeration
+    GNI (Global Network Inventory
+    Advanced IP Scanner
+    SuperScan
+    Hyena
+    NetBios Enumerator
+    SoftPerfect Netowrk Scanner
+    NMAP
+    ZenMAP
+    nbtstat
+    net use
+    nmap -sP  10.10.10.0/24 ping sweet
+    nmap -sS 10.10.10.0/24 stealth scan
+    nmap -sSV -O synscan with OS detection
+    nmap -sSV -O -oN enumeration.txt
+    nmap -sU -p 161 10.10.10.0/24
+    nmap -sU -p 161 --script=snmp-brute 10.10.10.12
+    msfconsole
+                - use auxiliry/scanner/snmp/snmp_login
+                - set RHOSTS 10.10.10.12
+                - run
+                - use auxiliary/scanner/snmp/snmp_enum
+                - set RHOSTS 10.10.10.12
+                - run
+    LDAP
+    ADExplorer
+    enum4linux -u user -p passwd -U 10.10.10.12 - full output
+    enum4linux -u user -p passwd -o 10.10.10.12 OS version
+    enum4linux -u user -p passwd -P 10.10.10.12 password policy
+    enum4linux -u user -p passwd -G 10.10.10.12 groups
+    enum4linux -u user -p passwd -S 10.10.10.12 share policy 
+    
+    Module 5 - Vulnerability Analysis
+    
+    Nessus
+    Nikto -h 10.10.10.12 -Tuning 1
+    
+    Module 9 - Social Engineering
+    
+    SET toolkit
+    
+    Module 10 - Denial of Service
+    
+    wireshark - tcp filter
+    hping3 -S 10.10.10.10 -a 10.10.10.11 -p 22 --flood
+    HOIC (high orbit Ion Cannon)
+    
+    Module 11 - Session Hijacking
+    
+    OWASP ZAP
+    Burp
+    
+    Module 12 - Hacking Web Servers
+    
+    skipfish -o /root/test -S /usr/share/skipfish/dictionaries/complete.wl http://10.10.10.12
+    httprecon
+    ID Serve
+    nmap -p 21 10.10.10.12
+    ftp 10.10.10.12
+    anonymous
+    test@test.com
+    hydra -L /root/Desktop/Wordlists/Usernames.txt -P root/Desktop/Wordlists/Passwords.txt ftp://10.10.10.12
+    uniscan -u http://10.10.10.12
+    uniscan -u http://10.10.10.12 -we (robots.txt and sitemap.txt
+    uniscan -u http://10.10.10.12 -d dynamic scan (blind SQL)
+    
+    Module 14 Hacking Web Applications
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
 
