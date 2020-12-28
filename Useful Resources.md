@@ -10,6 +10,7 @@ Resources of all the hacky - Need to clean this up better
 - john - https://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
 - hashcat
 - responder - https://notsosecure.com/pwning-with-responder-a-pentesters-guide/
+- CEHv10 iLAB Videos  https://www.youtube.com/playlist?list=PLWGnVet-gN_kGHSHbWbeI0gtfYx3PnDZO
 
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
