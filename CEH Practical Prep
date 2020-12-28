@@ -59,6 +59,28 @@ searchsploit
     searchsploit -m 7618 — Paste the exploit in the current directory
     searchsploit -p 7618[.c] — Show complete path
     searchsploit — nmap file.xml — Search vulns inside a Nmap XML result
+    
+    firebug plugin (old) for browser (same as web developer tools)
+    httrack to mirror a site.
+    path analyzer pro
+    metasploit - service postgresql start 
+               - msfconsole
+               - db_status
+               - msfdb init
+               - service postgresql restart
+               - nmap -Pn -sS -A -oX test 10.10.10.0/24
+               - db_import Test
+               - hosts
+               - db_nmap -sS -A 10.10.10.16
+               - services
+               - use scanner/smb/smb_version
+               - set RHOSTS 10.10.10.8-16
+               - set THREADS 100
+               - run
+               - os_flavor
+               
+               
+    
 
 
 
