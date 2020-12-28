@@ -1,17 +1,6 @@
 # Resources
 Resources of all the hacky - Need to clean this up better
 
-#### CEH Practical Prep
-- nmap - https://www.stationx.net/nmap-cheat-sheet/
-- sqlmap - https://www.hackingarticles.in/database-penetration-testing-using-sqlmap-part-1/
-- wireshark - https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
-- wpscan - https://www.poftut.com/how-to-scan-wordpress-sites-with-wpscan-tutorial-for-security-vulnerabilities/
-- hydra - https://securitytutorials.co.uk/brute-forcing-passwords-with-thc-hydra/
-- john - https://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
-- hashcat
-- responder - https://notsosecure.com/pwning-with-responder-a-pentesters-guide/
-- CEHv10 iLAB Videos  https://www.youtube.com/playlist?list=PLWGnVet-gN_kGHSHbWbeI0gtfYx3PnDZO
-
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
 - [OSCP like machines](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
