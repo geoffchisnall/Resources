@@ -59,7 +59,11 @@ searchsploit
     searchsploit -m 7618 — Paste the exploit in the current directory
     searchsploit -p 7618[.c] — Show complete path
     searchsploit — nmap file.xml — Search vulns inside a Nmap XML result
-    
+
+
+Module 2 - Footprinting and Reconaisance 
+    tracert/traceroute
+    ping
     firebug plugin (old) for browser (same as web developer tools)
     httrack to mirror a site.
     path analyzer pro
