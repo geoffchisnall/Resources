@@ -121,6 +121,15 @@ Module 4 - Enumeration
     Nessus
     Nikto -h 10.10.10.12 -Tuning 1
     
+    Chapter 6 - System hacking
+    
+    RainbowCrack
+    Whitespace Stego
+    Snow
+    Image Stego
+    OpenStego
+    QuickStego
+    
     Module 9 - Social Engineering
     
     SET toolkit
