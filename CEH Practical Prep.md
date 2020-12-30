@@ -34,6 +34,7 @@
 * ' or 1=1/*
 * ') or '1'='1--
 * ') or ('1'='1—
+* SQL Cheat Sheet - https://github.com/geoffchisnall/Resources/blob/master/SQL%20Injection%20Cheat%20Sheet.md
 
 ###### Custom password lists
 * https://github.com/Dormidera/WordList-Compendium
@@ -206,7 +207,7 @@ edit in notepad or vim and add GIF98 in the beginning
 <input type="hidden" name="set_whitelist_ip" value="Set Whitelist IPs" class="button-secondary">
 <input type="submit">
 </form>
-*  save as Security_Script.html
+ * save as Security_Script.html
     
 ##### Module 15 - SQL Injection
     
