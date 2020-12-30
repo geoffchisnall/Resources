@@ -1,5 +1,6 @@
 ###### still under construction
 
+# MSSQL
 Query | Command
 ------| ------
 Version | SELECT @@VERSION;
@@ -196,8 +197,10 @@ Current privs on a particular object in 2005, 2008 | SELECT permission_name FROM
 . | - This command obtains column name ‘name’ from table master..syslogins having dbcreator value as 1.
 . | SELECT name FROM master..syslogins WHERE bulkadmin = 1;
 . | - This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
+------| ------
 
-##### MYSQL
+# MYSQL
+
 Query | Command
 ------| ------
 Version | SELECT @@VERSION;
@@ -316,8 +319,10 @@ privileges | .
 . | - This command lists privileges on databases (schemas).
 . | SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
 . | - This command lists privileges on columns.
+------| ------
 
-##### POSTGRESSQL
+# POSTGRESSQL
+
 Query | Command
 ------| ------
 Version | SELECT version();
