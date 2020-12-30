@@ -1,5 +1,4 @@
 ###### still under construction
-#### MSSQL 
 
 Query | Command
 ------| ------
@@ -199,8 +198,8 @@ Current privs on a particular object in 2005, 2008 | SELECT permission_name FROM
 . | - This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
 
 ##### MYSQL
-
 Query | Command
+------| ------
 Version | SELECT @@VERSION;
 . | - This command retrieves the system information of the
 current installation of SQL Server | SELECT version();
@@ -318,10 +317,9 @@ privileges | .
 . | SELECT table_schema, table_name, column_name, privilege_type FROM information_schema.column_privileges;
 . | - This command lists privileges on columns.
 
-##### Postgressql
-
+##### POSTGRESSQL
 Query | Command
-
+------| ------
 Version | SELECT version();
 . | - This command obtains the version and built information of a database.
 List Users | SELECT usename FROM pg_user;
