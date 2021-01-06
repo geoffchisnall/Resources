@@ -11,6 +11,7 @@ Resources of all the hacky - Need to clean this up better
 #### OSINT stuff
 - [osintcurio.us](https://osintcurio.us)
 - [twint - twitter scrapeing](https://github.com/twintproject/twint)
+- [TCM - OSINT Course Resources](https://github.com/TCM-Course-Resources/Open-Source-Intellingence-Resources)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
