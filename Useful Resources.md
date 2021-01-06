@@ -20,6 +20,7 @@ Resources of all the hacky - Need to clean this up better
 
 
 #### Useful resources
+- [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
 - [RedTeam-Tactics-and-Technique](https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques)
 - [Hacktricks](https://book.hacktricks.xyz/)
 - [https://redteams.fr/](https://redteams.fr/)
