@@ -58,12 +58,11 @@ Resources of all the hacky - Need to clean this up better
 
 #### Uncategorised
 - [DetectionLab](https://github.com/clong/DetectionLab)
-- [CTF-Katana](https://github.com/JohnHammond/ctf-katana)
-- [SimpleHTTPServer](https://docs.python.org/2/library/simplehttpserver.html)
+- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
-- [truffleHog](https://github.com/dxa4481/truffleHog)
-- [gitrob](https://github.com/michenriksen/gitrob)
-- [gitleaks](https://github.com/zricethezav/gitleaks)
+- [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
+- [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
+- [gitleaks - SAST tool for detecting hardcoded secrets](https://github.com/zricethezav/gitleaks)
 - [shhgit](https://shhgit.darkport.co.uk/)
 - [PACU](https://github.com/RhinoSecurityLabs/pacu)
 - [cloud_enum](https://github.com/initstring/cloud_enum)
