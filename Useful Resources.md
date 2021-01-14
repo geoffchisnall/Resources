@@ -52,6 +52,10 @@ Resources of all the hacky - Need to clean this up better
 #### Sec Lists
 - [SecLists](https://github.com/danielmiessler/SecLists)
 - [Wordlists](https://wordlists.assetnote.io/)
+- [wordlistctl](https://github.com/BlackArch/wordlistctl) - Script to fetch, install, update and search wordlist archives from websites offering wordlists
+- [Mentalist](https://github.com/sc0tfree/mentalist) - graphical tool for custom wordlist generation
+- [CeWL](https://github.com/digininja/CeWL) - Custom Word List generator
+- [TTPassGen](https://github.com/tp7309/TTPassGen) - password dictionary generator
 
 #### Decoders
 - [https://www.dcode.fr](https://www.dcode.fr)
