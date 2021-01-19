@@ -23,6 +23,7 @@ Resources of all the hacky - Need to clean this up better
 #### Useful resources
 - [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
 - [RedTeam-Tactics-and-Technique](https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques)
+- [shad0w](https://blog.dylan.codes/shad0w/)
 - [Hacktricks](https://book.hacktricks.xyz/)
 - [https://redteams.fr/](https://redteams.fr/)
 - [Offensive Security Cheet Sheets](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets) 
@@ -95,6 +96,10 @@ Resources of all the hacky - Need to clean this up better
 - [WADComs](https://wadcoms.github.io/)
 - [LOLBAS](https://lolbas-project.github.io)
 - [xss-encoder](http://evuln.com/tools/xss-encoder/)
+- [explain shell](https://explainshell.com/)
+- [BASHRC Generator](https://bashrcgenerator.com/)
+- [powerline](https://github.com/powerline/powerline)
+
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
