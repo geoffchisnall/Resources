@@ -114,6 +114,7 @@ Resources of all the hacky - Need to clean this up better
 - [NodeGoat](https://github.com/OWASP/NodeGoat)
 - [JuiceShop](https://github.com/bkimminich/juice-shop)
 - [HackTheBox](https://www.hackthebox.eu/)
+- [HackTheBox Academy](https://academy.hackthebox.eu)
 - [TryHackMe](https://tryhackme.com)
 - [VulnHub](https://www.vulnhub.com/)
 - [Websploit](https://websploit.h4cker.org/)
