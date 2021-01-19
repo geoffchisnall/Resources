@@ -97,7 +97,7 @@ Resources of all the hacky - Need to clean this up better
 - [LOLBAS](https://lolbas-project.github.io)
 - [xss-encoder](http://evuln.com/tools/xss-encoder/)
 - [explain shell](https://explainshell.com/)
-- [BASHRC Generator](https://bashrcgenerator.com/)
+- [BASHRC Generator](http://bashrcgenerator.com/)
 - [powerline](https://github.com/powerline/powerline)
 
 
