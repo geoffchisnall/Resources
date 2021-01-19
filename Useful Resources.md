@@ -94,6 +94,7 @@ Resources of all the hacky - Need to clean this up better
 - [CVE Mitre](https://cve.mitre.org/)
 - [WADComs](https://wadcoms.github.io/)
 - [LOLBAS](https://lolbas-project.github.io)
+- [xss-encoder](http://evuln.com/tools/xss-encoder/)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
