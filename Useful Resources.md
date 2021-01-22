@@ -64,6 +64,9 @@ Resources of all the hacky - Need to clean this up better
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 
 #### Uncategorised
+- [Attack Mitre](https://attack.mitre.org/)
+- [Ask the C2 Matrix](http://ask.thec2matrix.com/)
+- [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
 - [DetectionLab](https://github.com/clong/DetectionLab)
 - [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
