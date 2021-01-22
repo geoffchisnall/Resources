@@ -21,6 +21,9 @@ Resources of all the hacky - Need to clean this up better
 
 
 #### Useful resources
+- [Caledra](https://github.com/mitre/caldera)
+- [pupy](https://github.com/n1nj4sec/pupy)
+- [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 - [Top 51 Red Team Open Source Projects](https://awesomeopensource.com/projects/red-team)
 - [Emulation Library](https://github.com/center-for-threat-informed-defense/adversary_emulation_library)
 - [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
