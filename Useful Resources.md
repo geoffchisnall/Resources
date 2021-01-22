@@ -135,3 +135,6 @@ Resources of all the hacky - Need to clean this up better
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
 
+#### people
+- https://github.com/vhumint
+- https://github.com/BushidoUK
