@@ -22,6 +22,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Useful resources
 - [Top 51 Red Team Open Source Projects](https://awesomeopensource.com/projects/red-team)
+- [Emulation Library](https://github.com/center-for-threat-informed-defense/adversary_emulation_library)
 - [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
 - [RedTeam-Tactics-and-Technique](https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques)
 - [shad0w](https://blog.dylan.codes/shad0w/)
