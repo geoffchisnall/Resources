@@ -22,6 +22,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Useful resources
 - [Caledra](https://github.com/mitre/caldera)
+- [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
 - [pupy](https://github.com/n1nj4sec/pupy)
 - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 - [Top 51 Red Team Open Source Projects](https://awesomeopensource.com/projects/red-team)
