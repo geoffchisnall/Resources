@@ -109,7 +109,13 @@ Resources of all the hacky - Need to clean this up better
 - [explain shell](https://explainshell.com/)
 - [BASHRC Generator](http://bashrcgenerator.com/)
 - [powerline](https://github.com/powerline/powerline)
-
+- https://jordanpotti.com/2019/08/26/phishing-with-saml-and-sso-providers/#
+- https://github.com/vxunderground/MalwareSourceCode
+- https://mergene.medium.com/detecting-threats-with-process-tree-analysis-without-machine-learning-838d85f78b2c
+- https://reconshell.com/cve-2020-0688-microsoft-exchange-remote-code-execution-with-poc/
+- https://reconshell.com/spraykatz-retrieve-credentials-on-windows-machines/
+- https://reconshell.com/rdpthief-extracting-clear-text-passwords-from-mstsc-exe-using-api-hooking/
+- https://reconshell.com/cve-2020-1472-zerologon-exploit-poc/
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
