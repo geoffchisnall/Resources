@@ -116,6 +116,11 @@ Resources of all the hacky - Need to clean this up better
 - https://reconshell.com/spraykatz-retrieve-credentials-on-windows-machines/
 - https://reconshell.com/rdpthief-extracting-clear-text-passwords-from-mstsc-exe-using-api-hooking/
 - https://reconshell.com/cve-2020-1472-zerologon-exploit-poc/
+- https://www.youtube.com/watch?v=SG2ibjuzRJM&t=1s
+- https://www.youtube.com/watch?v=udk16av8XHI&feature=youtu.be
+- https://www.skypli.com/
+- https://copycookie.com/striker-recon-vulnerability-scanning-suite/
+- https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
