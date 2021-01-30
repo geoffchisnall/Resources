@@ -121,6 +121,7 @@ Resources of all the hacky - Need to clean this up better
 - https://www.skypli.com/
 - https://copycookie.com/striker-recon-vulnerability-scanning-suite/
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
+- [tinypng](https://tinypng.com/)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
