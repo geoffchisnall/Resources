@@ -7,6 +7,7 @@ Resources of all the hacky - Need to clean this up better
 - [OSCP prep](https://mystiko.sh/?p=532)
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OSCP templates](https://github.com/whoisflynn/OSCP-Exam-Report-Template)
+- [OSCP exam Report Template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown)
 
 #### OSINT stuff
 - [osintcurio.us](https://osintcurio.us)
@@ -122,6 +123,7 @@ Resources of all the hacky - Need to clean this up better
 - https://copycookie.com/striker-recon-vulnerability-scanning-suite/
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 - [tinypng](https://tinypng.com/)
+- [Obsidian Note Taking](https://obsidian.md)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
