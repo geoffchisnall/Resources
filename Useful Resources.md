@@ -44,6 +44,7 @@ Resources of all the hacky - Need to clean this up better
 - [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
 - [byt3bl33d3r](https://github.com/byt3bl33d3r)
 - [Starting Up Security](https://scrty.io/)
+- [fawkes](https://sandlab.cs.uchicago.edu/fawkes/}
 
 
 #### Reverse Shells
