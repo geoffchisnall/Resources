@@ -44,7 +44,7 @@ Resources of all the hacky - Need to clean this up better
 - [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
 - [byt3bl33d3r](https://github.com/byt3bl33d3r)
 - [Starting Up Security](https://scrty.io/)
-- [fawkes](https://sandlab.cs.uchicago.edu/fawkes/}
+- [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
 
 
 #### Reverse Shells
@@ -77,6 +77,7 @@ Resources of all the hacky - Need to clean this up better
 - [Attack Mitre](https://attack.mitre.org/)
 - [Security Trails](https://securitytrails.com)
 - [Ask the C2 Matrix](http://ask.thec2matrix.com/)
+- [Howto C2Matrix](https://howto.thec2matrix.com/)
 - [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
 - [DetectionLab](https://github.com/clong/DetectionLab)
 - [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
