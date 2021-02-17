@@ -162,3 +162,4 @@ Resources of all the hacky - Need to clean this up better
 #### people
 - https://github.com/vhumint
 - https://github.com/BushidoUK
+- https://medium.com/bug-bounty
