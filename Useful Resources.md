@@ -24,6 +24,7 @@ Resources of all the hacky - Need to clean this up better
 #### Useful resources
 - [nuclei](https://github.com/projectdiscovery/nuclei)
 - [dalfox](https://github.com/hahwul/dalfox)
+- [axiom](https://github.com/pry0cc/axiom)
 - [Red Team Tips](https://redteamer.tips/)
 - [Caledra](https://github.com/mitre/caldera)
 - [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
@@ -47,6 +48,7 @@ Resources of all the hacky - Need to clean this up better
 - [byt3bl33d3r](https://github.com/byt3bl33d3r)
 - [Starting Up Security](https://scrty.io/)
 - [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
+- [projectdiscovery](https://chaos.projectdiscovery.io/)
 
 
 #### Reverse Shells
