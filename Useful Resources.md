@@ -25,6 +25,7 @@ Resources of all the hacky - Need to clean this up better
 - [nuclei](https://github.com/projectdiscovery/nuclei)
 - [dalfox](https://github.com/hahwul/dalfox)
 - [axiom](https://github.com/pry0cc/axiom)
+- [bbrf-client](https://github.com/honoki/bbrf-client)
 - [Red Team Tips](https://redteamer.tips/)
 - [Caledra](https://github.com/mitre/caldera)
 - [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
