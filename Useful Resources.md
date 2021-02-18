@@ -27,6 +27,7 @@ Resources of all the hacky - Need to clean this up better
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
 - [Red Team Tips](https://redteamer.tips/)
+- [Covenant](https://github.com/cobbr/Covenant)
 - [Caledra](https://github.com/mitre/caldera)
 - [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
 - [pupy](https://github.com/n1nj4sec/pupy)
