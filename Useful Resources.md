@@ -23,6 +23,7 @@ Resources of all the hacky - Need to clean this up better
 
 #### Useful resources
 - [nuclei](https://github.com/projectdiscovery/nuclei)
+- [projectdiscovery](https://github.com/projectdiscovery)
 - [dalfox](https://github.com/hahwul/dalfox)
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
