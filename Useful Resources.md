@@ -29,6 +29,7 @@ Resources of all the hacky - Need to clean this up better
 - [dalfox](https://github.com/hahwul/dalfox)
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
+- [Honeypot](https://github.com/Shmakov/Honeypot)
 - [Red Team Tips](https://redteamer.tips/)
 - [Covenant](https://github.com/cobbr/Covenant)
 - [Caledra](https://github.com/mitre/caldera)
