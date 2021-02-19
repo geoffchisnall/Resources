@@ -30,6 +30,7 @@ Resources of all the hacky - Need to clean this up better
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
 - [Honeypot](https://github.com/Shmakov/Honeypot)
+- [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
 - [Covenant](https://github.com/cobbr/Covenant)
 - [Caledra](https://github.com/mitre/caldera)
