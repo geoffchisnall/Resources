@@ -32,6 +32,7 @@ Resources of all the hacky - Need to clean this up better
 - [Honeypot](https://github.com/Shmakov/Honeypot)
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
+- [KitPloit](https://www.kitploit.com/)
 - [Covenant](https://github.com/cobbr/Covenant)
 - [Caledra](https://github.com/mitre/caldera)
 - [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
