@@ -169,7 +169,7 @@ Resources of all the hacky - Need to clean this up better
 - [XSS Training](http://xss-game.appspot.com/)
 - [AWS security - FLAWS](http://flaws.cloud/)
 - [AWS security = FLAWS2](http://flaws2.cloud/)
-- [malware exercise]([https://heapoverride.sexy/challenge-2/)
+- [malware exercise](https://heapoverride.sexy/challenge-2/)
 - [XSS Hunter](https://xsshunter.com/)
 
 #### TLS Vulerabilties
