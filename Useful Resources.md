@@ -85,7 +85,7 @@ Resources of all the hacky - Need to clean this up better
 - [https://www.dcode.fr](https://www.dcode.fr)
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 - [Javascript Obfuscator](https://beautifytools.com/javascript-obfuscator.php)
-- [jsconsole](https://jsconsole.com/{
+- [jsconsole](https://jsconsole.com/)
 - [Javascript Minifier](https://javascript-minifier.com/)
 - [JS Obfuscator](https://obfuscator.io/)
 - [Prettier Codifier](https://prettier.io/playground)
