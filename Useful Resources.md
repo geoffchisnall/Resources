@@ -90,6 +90,7 @@ Resources of all the hacky - Need to clean this up better
 - [JS Obfuscator](https://obfuscator.io/)
 - [Prettier Codifier](https://prettier.io/playground)
 - [JSNice](http://www.jsnice.org/)
+- [jsfuck](http://www.jsfuck.com/)
 
 #### Uncategorised
 - [Attack Mitre](https://attack.mitre.org/)
