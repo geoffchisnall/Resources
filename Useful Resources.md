@@ -50,6 +50,8 @@ Resources of all the hacky - Need to clean this up better
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
 - [grinder](https://github.com/sdnewhop/grinder)
 - [rengine](https://github.com/yogeshojha/rengine)
+- https://copycookie.com/striker-recon-vulnerability-scanning-suite/
+- https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 
 #### Resources
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
@@ -72,8 +74,11 @@ Resources of all the hacky - Need to clean this up better
 - [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
 - [Starting Up Security](https://scrty.io/)
 - [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
+- [RE stuff](https://www.notion.so/806c7afcbce24dc19e26fcd4b9c84f7b?v=21a0d4cde27942c48924ef5b078acc99)
+- [CWE Mitre](https://cwe.mitre.org/)
+- [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
+- [CVE Mitre](https://cve.mitre.org/)
 
-- [pupy](https://github.com/n1nj4sec/pupy)
 
 #### Reverse Shells
 - [Reverse Shell Cheet Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
@@ -114,46 +119,8 @@ Resources of all the hacky - Need to clean this up better
 - [Security Trails](https://securitytrails.com)
 - [Ask the C2 Matrix](http://ask.thec2matrix.com/)
 - [Howto C2Matrix](https://howto.thec2matrix.com/)
-
-#### Git Stuff
-- [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
-- [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
-- [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
-- [gitleaks - SAST tool for detecting hardcoded secrets](https://github.com/zricethezav/gitleaks)
-- [shhgit](https://shhgit.darkport.co.uk/)
-- [GitGot](https://github.com/BishopFox/GitGot)
-
-- [DetectionLab](https://github.com/clong/DetectionLab)
-- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
-- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
-
-
-
-
-
-
-#### Cloud stuff
-- [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
-- [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
-- [PowerZure](https://github.com/hausec/PowerZure)
-
-
-- [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
-- [Linux GTFOBINS](https://gtfobins.github.io/)
-- [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
-
-
-- [getsploit](https://github.com/vulnersCom/getsploit)
-- [RE stuff](https://www.notion.so/806c7afcbce24dc19e26fcd4b9c84f7b?v=21a0d4cde27942c48924ef5b078acc99)
-- [CWE Mitre](https://cwe.mitre.org/)
-- [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
-- [CVE Mitre](https://cve.mitre.org/)
-- [WADComs](https://wadcoms.github.io/)
-- [LOLBAS](https://lolbas-project.github.io)
-- [xss-encoder](http://evuln.com/tools/xss-encoder/)
-- [explain shell](https://explainshell.com/)
-- [BASHRC Generator](http://bashrcgenerator.com/)
-- [powerline](https://github.com/powerline/powerline)
+- [pupy](https://github.com/n1nj4sec/pupy)
+- https://www.skypli.com/
 - https://jordanpotti.com/2019/08/26/phishing-with-saml-and-sso-providers/#
 - https://github.com/vxunderground/MalwareSourceCode
 - https://mergene.medium.com/detecting-threats-with-process-tree-analysis-without-machine-learning-838d85f78b2c
@@ -163,11 +130,35 @@ Resources of all the hacky - Need to clean this up better
 - https://reconshell.com/cve-2020-1472-zerologon-exploit-poc/
 - https://www.youtube.com/watch?v=SG2ibjuzRJM&t=1s
 - https://www.youtube.com/watch?v=udk16av8XHI&feature=youtu.be
-- https://www.skypli.com/
-- https://copycookie.com/striker-recon-vulnerability-scanning-suite/
-- https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
+- [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
+- [xss-encoder](http://evuln.com/tools/xss-encoder/)
+- [explain shell](https://explainshell.com/)
+- [BASHRC Generator](http://bashrcgenerator.com/)
+- [powerline](https://github.com/powerline/powerline)
 - [tinypng](https://tinypng.com/)
 - [Obsidian Note Taking](https://obsidian.md)
+
+#### Git Stuff
+- [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
+- [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
+- [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
+- [gitleaks - SAST tool for detecting hardcoded secrets](https://github.com/zricethezav/gitleaks)
+- [shhgit](https://shhgit.darkport.co.uk/)
+- [GitGot](https://github.com/BishopFox/GitGot)
+- [DetectionLab](https://github.com/clong/DetectionLab)
+- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
+- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
+
+#### Exploitation 
+- [Linux GTFOBINS](https://gtfobins.github.io/)
+- [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
+- [getsploit](https://github.com/vulnersCom/getsploit)
+- [WADComs](https://wadcoms.github.io/)
+
+#### Cloud stuff
+- [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
+- [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
+- [PowerZure](https://github.com/hausec/PowerZure)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
