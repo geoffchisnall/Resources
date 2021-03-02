@@ -14,6 +14,7 @@ Resources of all the hacky - Need to clean this up better
 - [twint - twitter scrapeing](https://github.com/twintproject/twint)
 - [TCM - OSINT Course Resources](https://github.com/TCM-Course-Resources/Open-Source-Intellingence-Resources)
 - [faker](https://github.com/Marak/faker.js)
+- [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
@@ -22,27 +23,35 @@ Resources of all the hacky - Need to clean this up better
 
 
 #### Useful resources
+
+### Discovery
 - [nuclei](https://github.com/projectdiscovery/nuclei)
 - [SnitchDNS](https://github.com/ctxis/SnitchDNS)
-- [dionaea](https://hub.docker.com/r/dinotools/dionaea)
 - [projectdiscovery](https://github.com/projectdiscovery)
 - [dalfox](https://github.com/hahwul/dalfox)
+
+### Honeypots
+- [dionaea](https://hub.docker.com/r/dinotools/dionaea)
+- [Honeypot](https://github.com/Shmakov/Honeypot)
+
+### Frameworks
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
-- [Honeypot](https://github.com/Shmakov/Honeypot)
+- [Covenant](https://github.com/cobbr/Covenant)
+- [Caledra](https://github.com/mitre/caldera)
+- [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
+- [shad0w](https://blog.dylan.codes/shad0w/)
+
+
+### Resources
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
 - [KitPloit](https://www.kitploit.com/)
-- [Covenant](https://github.com/cobbr/Covenant)
-- [Caledra](https://github.com/mitre/caldera)
 - [How to Install Mitre CALDERA and Configure Your SSL Certificate](https://www.blackhillsinfosec.com/how-to-install-mitre-caldera-and-configure-your-ssl-certificate/)
-- [pupy](https://github.com/n1nj4sec/pupy)
-- [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 - [Top 51 Red Team Open Source Projects](https://awesomeopensource.com/projects/red-team)
 - [Emulation Library](https://github.com/center-for-threat-informed-defense/adversary_emulation_library)
 - [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
 - [RedTeam-Tactics-and-Technique](https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques)
-- [shad0w](https://blog.dylan.codes/shad0w/)
 - [Hacktricks](https://book.hacktricks.xyz/)
 - [https://redteams.fr/](https://redteams.fr/)
 - [Offensive Security Cheet Sheets](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets) 
@@ -53,11 +62,9 @@ Resources of all the hacky - Need to clean this up better
 - [Awesome Hacking](https://github.com/carpedm20/awesome-hacking)
 - [SQL MAP Cheatsheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet)
 - [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
-- [byt3bl33d3r](https://github.com/byt3bl33d3r)
 - [Starting Up Security](https://scrty.io/)
-- [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
-- [projectdiscovery](https://chaos.projectdiscovery.io/)
 
+- [pupy](https://github.com/n1nj4sec/pupy)
 
 #### Reverse Shells
 - [Reverse Shell Cheet Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
@@ -180,3 +187,4 @@ Resources of all the hacky - Need to clean this up better
 - https://github.com/vhumint
 - https://github.com/BushidoUK
 - https://medium.com/bug-bounty
+- [byt3bl33d3r](https://github.com/byt3bl33d3r)
