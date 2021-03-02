@@ -22,28 +22,36 @@ Resources of all the hacky - Need to clean this up better
 - [Bypass File Upload Filtering](https://github.com/xapax/security/blob/master/bypass_image_upload.md)
 
 
-#### Useful resources
-
-### Discovery
+#### Discovery
 - [nuclei](https://github.com/projectdiscovery/nuclei)
 - [SnitchDNS](https://github.com/ctxis/SnitchDNS)
 - [projectdiscovery](https://github.com/projectdiscovery)
 - [dalfox](https://github.com/hahwul/dalfox)
+- [cloud_enum](https://github.com/initstring/cloud_enum)
+- [MicroBurst](https://github.com/NetSPI/MicroBurst)
+- [FOCA](https://github.com/ElevenPaths/FOCA)
 
-### Honeypots
+
+
+#### Honeypots
 - [dionaea](https://hub.docker.com/r/dinotools/dionaea)
 - [Honeypot](https://github.com/Shmakov/Honeypot)
 
-### Frameworks
+#### Frameworks
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
 - [Covenant](https://github.com/cobbr/Covenant)
 - [Caledra](https://github.com/mitre/caldera)
 - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
 - [shad0w](https://blog.dylan.codes/shad0w/)
+- [PACU](https://github.com/RhinoSecurityLabs/pacu)
+- [ROADtools](https://github.com/dirkjanm/ROADtools)
+- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
+- [grinder](https://github.com/sdnewhop/grinder)
+- [rengine](https://github.com/yogeshojha/rengine)
 
-
-### Resources
+#### Resources
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
 - [KitPloit](https://www.kitploit.com/)
@@ -63,6 +71,7 @@ Resources of all the hacky - Need to clean this up better
 - [SQL MAP Cheatsheet](https://www.security-sleuth.com/sleuth-blog/2017/1/3/sqlmap-cheat-sheet)
 - [SQL Injection Payload List](https://github.com/payloadbox/sql-injection-payload-list)
 - [Starting Up Security](https://scrty.io/)
+- [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
 
 - [pupy](https://github.com/n1nj4sec/pupy)
 
@@ -100,36 +109,40 @@ Resources of all the hacky - Need to clean this up better
 - [jsfuck](http://www.jsfuck.com/)
 
 #### Uncategorised
+
 - [Attack Mitre](https://attack.mitre.org/)
 - [Security Trails](https://securitytrails.com)
 - [Ask the C2 Matrix](http://ask.thec2matrix.com/)
 - [Howto C2Matrix](https://howto.thec2matrix.com/)
+
+#### Git Stuff
 - [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
-- [DetectionLab](https://github.com/clong/DetectionLab)
-- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
-- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
 - [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
 - [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
 - [gitleaks - SAST tool for detecting hardcoded secrets](https://github.com/zricethezav/gitleaks)
 - [shhgit](https://shhgit.darkport.co.uk/)
-- [PACU](https://github.com/RhinoSecurityLabs/pacu)
-- [cloud_enum](https://github.com/initstring/cloud_enum)
-- [MicroBurst](https://github.com/NetSPI/MicroBurst)
 - [GitGot](https://github.com/BishopFox/GitGot)
-- [FOCA](https://github.com/ElevenPaths/FOCA)
-- [dafthack](https://github.com/dafthack)
+
+- [DetectionLab](https://github.com/clong/DetectionLab)
+- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
+- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
+
+
+
+
+
+
+#### Cloud stuff
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
-- [ROADtools](https://github.com/dirkjanm/ROADtools)
-- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
 - [PowerZure](https://github.com/hausec/PowerZure)
-- [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
-- [grinder](https://github.com/sdnewhop/grinder)
+
+
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
 - [Linux GTFOBINS](https://gtfobins.github.io/)
-- [Windows GTFOBINS](https://lolbas-project.github.io)
-- [rengine](https://github.com/yogeshojha/rengine)
-- [bugbountytips](https://hackanythingfor.blogspot.com/2020/07/bugbountytips.html)
+- [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
+
+
 - [getsploit](https://github.com/vulnersCom/getsploit)
 - [RE stuff](https://www.notion.so/806c7afcbce24dc19e26fcd4b9c84f7b?v=21a0d4cde27942c48924ef5b078acc99)
 - [CWE Mitre](https://cwe.mitre.org/)
@@ -188,3 +201,4 @@ Resources of all the hacky - Need to clean this up better
 - https://github.com/BushidoUK
 - https://medium.com/bug-bounty
 - [byt3bl33d3r](https://github.com/byt3bl33d3r)
+- [dafthack](https://github.com/dafthack)
