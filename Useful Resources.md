@@ -86,6 +86,7 @@ Resources of all the hacky - Need to clean this up better
 - [pwncat - cytopia](https://github.com/cytopia/pwncat)
 - [pwncat - calebsteward](https://github.com/calebstewart/pwncat)
 - [Weevely3](https://github.com/epinna/weevely3)
+- [ReverseShells](https://0day.exposed/reverseshell/)
 
 #### Enumeration Tools
 - [pspy](https://github.com/DominicBreuker/pspy)
