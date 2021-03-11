@@ -138,6 +138,16 @@ Resources of all the hacky - Need to clean this up better
 - [powerline](https://github.com/powerline/powerline)
 - [tinypng](https://tinypng.com/)
 - [Obsidian Note Taking](https://obsidian.md)
+- [Talon](https://github.com/optiv/Talon)
+- [Crowbar](https://github.com/galkan/crowbar)
+- [TREVORspray](https://github.com/blacklanternsecurity/TREVORspray)
+- [Farmer](https://github.com/blacklanternsecurity/TREVORspray)
+- [CrackMapExec](https://github.com/byt3bl33d3r/CrackMapExec)
+- [Pillager](https://github.com/brittonhayes/pillager)
+- [traitor](https://github.com/liamg/traitor)
+- [Perfusion](https://github.com/itm4n/Perfusion)
+- [SUID3NUM](https://github.com/Anon-Exploiter/SUID3NUM)
+- [penoit](https://github.com/yakuza8/peniot)
 
 #### Git Stuff
 - [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
@@ -160,6 +170,8 @@ Resources of all the hacky - Need to clean this up better
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
 - [ScoutSuite](https://github.com/nccgroup/ScoutSuite)
 - [PowerZure](https://github.com/hausec/PowerZure)
+- [bucketbunny](https://github.com/iamthefrogy/bucketbunny)
+- [cloudsploit](https://github.com/aquasecurity/cloudsploit)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
@@ -168,6 +180,9 @@ Resources of all the hacky - Need to clean this up better
 - [Azure Germany](https://www.microsoft.com/en-us/download/details.aspx?id=57064)
 - [Azure China](https://www.microsoft.com/en-us/download/details.aspx?id=57062)
 - [parsuite](https://github.com/arch4ngel/parsuite)
+
+#### Threat Intellegence
+- [Intel Owl](https://github.com/intelowlproject/IntelOwl)
 
 #### Learning
 - [WebGoat](https://github.com/WebGoat/WebGoat)
