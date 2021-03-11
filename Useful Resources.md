@@ -212,3 +212,4 @@ Resources of all the hacky - Need to clean this up better
 - https://medium.com/bug-bounty
 - [byt3bl33d3r](https://github.com/byt3bl33d3r)
 - [dafthack](https://github.com/dafthack)
+- https://www.engetsu-consulting.com/2021/02/05/penetration-testing-tools-reference-guide/
