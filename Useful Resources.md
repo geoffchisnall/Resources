@@ -1,5 +1,5 @@
 # Resources
-Resources of all the hacky - Need to clean this up better
+Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
 
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
@@ -88,6 +88,7 @@ Resources of all the hacky - Need to clean this up better
 - [pwncat - calebsteward](https://github.com/calebstewart/pwncat)
 - [Weevely3](https://github.com/epinna/weevely3)
 - [ReverseShells](https://www.revshells.com/)
+- [RevShellNim](https://github.com/dmknght/RevShellNim)
 
 #### Enumeration Tools
 - [pspy](https://github.com/DominicBreuker/pspy)
