@@ -201,6 +201,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [AWS security = FLAWS2](http://flaws2.cloud/)
 - [malware exercise](https://heapoverride.sexy/challenge-2/)
 - [XSS Hunter](https://xsshunter.com/)
+- [ippsec-rocks](https://ippsec.rocks)
 
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
