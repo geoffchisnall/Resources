@@ -105,6 +105,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Mentalist](https://github.com/sc0tfree/mentalist) - graphical tool for custom wordlist generation
 - [CeWL](https://github.com/digininja/CeWL) - Custom Word List generator
 - [TTPassGen](https://github.com/tp7309/TTPassGen) - password dictionary generator
+- [WeakPass](https://weakpass.com/)
 
 #### Decoders
 - [https://www.dcode.fr](https://www.dcode.fr)
