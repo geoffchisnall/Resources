@@ -30,6 +30,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [cloud_enum](https://github.com/initstring/cloud_enum)
 - [MicroBurst](https://github.com/NetSPI/MicroBurst)
 - [FOCA](https://github.com/ElevenPaths/FOCA)
+- [RustScan](https://github.com/RustScan/RustScan)
 
 
 
