@@ -31,8 +31,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [MicroBurst](https://github.com/NetSPI/MicroBurst)
 - [FOCA](https://github.com/ElevenPaths/FOCA)
 - [RustScan](https://github.com/RustScan/RustScan)
-
-
+- [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
+- [Bloodhound.py](https://github.com/fox-it/BloodHound.py)
 
 #### Honeypots
 - [dionaea](https://hub.docker.com/r/dinotools/dionaea)
@@ -120,6 +120,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 #### Uncategorised
 
+- [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
+- [usernameGenerator](https://github.com/21y4d/usernameGenerator)
 - [Attack Mitre](https://attack.mitre.org/)
 - [Security Trails](https://securitytrails.com)
 - [Ask the C2 Matrix](http://ask.thec2matrix.com/)
