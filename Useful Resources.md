@@ -97,6 +97,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [linuxprivchecker](https://github.com/sleventyeleven/linuxprivchecker)
 - [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
+- [deepce](https://github.com/stealthcopter/deepce)
 
 #### Sec Lists
 - [SecLists](https://github.com/danielmiessler/SecLists)
