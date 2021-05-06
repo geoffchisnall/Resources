@@ -213,6 +213,11 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 ####
 - [weakpass](https://weakpass.com/wordlist/1919)
 
+#### Forensics
+
+- [Intro to DFIR](https://sroberts.medium.com/introduction-to-dfir-d35d5de4c180)
+- [AutoSpy](https://www.autopsy.com/)
+
 #### people
 - https://github.com/vhumint
 - https://github.com/BushidoUK
