@@ -219,6 +219,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [AutoSpy](https://www.autopsy.com/)
 - [free-incident-response-training](https://freetraining.dfirdiva.com/free-incident-response-training)
 - [getting-into-dfir](https://dfirdiva.com/getting-into-dfir/)
+- [ctf.dfir.science](https://ctf.dfir.science)
+- [SocVel CTF](https://socvel.com/)
 
 #### people
 - https://github.com/vhumint
