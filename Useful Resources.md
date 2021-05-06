@@ -217,6 +217,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 - [Intro to DFIR](https://sroberts.medium.com/introduction-to-dfir-d35d5de4c180)
 - [AutoSpy](https://www.autopsy.com/)
+- [free-incident-response-training](https://freetraining.dfirdiva.com/free-incident-response-training)
+- [getting-into-dfir](https://dfirdiva.com/getting-into-dfir/)
 
 #### people
 - https://github.com/vhumint
