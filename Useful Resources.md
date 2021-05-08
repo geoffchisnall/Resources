@@ -31,6 +31,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [MicroBurst](https://github.com/NetSPI/MicroBurst)
 - [FOCA](https://github.com/ElevenPaths/FOCA)
 - [RustScan](https://github.com/RustScan/RustScan)
+- [feroxbuster](ttps://github.com/epi052/feroxbuster)
 - [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
 - [Bloodhound.py](https://github.com/fox-it/BloodHound.py)
 
