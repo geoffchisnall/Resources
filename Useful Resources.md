@@ -57,6 +57,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 
 #### Resources
+- [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
 - [KitPloit](https://www.kitploit.com/)
