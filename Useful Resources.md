@@ -159,6 +159,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [penoit](https://github.com/yakuza8/peniot)
 
 #### Git Stuff
+- [GitTools](https://github.com/internetwache/GitTools)
 - [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
 - [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
 - [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
