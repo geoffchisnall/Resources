@@ -168,6 +168,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [DetectionLab](https://github.com/clong/DetectionLab)
 - [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
 - [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
+- [gitdumper](https://github.com/arthaud/git-dumper.git)
 
 #### Exploitation 
 - [Linux GTFOBINS](https://gtfobins.github.io/)
