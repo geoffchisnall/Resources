@@ -57,6 +57,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 
 #### Resources
+
 - [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
@@ -109,7 +110,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [CeWL](https://github.com/digininja/CeWL) - Custom Word List generator
 - [TTPassGen](https://github.com/tp7309/TTPassGen) - password dictionary generator
 - [WeakPass](https://weakpass.com/)
-
+- [password village](https://passwordvillage.org)
+-
 #### Decoders
 - [https://www.dcode.fr](https://www.dcode.fr)
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
