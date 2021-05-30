@@ -34,6 +34,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [feroxbuster](https://github.com/epi052/feroxbuster)
 - [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
 - [Bloodhound.py](https://github.com/fox-it/BloodHound.py)
+- [PlumHound](https://github.com/PlumHound/PlumHound)
+- [GoFetch](https://github.com/GoFetchAD/GoFetch)
 
 #### Honeypots
 - [dionaea](https://hub.docker.com/r/dinotools/dionaea)
