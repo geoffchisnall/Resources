@@ -222,6 +222,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 ####
 - [weakpass](https://weakpass.com/wordlist/1919)
 
+#### Windows stuff
+- [CommodoVM](https://www.fireeye.com/blog/threat-research/2019/03/commando-vm-windows-offensive-distribution.html)
+
 #### Forensics
 
 - [Intro to DFIR](https://sroberts.medium.com/introduction-to-dfir-d35d5de4c180)
