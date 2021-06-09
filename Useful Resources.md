@@ -57,6 +57,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [rengine](https://github.com/yogeshojha/rengine)
 - https://copycookie.com/striker-recon-vulnerability-scanning-suite/
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
+- [bruteratel](https://bruteratel.com/tabs/features/)
 
 #### Resources
 
