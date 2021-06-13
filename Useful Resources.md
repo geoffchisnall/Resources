@@ -188,6 +188,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
 - [getsploit](https://github.com/vulnersCom/getsploit)
 - [WADComs](https://wadcoms.github.io/)
+- ([Linux Exploit Suggester)https://github.com/mzet-/linux-exploit-suggester)
 
 #### Cloud stuff
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
