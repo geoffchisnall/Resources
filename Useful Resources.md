@@ -172,6 +172,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Perfusion](https://github.com/itm4n/Perfusion)
 - [SUID3NUM](https://github.com/Anon-Exploiter/SUID3NUM)
 - [penoit](https://github.com/yakuza8/peniot)
+- [Retire.js](https://github.com/RetireJS/retire.js)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
