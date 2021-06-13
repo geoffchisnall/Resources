@@ -58,6 +58,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - https://copycookie.com/striker-recon-vulnerability-scanning-suite/
 - https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 - [bruteratel](https://bruteratel.com/tabs/features/)
+- [OWASP Top 10](https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/)
+- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 
 #### Resources
 
