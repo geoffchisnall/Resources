@@ -110,6 +110,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [payloadallthethings](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
 - [Checklist - Linux Privilege Escalation](https://book.hacktricks.xyz/linux-unix/linux-privilege-escalation-checklist)
 - [Privilege Escalation](https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html)
+- [Linux Capabilities Privilege Escalation via OpenSSL with SELinux Enabled and Enforced](https://int0x33.medium.com/day-44-linux-capabilities-privilege-escalation-via-openssl-with-selinux-enabled-and-enforced-74d2bec02099)
+- [SUID vs Capabilities](https://mn3m.info/posts/suid-vs-capabilities/)
+- [Linux Privilege Escalation using Capabilities](https://www.hackingarticles.in/linux-privilege-escalation-using-capabilities/)
 
 
 #### Sec Lists
