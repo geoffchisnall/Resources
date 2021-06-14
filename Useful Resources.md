@@ -115,6 +115,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Linux Capabilities Privilege Escalation via OpenSSL with SELinux Enabled and Enforced](https://int0x33.medium.com/day-44-linux-capabilities-privilege-escalation-via-openssl-with-selinux-enabled-and-enforced-74d2bec02099)
 - [SUID vs Capabilities](https://mn3m.info/posts/suid-vs-capabilities/)
 - [Linux Privilege Escalation using Capabilities](https://www.hackingarticles.in/linux-privilege-escalation-using-capabilities/)
+- [Windows Privilege Escalation Guide](https://www.absolomb.com/2018-01-26-Windows-Privilege-Escalation-Guide/)
+- [Payloadallthethings Windows privilege escalation guide](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
+- [Windows Privilege Escalation Fundamentals](https://www.fuzzysecurity.com/tutorials/16.html)
 
 
 #### Sec Lists
