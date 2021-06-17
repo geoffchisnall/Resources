@@ -178,6 +178,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [SUID3NUM](https://github.com/Anon-Exploiter/SUID3NUM)
 - [penoit](https://github.com/yakuza8/peniot)
 - [Retire.js](https://github.com/RetireJS/retire.js)
+- [Windows-Kernel-Exploits](https://github.com/SecWiki/windows-kernel-exploits)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
