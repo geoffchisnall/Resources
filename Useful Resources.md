@@ -25,6 +25,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 #### Discovery
 - [nuclei](https://github.com/projectdiscovery/nuclei)
 - [SnitchDNS](https://github.com/ctxis/SnitchDNS)
+- [AutoRecon](https://github.com/Tib3rius/AutoRecon)
 - [projectdiscovery](https://github.com/projectdiscovery)
 - [dalfox](https://github.com/hahwul/dalfox)
 - [cloud_enum](https://github.com/initstring/cloud_enum)
