@@ -2,15 +2,15 @@
 
 Some tools to check for live hosts and ports on a network.
 
-##### **netdiscover**
+### **netdiscover**
 ```bash
 #:> sudo netdiscover -i eth0
 ```
-##### **fping**
+### **fping**
 ```bash
 #:> fping -a -g 192.168.1.0/24 2>/dev/null
 ```
-##### **NMAP**
+### **NMAP**
 ```bash
 ping scan
 #:> sudo nmap -n -sn 192.168.1.0/24 -oG - | awk '/Up$/{print $2}'
@@ -18,7 +18,7 @@ ping scan
 with --script=default and version detection and out put it to a file
 #:> sudo nmap 192.168.1.0/2 -sC -sV -oN output.nmap
 ```
-#### **Rustscan**
+### **Rustscan**
 ```bash
 normal scan
 #:> rustscan -a 192.168.1.0/24 --ulimit 5000
@@ -26,14 +26,14 @@ normal scan
 With nmap with --script=default, version detection and output to a file
 #:> rustscan -a 192.168.1.0/24 --ulimit 5000 -- -A -sC -sV -oN output.nmap
 ```
-##### **netcat**
+### **netcat**
 You can also use netcat to check for open or closed ports
 ```bash
 #:> nc -nv -u -z -w 1 192.168.1.1 161`
 ```
-### **Web Directory Enumeration**
+## **Web Directory Enumeration**
 
-##### **Gobuster**
+### **Gobuster**
 
 Gobuster by default uses:
 
@@ -64,7 +64,7 @@ Headers
 
 ```
 
-##### **feroxbuster**
+### **feroxbuster**
 Feroxbuster by default uses:
 
 **Wordlist** : raft-medium-directories.txt
@@ -100,7 +100,7 @@ Disables TLS certificate validation
 #:> feroxbuster --url http://192.168.1.1 -k
 ```
 
-##### **wfuzz**
+### **wfuzz**
 
 wfuzz by default uses:
 
@@ -126,11 +126,9 @@ User-Agent
 Use Proxy
 #:> wfuzz -c -z file,'wordlist' -u 192.168.1.1/FUZZ -p 192.168.1.10:3128:HTTP
 
-
-
 ```
 
-##### **ffuf**
+### **ffuf**
 ```bash
 Directory Fuzzing
 #:> ffuf -w wordlist.txt:FUZZ -u http://192.168.1.1/FUZZ
@@ -161,16 +159,16 @@ Parameter Fuzzing - POST
 
 ## **SMB Enumeration**
 
-##### **Enumerate information from Windows and Samba systems**
+### **Enumerate information from Windows and Samba systems**
 ```bash
 #:> enum4linux -a 192.168.1.150
 ```
-##### **Show SMB shares**
+### **Show SMB shares**
 ```bash
 #:> smbclient -U "user" -L 192.168.1.150
 #:> showmount -e 192.16.1.150
 ```
-##### **Mount shares**
+### **Mount shares**
 
 ```bash
 #:> sudo mount -t cifs //192.168.1.150/share$ smb/ -o user="user"
