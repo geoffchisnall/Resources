@@ -190,9 +190,8 @@ Parameter Fuzzing - POST
 
 This is a GUI version of dirb
 
-```bash
 ## **SMB Enumeration**
-```
+
 ### **Enumerate information from Windows and Samba systems**
 ```bash
 #:> enum4linux -a 192.168.1.150
