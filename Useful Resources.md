@@ -64,6 +64,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 #### Resources
 
+- [Azure AD for Red Teamers](https://www.synacktiv.com/en/publications/azure-ad-introduction-for-red-teamers.html)
 - [arsenal](https://github.com/Orange-Cyberdefense/arsenal)
 - [AwesomeOpensource Stuff](https://awesomeopensource.com/)
 - [Red Team Tips](https://redteamer.tips/)
