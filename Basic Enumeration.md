@@ -187,9 +187,10 @@ Parameter Fuzzing - POST
 #:> dirb http://192.168.1.1 wordlist.txt
 ```
 ### **dirbuster**
-```sh
+
 This is a GUI version of dirb
 
+```bash
 ## **SMB Enumeration**
 
 ### **Enumerate information from Windows and Samba systems**
@@ -200,10 +201,12 @@ This is a GUI version of dirb
 # Samba Enumeration
 
 ## **Enumerate information from Windows and Samba systems**
+
 ```bash
 #:> enum4linux -a 192.168.1.150
 ```
 ### **Show SMB shares**
+
 ```bash
 #:> smbclient -U "user" -L 192.168.1.150
 #:> showmount -e 192.16.1.150
