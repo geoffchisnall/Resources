@@ -33,7 +33,7 @@ With nmap with --script=default, version detection and output to a file
 
 You can also use netcat to check for open or closed ports
 ```bash
-#:> nc -nv -u -z -w 1 192.168.1.1 161`
+#:> nc -nv -u -z -w 1 192.168.1.1 161
 ```
 
 ## Web Enumeration
