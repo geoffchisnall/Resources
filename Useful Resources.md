@@ -210,6 +210,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [cloudsploit](https://github.com/aquasecurity/cloudsploit)
 - [Stormspotter](https://github.com/Azure/Stormspotter)
 - [CloudPentestCheatSheets](https://github.com/dafthack/CloudPentestCheatsheets)
+- [AzureHound](https://github.com/BloodHoundAD/AzureHound)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
