@@ -1,5 +1,8 @@
 # **WORK IN PROGRESS**
 
+
+##Network Enumeration
+
 Some tools to check for live hosts and ports on a network.
 
 ### **netdiscover**
@@ -33,13 +36,13 @@ You can also use netcat to check for open or closed ports
 #:> nc -nv -u -z -w 1 192.168.1.1 161`
 ```
 
-# Web Enumeration
+## Web Enumeration
 
 Basic web enumeration of various tools.
 
 ***This is still being updated to expand more options.***
 
-## **Gobuster**
+### **Gobuster**
 
 Gobuster by default uses:
 
@@ -53,7 +56,7 @@ Gobuster by default uses:
 
 **Status Codes** : 200, 204, 301, 302, 307, 308, 401, 403, 405
 
-##### **dir mode**
+### **dir mode**
 
 ```bash
 Normal scan
@@ -80,7 +83,7 @@ Use Authentication
 Headers
 #:> gobuster dir -u http://192.168.1.1 -w wordlist -H Accept:application/json -H "Authorization:Bearer {token}"
 ```
-## **feroxbuster**
+### **feroxbuster**
 
 Feroxbuster by default uses:
 
@@ -125,7 +128,7 @@ Disables TLS certificate validation
 
 #:> feroxbuster --url http://192.168.1.1 -k
 ```
-## **wfuzz**
+### **wfuzz**
 wfuzz by default uses:
 
 **Wordlist** : none
@@ -151,7 +154,7 @@ User-Agent
 Use Proxy
 #:> wfuzz -z file,'wordlist' -u 192.168.1.1/FUZZ -p 192.168.1.10:3128:HTTP
 ```
-## **ffuf**
+### **ffuf**
 
 ```bash
 Directory Fuzzing
@@ -179,11 +182,11 @@ Parameter Fuzzing - POST
 #:> ffuf -w wordlist.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`
 #:> ffuf -w ids.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`
 ```
-## **dirb**
+### **dirb**
 ```bash
 #:> dirb http://192.168.1.1 wordlist.txt
 ```
-## **dirbuster**
+### **dirbuster**
 ```sh
 This is a GUI version of dirb
 
@@ -194,9 +197,9 @@ This is a GUI version of dirb
 #:> enum4linux -a 192.168.1.150
 ```
 
-###Samba Enumeration
+# Samba Enumeration
 
-### **Enumerate information from Windows and Samba systems**
+## **Enumerate information from Windows and Samba systems**
 ```bash
 #:> enum4linux -a 192.168.1.150
 ```
