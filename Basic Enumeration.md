@@ -1,7 +1,5 @@
 # **WORK IN PROGRESS**
 
-## **Network Discovery**
-
 Some tools to check for live hosts and ports on a network.
 
 ### **netdiscover**
@@ -29,15 +27,33 @@ With nmap with --script=default, version detection and output to a file
 #:> rustscan -a 192.168.1.0/24 --ulimit 5000 -- -A -sC -sV -oN output.nmap
 ```
 ### **netcat**
+
 You can also use netcat to check for open or closed ports
 ```bash
 #:> nc -nv -u -z -w 1 192.168.1.1 161`
 ```
-## **Web Directory Enumeration**
 
-### **Gobuster**
+# Web Enumeration
+
+Basic web enumeration of various tools.
+
+***This is still being updated to expand more options.***
+
+## **Gobuster**
 
 Gobuster by default uses:
+
+**Wordlist** : none
+
+**Threads** : 10
+
+**User-Agent** : gobuster/3.1.0
+
+**Recursion Depth** : none
+
+**Status Codes** : 200, 204, 301, 302, 307, 308, 401, 403, 405
+
+##### **dir mode**
 
 ```bash
 Normal scan
@@ -63,10 +79,9 @@ Use Authentication
 
 Headers
 #:> gobuster dir -u http://192.168.1.1 -w wordlist -H Accept:application/json -H "Authorization:Bearer {token}"
-
 ```
+## **feroxbuster**
 
-### **feroxbuster**
 Feroxbuster by default uses:
 
 **Wordlist** : raft-medium-directories.txt
@@ -82,28 +97,35 @@ Feroxbuster by default uses:
 ```bash
 Normal scan as per defaults
 #:> feroxbuster --url http://192.168.1.1
+
 Own Wordlist
 #:> feroxbuster --url http://192.168.1.1 -w 'wordlist.txt'
+
 Extentions php, sql, bak
 #:> feroxbuster --url http://192.168.1.1 -x php,sql,bak
+
 Recursion Depth
 #:> feroxbuster --url http://192.168.1.1 -d 2
+
 No Recusion Depth
 #:> feroxbuster --url http://192.168.1.1 -n
+
 Status codes
 #:> feroxbuster --url http://192.168.1.1 -s 200,301
+
 User Agent
 #:> feroxbuster --url http://192.168.1.1 -a <USER_AGENT>
+
 Headers
 #:> feroxbuster --url http://192.168.1.1 -H Accept:application/json "Authorization:Bearer {token}"
+
 Use Proxy
 #:> feroxbuster --url http://192.168.1.1 -p http://192.168.1.10:3128
 Disables TLS certificate validation
+
 #:> feroxbuster --url http://192.168.1.1 -k
 ```
-
-### **wfuzz**
-
+## **wfuzz**
 wfuzz by default uses:
 
 **Wordlist** : none
@@ -117,20 +139,20 @@ wfuzz by default uses:
 **Status Codes** : 200, 204, 301, 302, 307, 308, 401, 403, 405
 
 ```bash
-#:> wfuzz -c -z file,'wordlist' -u 192.168.1.1/FUZZ
+Normal scan
+#:> wfuzz -z file,'wordlist' -u 192.168.1.1/FUZZ
 
 Extentions
-#:> wfuzz -c -z file,'wordlist' -z file,'extensions_common.txt' -u 192.168.1.1/FUZZ%FUZ2Z
+#:> wfuzz -z file,'wordlist' -z file,'extensions_common.txt' -u 192.168.1.1/FUZZ%FUZ2Z
 
 User-Agent
-#:> wfuzz -c -z file,'wordlist' -u 192.168.1.1/FUZZ -H "User-Agent: <USER-AGENT>"
+#:> wfuzz -z file,'wordlist' -u 192.168.1.1/FUZZ -H "User-Agent: <USER-AGENT>"
 
 Use Proxy
-#:> wfuzz -c -z file,'wordlist' -u 192.168.1.1/FUZZ -p 192.168.1.10:3128:HTTP
-
+#:> wfuzz -z file,'wordlist' -u 192.168.1.1/FUZZ -p 192.168.1.10:3128:HTTP
 ```
+## **ffuf**
 
-### **ffuf**
 ```bash
 Directory Fuzzing
 #:> ffuf -w wordlist.txt:FUZZ -u http://192.168.1.1/FUZZ
@@ -155,11 +177,24 @@ Parameter Fuzzing - GET
 
 Parameter Fuzzing - POST
 #:> ffuf -w wordlist.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'FUZZ=key' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`
-
 #:> ffuf -w ids.txt:FUZZ -u http://sub.domain.com:PORT/admin/admin.php -X POST -d 'id=FUZZ' -H 'Content-Type: application/x-www-form-urlencoded' -fs xxx`
 ```
+## **dirb**
+```bash
+#:> dirb http://192.168.1.1 wordlist.txt
+```
+## **dirbuster**
+```sh
+This is a GUI version of dirb
 
 ## **SMB Enumeration**
+
+### **Enumerate information from Windows and Samba systems**
+```bash
+#:> enum4linux -a 192.168.1.150
+```
+
+###Samba Enumeration
 
 ### **Enumerate information from Windows and Samba systems**
 ```bash
@@ -175,4 +210,27 @@ Parameter Fuzzing - POST
 ```bash
 #:> sudo mount -t cifs //192.168.1.150/share$ smb/ -o user="user"
 #:> smbclient \\\\192.168.1.150\\sharename -U guest
+```
+
+## SNMP Enumeration
+
+### **SNMPWALK**
+```bash
+version 1 with public community string
+#:> snmpwalk -v 1 -c public 192.168.1.10 .1
+
+version 2 with public community string
+#:> snmpwalk -v 2c -c public 192.168.1.10 .1
+```
+
+### **SNMP-CHECK**
+```bash
+version 1 with public community string
+#:> snmp-check -v1 -c public 192.168.1.10 
+
+version 2 with public community string
+#:> snmp-check -v2c -c public 192.168.1.10
+
+Detect write access to the SNMP
+#:> snmp-check -v2c -c public 192.168.1.10 -w
 ```
