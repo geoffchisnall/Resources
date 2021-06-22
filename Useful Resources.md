@@ -209,6 +209,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [bucketbunny](https://github.com/iamthefrogy/bucketbunny)
 - [cloudsploit](https://github.com/aquasecurity/cloudsploit)
 - [Stormspotter](https://github.com/Azure/Stormspotter)
+- [CloudPentestCheatSheets](https://github.com/dafthack/CloudPentestCheatsheets)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
