@@ -1,6 +1,7 @@
 ### LFI (local file inclusion)
 
 If you see a parameter you can try LFI on it.
+
 http://127.0.0.1/?file=page.php
 
 We can not try view a file on the system.
