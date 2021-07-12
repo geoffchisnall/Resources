@@ -140,3 +140,4 @@ xsrfprobe -u <url>/<endpoint>
 HEAD.PAYLOAD.SECRET
 ```
 https://jwt.io/
+https://www.base64url.com/
