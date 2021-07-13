@@ -149,3 +149,7 @@ HEAD.PAYLOAD.SECRET
 https://jwt.io/
 https://www.base64url.com/
 https://github.com/lmammino/jwt-cracker
+
+### SSRF (Server Side Request Forgery)
+
+
