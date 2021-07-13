@@ -8,6 +8,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OSCP templates](https://github.com/whoisflynn/OSCP-Exam-Report-Template)
 - [OSCP exam Report Template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown)
+- [OSCP Preparation Guide](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/)
 
 #### OSINT stuff
 - [osintcurio.us](https://osintcurio.us)
