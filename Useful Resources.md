@@ -240,6 +240,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [malware exercise](https://heapoverride.sexy/challenge-2/)
 - [XSS Hunter](https://xsshunter.com/)
 - [ippsec-rocks](https://ippsec.rocks)
+- [web application whitebox challenges](https://williammoody.com/challenges)
 
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
