@@ -182,6 +182,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [penoit](https://github.com/yakuza8/peniot)
 - [Retire.js](https://github.com/RetireJS/retire.js)
 - [Windows-Kernel-Exploits](https://github.com/SecWiki/windows-kernel-exploits)
+- [cutter - RE Platform](https://cutter.re/)
+- [monitor and control API calls made by applications and services](http://www.rohitab.com/apimonitor)
+- [bartail - real-time log file monitoring tool](https://www.baremetalsoft.com/baretail/)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
