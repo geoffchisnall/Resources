@@ -10,6 +10,10 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [OSCP exam Report Template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown)
 - [OSCP Preparation Guide](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/)
 
+#### Pentest Reports
+- [Public Pentest Reports](https://github.com/juliocesarfort/public-pentesting-reports)
+- [Offensive Security Pentest Report](https://www.offensive-security.com/reports/penetration-testing-sample-report-2013.pdf)
+
 #### OSINT stuff
 - [osintcurio.us](https://osintcurio.us)
 - [twint - twitter scrapeing](https://github.com/twintproject/twint)
@@ -185,6 +189,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [cutter - RE Platform](https://cutter.re/)
 - [monitor and control API calls made by applications and services](http://www.rohitab.com/apimonitor)
 - [bartail - real-time log file monitoring tool](https://www.baremetalsoft.com/baretail/)
+- [Static Binaries](https://github.com/andrew-d/static-binaries)
+- [Updog](https://github.com/sc0tfree/updog)
+- [pwndrop](https://github.com/kgretzky/pwndrop)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
