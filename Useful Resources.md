@@ -269,6 +269,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [getting-into-dfir](https://dfirdiva.com/getting-into-dfir/)
 - [ctf.dfir.science](https://ctf.dfir.science)
 - [SocVel CTF](https://socvel.com/)
+- [DFIR Stuff](https://start.me/p/jj0B26/dfir)
+- [Volatility CheatSheet](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
 
 #### people
 - https://github.com/vhumint
