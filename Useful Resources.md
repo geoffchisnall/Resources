@@ -20,6 +20,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [TCM - OSINT Course Resources](https://github.com/TCM-Course-Resources/Open-Source-Intellingence-Resources)
 - [faker](https://github.com/Marak/faker.js)
 - [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
+- [maigret]https://github.com/soxoj/maigret)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
