@@ -29,16 +29,16 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 
 #### Discovery
-- [nuclei](https://github.com/projectdiscovery/nuclei)
-- [SnitchDNS](https://github.com/ctxis/SnitchDNS)
-- [AutoRecon](https://github.com/Tib3rius/AutoRecon)
+- [nuclei](https://github.com/projectdiscovery/nuclei) - Fast and customisable vulnerability scanner based on simple YAML based DSL
+- [SnitchDNS](https://github.com/ctxis/SnitchDNS) - database driven DNS Server with a Web UI
+- [AutoRecon](https://github.com/Tib3rius/AutoRecon) - multi-threaded network reconnaissance tool
 - [projectdiscovery](https://github.com/projectdiscovery)
-- [dalfox](https://github.com/hahwul/dalfox)
-- [cloud_enum](https://github.com/initstring/cloud_enum)
-- [MicroBurst](https://github.com/NetSPI/MicroBurst)
-- [FOCA](https://github.com/ElevenPaths/FOCA)
-- [RustScan](https://github.com/RustScan/RustScan)
-- [feroxbuster](https://github.com/epi052/feroxbuster)
+- [dalfox](https://github.com/hahwul/dalfox) - fast, powerful parameter analysis and XSS scanner
+- [cloud_enum](https://github.com/initstring/cloud_enum) - Multi-cloud OSINT tool. Enumerate public resources in AWS, Azure, and Google Cloud.
+- [MicroBurst](https://github.com/NetSPI/MicroBurst) - A PowerShell Toolkit for Attacking Azure
+- [FOCA](https://github.com/ElevenPaths/FOCA) - tool used mainly to find metadata and hidden information in the documents it scans
+- [RustScan](https://github.com/RustScan/RustScan) - The Modern Port Scanner
+- [feroxbuster](https://github.com/epi052/feroxbuster) - A simple, fast, recursive content discovery tool written in Rust
 - [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
 - [Bloodhound.py](https://github.com/fox-it/BloodHound.py)
 - [PlumHound](https://github.com/PlumHound/PlumHound)
