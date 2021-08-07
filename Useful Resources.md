@@ -139,6 +139,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [password village](https://passwordvillage.org)
 -
 #### Decoders
+- [https://www.dcode.fr/cipher-identifier](https://www.dcode.fr/cipher-identifier)
 - [https://www.dcode.fr](https://www.dcode.fr)
 - [https://www.boxentriq.com/code-breaking/cipher-identifier](https://www.boxentriq.com/code-breaking/cipher-identifier)
 - [Javascript Obfuscator](https://beautifytools.com/javascript-obfuscator.php)
