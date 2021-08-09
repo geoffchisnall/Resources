@@ -149,6 +149,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Prettier Codifier](https://prettier.io/playground)
 - [JSNice](http://www.jsnice.org/)
 - [jsfuck](http://www.jsfuck.com/)
+- [URLDecoder](https://www.urlencoder.org/)
 
 #### Uncategorised
 
