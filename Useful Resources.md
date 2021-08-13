@@ -251,6 +251,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [AWS security - FLAWS](http://flaws.cloud/)
 - [AWS security = FLAWS2](http://flaws2.cloud/)
 - [malware exercise](https://heapoverride.sexy/challenge-2/)
+- [GCP](https://gcpgoat.joshuajebaraj.com)
 - [XSS Hunter](https://xsshunter.com/)
 - [ippsec-rocks](https://ippsec.rocks)
 - [web application whitebox challenges](https://williammoody.com/challenges)
