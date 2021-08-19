@@ -9,6 +9,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [OSCP templates](https://github.com/whoisflynn/OSCP-Exam-Report-Template)
 - [OSCP exam Report Template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown)
 - [OSCP Preparation Guide](https://johnjhacking.com/blog/the-oscp-preperation-guide-2020/)
+- [Hack Your OSCP Certification](https://yan1x0s.medium.com/hack-your-oscp-certification-ba29317c72ff)
 
 #### Pentest Reports
 - [Public Pentest Reports](https://github.com/juliocesarfort/public-pentesting-reports)
@@ -195,6 +196,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Static Binaries](https://github.com/andrew-d/static-binaries)
 - [Updog](https://github.com/sc0tfree/updog)
 - [pwndrop](https://github.com/kgretzky/pwndrop)
+- [Responser-Windows]https://github.com/lgandx/Responder-Windows)
+- [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
