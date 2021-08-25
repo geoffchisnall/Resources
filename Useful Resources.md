@@ -82,6 +82,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Red Teaming Toolkit](https://github.com/infosecn1nja/Red-Teaming-Toolkit)
 - [RedTeam-Tactics-and-Technique](https://github.com/mantvydasb/RedTeam-Tactics-and-Techniques)
 - [Hacktricks](https://book.hacktricks.xyz/)
+- [Hacktricks - github](https://github.com/carlospolop/hacktricks)
 - [https://redteams.fr/](https://redteams.fr/)
 - [Offensive Security Cheet Sheets](https://ired.team/offensive-security-experiments/offensive-security-cheetsheets) 
 - [Pentestmonkey](http://pentestmonkey.net/)
@@ -196,7 +197,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Static Binaries](https://github.com/andrew-d/static-binaries)
 - [Updog](https://github.com/sc0tfree/updog)
 - [pwndrop](https://github.com/kgretzky/pwndrop)
-- [Responser-Windows]https://github.com/lgandx/Responder-Windows)
+- [Responser-Windows](https://github.com/lgandx/Responder-Windows)
 - [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 
 #### Git Stuff
