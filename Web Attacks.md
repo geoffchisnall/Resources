@@ -152,4 +152,4 @@ https://github.com/lmammino/jwt-cracker
 
 ### SSRF (Server Side Request Forgery)
 
-
+Attackers can bypass a Deny List by using alternative localhost references such as 0, 0.0.0.0, 0000, 127.1, 127.*.*.*, 2130706433, 017700000001 or subdomains that have a DNS record which resolves to the IP Address 127.0.0.1 such as 127.0.0.1.nip.io.
