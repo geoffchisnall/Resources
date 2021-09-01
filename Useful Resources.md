@@ -282,6 +282,10 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [DFIR Stuff](https://start.me/p/jj0B26/dfir)
 - [Volatility CheatSheet](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
 
+#### python
+- [python rich](https://github.com/willmcgugan/rich)
+
+
 #### people
 - https://github.com/vhumint
 - https://github.com/BushidoUK
@@ -291,3 +295,4 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - https://www.engetsu-consulting.com/2021/02/05/penetration-testing-tools-reference-guide/
 - [Robert Socca](https://robertscocca.medium.com)
 - [dafthack](https://github.com/dafthack)
+
