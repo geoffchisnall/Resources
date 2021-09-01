@@ -68,6 +68,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [bruteratel](https://bruteratel.com/tabs/features/)
 - [OWASP Top 10](https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
+- [Cobalt Strike Community Kit](https://cobalt-strike.github.io/community_kit/)
 
 #### Resources
 
