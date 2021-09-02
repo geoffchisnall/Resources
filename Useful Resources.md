@@ -200,6 +200,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [pwndrop](https://github.com/kgretzky/pwndrop)
 - [Responser-Windows](https://github.com/lgandx/Responder-Windows)
 - [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
+- [LaZagne](https://github.com/AlessandroZ/LaZagne)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
