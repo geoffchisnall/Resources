@@ -174,6 +174,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - https://www.youtube.com/watch?v=SG2ibjuzRJM&t=1s
 - https://www.youtube.com/watch?v=udk16av8XHI&feature=youtu.be
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
+- [StegBrute](https://github.com/R4yGM/stegbrute)
 - [xss-encoder](http://evuln.com/tools/xss-encoder/)
 - [explain shell](https://explainshell.com/)
 - [BASHRC Generator](http://bashrcgenerator.com/)
