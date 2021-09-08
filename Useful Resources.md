@@ -99,6 +99,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [CWE Mitre](https://cwe.mitre.org/)
 - [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
 - [CVE Mitre](https://cve.mitre.org/)
+- [NTLMTheft](https://github.com/Greenwolf/ntlm_theft/blob/master/ntlm_theft.py)
 
 
 #### Reverse Shells
