@@ -45,6 +45,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [PlumHound](https://github.com/PlumHound/PlumHound)
 - [GoFetch](https://github.com/GoFetchAD/GoFetch)
 - [https://github.com/1N3/Sn1per](https://github.com/1N3/Sn1per)
+- [dnstwist](https://github.com/elceef/dnstwist)
 
 #### Honeypots
 - [dionaea](https://hub.docker.com/r/dinotools/dionaea)
