@@ -268,6 +268,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [ippsec-rocks](https://ippsec.rocks)
 - [web application whitebox challenges](https://williammoody.com/challenges)
 - [kontra](https://application.security/free/kontra-aws-clould-top-10)
+- [ASCII Tables](https://www.rapidtables.com/code/text/ascii-table.html)
 
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
