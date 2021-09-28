@@ -270,6 +270,21 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [kontra](https://application.security/free/kontra-aws-clould-top-10)
 - [ASCII Tables](https://www.rapidtables.com/code/text/ascii-table.html)
 
+#### LABS
+- [https://github.com/R3dy/capsulecorp-pentest](https://github.com/R3dy/capsulecorp-pentest)
+- [https://www.amanhardikar.com/mindmaps/Practice.html](https://www.amanhardikar.com/mindmaps/Practice.html)
+- [https://github-dotcom.gateway.web.tr/0xffsec/webdojo](https://github-dotcom.gateway.web.tr/0xffsec/webdojo)
+- [https://rmusser.net/git/admin-2/Infosec_Reference/src/commit/7e88d1d9bd11800ec95dfff74ea2878214c300c7/Sphinx/source/Building-A-Pentest-Lab.md](https://rmusser.net/git/admin-2/Infosec_Reference/src/commit/7e88d1d9bd11800ec95dfff74ea2878214c300c7/Sphinx/source/Building-A-Pentest-Lab.md)
+- [https://github.com/oliverwiegers/pentest_lab](https://github.com/oliverwiegers/pentest_lab)
+- [https://github.com/itboxltda/pentestlab](https://github.com/itboxltda/pentestlab)
+- [https://github.com/s0wr0b1ndef/pentest-lab](https://github.com/s0wr0b1ndef/pentest-lab)
+- [https://github.com/indigos33k3r/portainer-pentest-lab](https://github.com/indigos33k3r/portainer-pentest-lab)
+- [https://github.com/juanjoSanz/aws-pentesting-lab](https://github.com/juanjoSanz/aws-pentesting-lab)
+- [https://github.com/jbarone/penlab](https://github.com/jbarone/penlab)
+- [https://github.com/TROUBLE-1/White-box-pentesting](https://github.com/TROUBLE-1/White-box-pentesting)
+- [https://github.com/Sliim/pentest-lab](https://github.com/Sliim/pentest-lab)
+- [https://github.com/Marshall-Hallenbeck/red_team_attack_lab](https://github.com/Marshall-Hallenbeck/red_team_attack_lab)
+
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
 
