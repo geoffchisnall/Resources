@@ -102,6 +102,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [OWASP Top 10](https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_(en).pdf.pdf)
 - [CVE Mitre](https://cve.mitre.org/)
 - [NTLMTheft](https://github.com/Greenwolf/ntlm_theft/blob/master/ntlm_theft.py)
+- [File Signatures](https://www.garykessler.net/library/file_sigs.html)
 
 
 #### Reverse Shells
@@ -143,7 +144,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [TTPassGen](https://github.com/tp7309/TTPassGen) - password dictionary generator
 - [WeakPass](https://weakpass.com/)
 - [password village](https://passwordvillage.org)
--
+
 #### Decoders
 - [https://www.dcode.fr/cipher-identifier](https://www.dcode.fr/cipher-identifier)
 - [https://www.dcode.fr](https://www.dcode.fr)
