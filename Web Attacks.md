@@ -88,11 +88,19 @@ or change something
  ```
  
  ####  Reflected XSS
+ Reflected XSS happens when user-supplied data in an HTTP request is included in the webpage source without any validation.
+ 
  ```
  <script>alert("Hello")</script>
  <script>alert(window.location.hostname)</script>
  ```
+ 
+ #### Stored XSS
+ As the name infers, the XSS payload is stored on the web application (in a database, for example) and then gets run when other users visit the site or web page.
+ 
  #### DOM-Based XSS
+DOM stands for Document Object Model and is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style and content. A web page is a document, and this document can be either displayed in the browser window or as the HTML source
+
  ```
  test" onmouseover="alert('test')
  test" onmouseover="document.body.style.backgroundColor='red'
