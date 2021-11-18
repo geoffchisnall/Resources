@@ -239,6 +239,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Stormspotter](https://github.com/Azure/Stormspotter)
 - [CloudPentestCheatSheets](https://github.com/dafthack/CloudPentestCheatsheets)
 - [AzureHound](https://github.com/BloodHoundAD/AzureHound)
+- [awesome-cloud-security](https://github.com/4ndersonLin/awesome-cloud-security)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
