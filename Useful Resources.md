@@ -209,6 +209,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Responser-Windows](https://github.com/lgandx/Responder-Windows)
 - [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 - [LaZagne](https://github.com/AlessandroZ/LaZagne)
+- [Learn regex](https://regexlearn.com/)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
