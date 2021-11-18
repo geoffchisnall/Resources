@@ -146,6 +146,13 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [WeakPass](https://weakpass.com/)
 - [password village](https://passwordvillage.org)
 
+- [Default Passwords](https://cirt.net/passwords)
+- [default passwords](https://datarecovery.com/rd/default-passwords/)
+- [default passwords](https://wiki.skullsecurity.org/index.php?title=Passwords)
+- [username_generator](https://github.com/therodri2/username_generator)
+- [Common User Passwords Profiler](https://github.com/Mebus/cupp)
+
+
 #### Decoders
 - [https://www.dcode.fr/cipher-identifier](https://www.dcode.fr/cipher-identifier)
 - [https://www.dcode.fr](https://www.dcode.fr)
