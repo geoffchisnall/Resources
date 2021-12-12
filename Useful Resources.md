@@ -217,6 +217,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Inveigh](https://github.com/Kevin-Robertson/Inveigh)
 - [LaZagne](https://github.com/AlessandroZ/LaZagne)
 - [Learn regex](https://regexlearn.com/)
+- [www.greynoise.io](https://www.greynoise.io)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
