@@ -218,6 +218,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [LaZagne](https://github.com/AlessandroZ/LaZagne)
 - [Learn regex](https://regexlearn.com/)
 - [www.greynoise.io](https://www.greynoise.io)
+- [Vortex - VPN Overall Reconnaissance, Testing, Enumeration and Exploitation Toolkit](https://github.com/klezVirus/vortex)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
