@@ -123,11 +123,13 @@ DOM stands for Document Object Model and is a programming interface for HTML and
  }
 </script> 
 ```
-
+```
 <img SRC="test" onmouseover=alert('Hello') />
 <img SRC="test" onmouseover=confirm('Hello') />
 <img SRC="test" onmouseover=alert('HHelloello') />
 <img SRC="test" ONMOUSEOVER=alert('HHelloello') />
+```
+
 
 ### SSTI (server side template injection)
 
