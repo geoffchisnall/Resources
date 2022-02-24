@@ -220,6 +220,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [www.greynoise.io](https://www.greynoise.io)
 - [Vortex - VPN Overall Reconnaissance, Testing, Enumeration and Exploitation Toolkit](https://github.com/klezVirus/vortex)
 - [oh365UserFinder](https://github.com/dievus/Oh365UserFinder)
+- [pywerview](https://github.com/the-useless-one/pywerview/)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
