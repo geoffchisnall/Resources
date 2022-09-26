@@ -54,6 +54,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [T-POT](https://github.com/telekom-security/tpotce)
 
 #### Frameworks
+- [Sliver](https://github.com/BishopFox/sliver))
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
 - [Covenant](https://github.com/cobbr/Covenant)
@@ -104,6 +105,8 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [CVE Mitre](https://cve.mitre.org/)
 - [NTLMTheft](https://github.com/Greenwolf/ntlm_theft/blob/master/ntlm_theft.py)
 - [File Signatures](https://www.garykessler.net/library/file_sigs.html)
+- [Pentesting Active Directory](https://xmind.works/#/share/pZPo4gOi)
+- [Azure Attack Paths](https://cloudbrothers.info/azure-attack-paths/)
 
 
 #### Reverse Shells
