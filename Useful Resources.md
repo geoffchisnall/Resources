@@ -54,6 +54,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [T-POT](https://github.com/telekom-security/tpotce)
 
 #### Frameworks
+- [Havoc](https://github.com/HavocFramework/Havoc)
 - [Sliver](https://github.com/BishopFox/sliver))
 - [axiom](https://github.com/pry0cc/axiom)
 - [bbrf-client](https://github.com/honoki/bbrf-client)
