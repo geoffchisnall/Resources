@@ -1,3 +1,11 @@
+# REALLY NEED TO SORT THIS
+
+https://www.comparitech.com/net-admin/powershell-cheat-sheet/
+https://gist.github.com/jhaddix/b80ea67d85c13206125806f0828f4d10#file-content_discovery_all-txt
+https://gist.github.com/jhaddix/2a08178b94e2fb37ca2bb47b25bcaed1
+https://github.com/Samsar4/Ethical-Hacking-Labs
+
+
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
 
