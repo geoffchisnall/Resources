@@ -5,6 +5,7 @@
 - https://gist.github.com/jhaddix/2a08178b94e2fb37ca2bb47b25bcaed1
 - https://github.com/Samsar4/Ethical-Hacking-Labs
 - https://wordlists.assetnote.io/
+- https://github.com/layer8secure/SilentHound
 
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
