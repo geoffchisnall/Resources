@@ -32,6 +32,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 
 #### Discovery
+- [ReconFTW](https://github.com/six2dez/reconftw)
 - [nuclei](https://github.com/projectdiscovery/nuclei) - Fast and customisable vulnerability scanner based on simple YAML based DSL
 - [SnitchDNS](https://github.com/ctxis/SnitchDNS) - database driven DNS Server with a Web UI
 - [AutoRecon](https://github.com/Tib3rius/AutoRecon) - multi-threaded network reconnaissance tool
