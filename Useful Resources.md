@@ -1,15 +1,8 @@
-# REALLY NEED TO SORT THIS WHOLE PAGE OUT
-
-- https://www.comparitech.com/net-admin/powershell-cheat-sheet/
-- https://gist.github.com/jhaddix/b80ea67d85c13206125806f0828f4d10#file-content_discovery_all-txt
-- https://gist.github.com/jhaddix/2a08178b94e2fb37ca2bb47b25bcaed1
-- https://github.com/Samsar4/Ethical-Hacking-Labs
-- https://wordlists.assetnote.io/
-- https://github.com/layer8secure/SilentHound
+# STILL BUSY TRYING TO SORT THIS PAGE OUT
 
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
-
+           
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
 - [OSCP like machines](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
@@ -49,40 +42,47 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [FOCA](https://github.com/ElevenPaths/FOCA) - tool used mainly to find metadata and hidden information in the documents it scans
 - [RustScan](https://github.com/RustScan/RustScan) - The Modern Port Scanner
 - [feroxbuster](https://github.com/epi052/feroxbuster) - A simple, fast, recursive content discovery tool written in Rust
+- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
 - [Bloodhound](https://github.com/BloodHoundAD/BloodHound)
 - [Bloodhound.py](https://github.com/fox-it/BloodHound.py)
+- [SilentHound](https://github.com/layer8secure/SilentHound)
 - [PlumHound](https://github.com/PlumHound/PlumHound)
 - [GoFetch](https://github.com/GoFetchAD/GoFetch)
-- [https://github.com/1N3/Sn1per](https://github.com/1N3/Sn1per)
+- [Sn1per](https://github.com/1N3/Sn1per)
 - [dnstwist](https://github.com/elceef/dnstwist)
 - [xsshunter](https://xsshunter.com/)
+- [ContentDiscovery](https://gist.github.com/jhaddix/b80ea67d85c13206125806f0828f4d10#file-content_discovery_all-txt)
 
 #### Honeypots
 - [dionaea](https://hub.docker.com/r/dinotools/dionaea)
 - [Honeypot](https://github.com/Shmakov/Honeypot)
 - [T-POT](https://github.com/telekom-security/tpotce)
 
-#### Frameworks
+#### C2 Frameworks
 - [Havoc](https://github.com/HavocFramework/Havoc)
-- [Sliver](https://github.com/BishopFox/sliver))
-- [axiom](https://github.com/pry0cc/axiom)
-- [bbrf-client](https://github.com/honoki/bbrf-client)
+- [Sliver](https://github.com/BishopFox/sliver)
 - [Covenant](https://github.com/cobbr/Covenant)
-- [Caledra](https://github.com/mitre/caldera)
 - [Metasploit Framework](https://github.com/rapid7/metasploit-framework)
-- [shad0w](https://blog.dylan.codes/shad0w/)
-- [PACU](https://github.com/RhinoSecurityLabs/pacu)
-- [ROADtools](https://github.com/dirkjanm/ROADtools)
-- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [Caledra](https://github.com/mitre/caldera)
+- [shad0w](https://github.com/bats3c/shad0w)
 - [SILENTTRINITY](https://github.com/byt3bl33d3r/SILENTTRINITY)
-- [grinder](https://github.com/sdnewhop/grinder)
-- [rengine](https://github.com/yogeshojha/rengine)
-- https://copycookie.com/striker-recon-vulnerability-scanning-suite/
-- https://copycookie.com/osmedeus-fully-automated-offensive-security-framework-for-reconnaissance-and-vulnerability-scanning/
 - [bruteratel](https://bruteratel.com/tabs/features/)
+- [Cobalt Strike Community Kit](https://cobalt-strike.github.io/community_kit/)
+
+
+#### Frameworks
+
+- [axiom](https://github.com/pry0cc/axiom) = dynamic infrastructure framework for everybody
+- [bbrf-client](https://github.com/honoki/bbrf-client) - The Bug Bounty Reconnaissance Framework
+- [PACU](https://github.com/RhinoSecurityLabs/pacu) - open-source AWS exploitation framework, designed for offensive security testing against cloud environments.
+- [ROADtools](https://github.com/dirkjanm/ROADtools) - Rogue Office 365 and Azure (active) Directory tools
+- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [grinder](https://github.com/sdnewhop/grinder) - automatically enumerate and fingerprint different hosts on the Internet using various back-end systems: search engines (such as Shodan or Censys)
+- [rengine](https://github.com/yogeshojha/rengine) - automated reconnaissance framework for web applications with a focus on highly configurable streamlined recon process
+
 - [OWASP Top 10](https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [Cobalt Strike Community Kit](https://cobalt-strike.github.io/community_kit/)
+
 
 #### Resources
 
@@ -135,6 +135,12 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [LinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/linPEAS)
 - [WinPEAS](https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite/tree/master/winPEAS)
 - [deepce](https://github.com/stealthcopter/deepce)
+- [Linux GTFOBINS](https://gtfobins.github.io/)
+- [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
+- [LinPEAS and WinPEAS](https://github.com/carlospolop/PEASS-ng)
+- [getsploit](https://github.com/vulnersCom/getsploit)
+- [WADComs](https://wadcoms.github.io/)
+- [Linux Exploit Suggester](https://github.com/mzet-/linux-exploit-suggester)
 
 #### Privilege Escalation Resources
 - [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
@@ -148,6 +154,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Payloadallthethings Windows privilege escalation guide](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Windows%20-%20Privilege%20Escalation.md)
 - [Windows Privilege Escalation Fundamentals](https://www.fuzzysecurity.com/tutorials/16.html)
 
+
+#### Cheat Sheets
+- [Powershell Cheatsheet](https://www.comparitech.com/net-admin/powershell-cheat-sheet/)
 
 #### Sec Lists
 - [SecLists](https://github.com/danielmiessler/SecLists)
@@ -190,16 +199,16 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Ask the C2 Matrix](http://ask.thec2matrix.com/)
 - [Howto C2Matrix](https://howto.thec2matrix.com/)
 - [pupy](https://github.com/n1nj4sec/pupy)
-- https://www.skypli.com/
-- https://jordanpotti.com/2019/08/26/phishing-with-saml-and-sso-providers/#
-- https://github.com/vxunderground/MalwareSourceCode
-- https://mergene.medium.com/detecting-threats-with-process-tree-analysis-without-machine-learning-838d85f78b2c
-- https://reconshell.com/cve-2020-0688-microsoft-exchange-remote-code-execution-with-poc/
-- https://reconshell.com/spraykatz-retrieve-credentials-on-windows-machines/
-- https://reconshell.com/rdpthief-extracting-clear-text-passwords-from-mstsc-exe-using-api-hooking/
-- https://reconshell.com/cve-2020-1472-zerologon-exploit-poc/
-- https://www.youtube.com/watch?v=SG2ibjuzRJM&t=1s
-- https://www.youtube.com/watch?v=udk16av8XHI&feature=youtu.be
+- [Skype search engine](https://www.skypli.com)
+- [Phishing with SAML and SSO Providers](https://jordanpotti.com/2019/08/26/phishing-with-saml-and-sso-providers/#)
+- [MalwareSourceCode](https://github.com/vxunderground/MalwareSourceCode)
+- [Enterprise Scale Threat Hunting with Process Tree Analysis](https://mergene.medium.com/detecting-threats-with-process-tree-analysis-without-machine-learning-838d85f78b2c)
+- [CVE-2020-0688 Microsoft Exchange Remote Code Execution With POC](https://reconshell.com/cve-2020-0688-microsoft-exchange-remote-code-execution-with-poc/)
+- [Spraykatz – retrieve credentials on Windows machines](https://reconshell.com/spraykatz-retrieve-credentials-on-windows-machines/)
+- [RdpThief – Extracting Clear Text Passwords from mstsc.exe using API Hooking](https://reconshell.com/rdpthief-extracting-clear-text-passwords-from-mstsc-exe-using-api-hooking/)
+- [CVE-2020-1472 – Zerologon Exploit POC](https://reconshell.com/cve-2020-1472-zerologon-exploit-poc/)
+- [Attacking and Defending the Microsoft Cloud (Office 365 & Azure AD)](https://www.youtube.com/watch?v=SG2ibjuzRJM&t=1s)
+- [Office 365 and Azure AD security - Sean Metcalf](https://www.youtube.com/watch?v=udk16av8XHI&feature=youtu.be)
 - [Stego Cheatsheet](https://0xrick.github.io/lists/stego/)
 - [StegBrute](https://github.com/R4yGM/stegbrute)
 - [xss-encoder](http://evuln.com/tools/xss-encoder/)
@@ -238,22 +247,13 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
 - [git dorks](https://github.com/obheda12/GitDorker/tree/master/Dorks)
-- [truffleHog - Searches through git repositories for secrets](https://github.com/dxa4481/truffleHog)
-- [gitrob - tool to help find potentially sensitive files](https://github.com/michenriksen/gitrob)
-- [gitleaks - SAST tool for detecting hardcoded secrets](https://github.com/zricethezav/gitleaks)
+- [truffleHog](https://github.com/dxa4481/truffleHog)
+- [gitrob](https://github.com/michenriksen/gitrob)
+- [gitleaks](https://github.com/zricethezav/gitleaks)
 - [shhgit](https://shhgit.darkport.co.uk/)
 - [GitGot](https://github.com/BishopFox/GitGot)
-- [DetectionLab](https://github.com/clong/DetectionLab)
-- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
-- [FFuF on Steroids](https://github.com/dark-warlord14/ffufplus)
 - [gitdumper](https://github.com/arthaud/git-dumper.git)
-
-#### Exploitation 
-- [Linux GTFOBINS](https://gtfobins.github.io/)
-- [Windows GTFOBINS - LOLBAS](https://lolbas-project.github.io)
-- [getsploit](https://github.com/vulnersCom/getsploit)
-- [WADComs](https://wadcoms.github.io/)
-- [Linux Exploit Suggester](https://github.com/mzet-/linux-exploit-suggester)
+- [Github Dorks from jhaddix](https://gist.github.com/jhaddix/2a08178b94e2fb37ca2bb47b25bcaed1)
 
 #### Cloud stuff
 - [weirdAAL](https://github.com/carnal0wnage/weirdAAL)
@@ -277,6 +277,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 #### Threat Intellegence
 - [Intel Owl](https://github.com/intelowlproject/IntelOwl)
 
+#### CTF Stuff
+- [CTF-Katana - Help with CTF challenges](https://github.com/JohnHammond/ctf-katana)
+
 #### Learning
 - [WebGoat](https://github.com/WebGoat/WebGoat)
 - [NodeGoat](https://github.com/OWASP/NodeGoat)
@@ -297,8 +300,6 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [web application whitebox challenges](https://williammoody.com/challenges)
 - [kontra](https://application.security/free/kontra-aws-clould-top-10)
 - [ASCII Tables](https://www.rapidtables.com/code/text/ascii-table.html)
-
-#### LABS
 - [https://github.com/R3dy/capsulecorp-pentest](https://github.com/R3dy/capsulecorp-pentest)
 - [https://www.amanhardikar.com/mindmaps/Practice.html](https://www.amanhardikar.com/mindmaps/Practice.html)
 - [https://github-dotcom.gateway.web.tr/0xffsec/webdojo](https://github-dotcom.gateway.web.tr/0xffsec/webdojo)
@@ -312,6 +313,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [https://github.com/TROUBLE-1/White-box-pentesting](https://github.com/TROUBLE-1/White-box-pentesting)
 - [https://github.com/Sliim/pentest-lab](https://github.com/Sliim/pentest-lab)
 - [https://github.com/Marshall-Hallenbeck/red_team_attack_lab](https://github.com/Marshall-Hallenbeck/red_team_attack_lab)
+- [Ethical Hacking Labs](https://github.com/Samsar4/Ethical-Hacking-Labs)
 
 #### TLS Vulerabilties
 - [overview of TLS vulnerabilities](https://www.cloudinsidr.com/content/known-attack-vectors-against-tls-implementation-vulnerabilities/)
@@ -332,6 +334,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [SocVel CTF](https://socvel.com/)
 - [DFIR Stuff](https://start.me/p/jj0B26/dfir)
 - [Volatility CheatSheet](https://downloads.volatilityfoundation.org/releases/2.4/CheatSheet_v2.4.pdf)
+- [DetectionLab](https://github.com/clong/DetectionLab)
 
 #### python
 - [python rich](https://github.com/willmcgugan/rich)
@@ -345,5 +348,4 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [dafthack](https://github.com/dafthack)
 - https://www.engetsu-consulting.com/2021/02/05/penetration-testing-tools-reference-guide/
 - [Robert Socca](https://robertscocca.medium.com)
-- [dafthack](https://github.com/dafthack)
 
