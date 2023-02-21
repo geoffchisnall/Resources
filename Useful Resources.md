@@ -1,12 +1,10 @@
-# STILL BUSY TRYING TO SORT THIS PAGE OUT
-
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
            
 #### OSCP Prep stuff
 - [https://411hall.github.io/OSCP-Preparation/](https://411hall.github.io/OSCP-Preparation/)
 - [OSCP like machines](https://github.com/rkhal101/Hack-the-Box-OSCP-Preparation)
-- [OSCP prep](https://mystiko.sh/?p=532)
+- [The Journey to Try Harder: TJnull’s Preparation Guide for PEN-200 PWK/OSCP 2.0](https://www.netsecfocus.com/oscp/2021/05/06/The_Journey_to_Try_Harder-_TJnull-s_Preparation_Guide_for_PEN-200_PWK_OSCP_2.0.html)
 - [OSCP like Vulnhub](https://www.abatchy.com/2017/02/oscp-like-vulnhub-vms)
 - [OSCP templates](https://github.com/whoisflynn/OSCP-Exam-Report-Template)
 - [OSCP exam Report Template](https://github.com/noraj/OSCP-Exam-Report-Template-Markdown)
@@ -77,10 +75,9 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [bbrf-client](https://github.com/honoki/bbrf-client) - The Bug Bounty Reconnaissance Framework
 - [PACU](https://github.com/RhinoSecurityLabs/pacu) - open-source AWS exploitation framework, designed for offensive security testing against cloud environments.
 - [ROADtools](https://github.com/dirkjanm/ROADtools) - Rogue Office 365 and Azure (active) Directory tools
-- [introducing-roadtools-and-roadrecon-azure-ad-exploration-framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
+- [Introducing ROADtools - The Azure AD exploration framework](https://dirkjanm.io/introducing-roadtools-and-roadrecon-azure-ad-exploration-framework/)
 - [grinder](https://github.com/sdnewhop/grinder) - automatically enumerate and fingerprint different hosts on the Internet using various back-end systems: search engines (such as Shodan or Censys)
 - [rengine](https://github.com/yogeshojha/rengine) - automated reconnaissance framework for web applications with a focus on highly configurable streamlined recon process
-
 - [OWASP Top 10](https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/)
 - [OWASP Top 10](https://owasp.org/www-project-top-ten/)
 
