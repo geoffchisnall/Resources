@@ -141,6 +141,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [getsploit](https://github.com/vulnersCom/getsploit)
 - [WADComs](https://wadcoms.github.io/)
 - [Linux Exploit Suggester](https://github.com/mzet-/linux-exploit-suggester)
+- [GTFOArgs](https://gtfoargs.github.io/)
 
 #### Privilege Escalation Resources
 - [Basic Linux Privilege Escalation](https://blog.g0tmi1k.com/2011/08/basic-linux-privilege-escalation/)
