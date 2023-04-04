@@ -266,6 +266,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [CloudPentestCheatSheets](https://github.com/dafthack/CloudPentestCheatsheets)
 - [AzureHound](https://github.com/BloodHoundAD/AzureHound)
 - [awesome-cloud-security](https://github.com/4ndersonLin/awesome-cloud-security)
+- [PACU](https://rhinosecuritylabs.com/aws/pacu-open-source-aws-exploitation-framework/)
 
 #### Cloud IP Ranges
 - [AWS](https://ip-ranges.amazonaws.com/ip-ranges.json)
