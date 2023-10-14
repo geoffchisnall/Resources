@@ -195,6 +195,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 
 #### Uncategorised
 
+- [Web Vulnerability Checklist](https://github.com/Az0x7/vulnerability-Checklist/tree/main)
 - [username-anarchy](https://github.com/urbanadventurer/username-anarchy)
 - [usernameGenerator](https://github.com/21y4d/usernameGenerator)
 - [Attack Mitre](https://attack.mitre.org/)
