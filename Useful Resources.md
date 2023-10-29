@@ -1,9 +1,11 @@
-https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
-https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-python-edition
-https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services
-https://github.com/sandialabs/wiretap
-https://github.com/eugeny/tabby
-https://github.com/t3l3machus/psudohash
+- https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
+- https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-python-edition
+- https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services
+- https://github.com/sandialabs/wiretap
+- https://github.com/eugeny/tabby
+- https://github.com/t3l3machus/psudohash
+- https://dork.offsec.nl/
+- https://kb.offsec.nl/
 
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
