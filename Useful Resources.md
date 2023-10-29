@@ -1,3 +1,6 @@
+https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
+https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-python-edition
+https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services
 https://github.com/sandialabs/wiretap
 https://github.com/eugeny/tabby
 https://github.com/t3l3machus/psudohash
