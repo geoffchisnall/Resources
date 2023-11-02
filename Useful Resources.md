@@ -6,6 +6,7 @@
 - https://github.com/t3l3machus/psudohash
 - https://dork.offsec.nl/
 - https://kb.offsec.nl/
+- https://github.com/dafthack/GraphRunner
 
 # Resources
 Resources of all the hacky - Need to clean this up better and sort. Continuing to add stuff.
