@@ -1,4 +1,7 @@
-- https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
+
+- https://github.com/D4Vinci/elpscrk
+- https://github.com/securisec/chepy
+- - https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
 - https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-python-edition
 - https://hideandsec.sh/books/cheatsheets-82c/page/active-directory-certificate-services
 - https://github.com/sandialabs/wiretap
