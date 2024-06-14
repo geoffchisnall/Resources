@@ -1,4 +1,5 @@
-
+- https://persistence-info.github.io/
+- https://github.com/gtworek/PSBits
 - https://github.com/D4Vinci/elpscrk
 - https://github.com/securisec/chepy
 - - https://hideandsec.sh/books/cheatsheets-82c/page/active-directory
