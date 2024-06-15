@@ -1,3 +1,5 @@
+- https://remnux.org/
+- https://github.com/mandiant/flare-vm
 - https://persistence-info.github.io/
 - https://github.com/gtworek/PSBits
 - https://github.com/D4Vinci/elpscrk
