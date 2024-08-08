@@ -38,6 +38,10 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [faker](https://github.com/Marak/faker.js)
 - [fawkes](https://sandlab.cs.uchicago.edu/fawkes/)
 - [maigret](https://github.com/soxoj/maigret)
+- [hybrid-analysis]https://www.hybrid-analysis.com/)
+- [osint4all](https://start.me/p/L1rEYQ/osint4all)
+- [the-bbc-africa-eye-forensics-dashboard])https://start.me/p/m6OJgv/the-bbc-africa-eye-forensics-dashboard)
+- [https://sector035.nl](https://sector035.nl/articles/2024-29)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
 - [PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings)
@@ -259,6 +263,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [Vortex - VPN Overall Reconnaissance, Testing, Enumeration and Exploitation Toolkit](https://github.com/klezVirus/vortex)
 - [oh365UserFinder](https://github.com/dievus/Oh365UserFinder)
 - [pywerview](https://github.com/the-useless-one/pywerview/)
+- [https://bgp.tools/](https://bgp.tools/)
 
 #### Git Stuff
 - [GitTools](https://github.com/internetwache/GitTools)
