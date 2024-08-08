@@ -40,7 +40,7 @@ Resources of all the hacky - Need to clean this up better and sort. Continuing t
 - [maigret](https://github.com/soxoj/maigret)
 - [hybrid-analysis]https://www.hybrid-analysis.com/)
 - [osint4all](https://start.me/p/L1rEYQ/osint4all)
-- [the-bbc-africa-eye-forensics-dashboard])https://start.me/p/m6OJgv/the-bbc-africa-eye-forensics-dashboard)
+- [the-bbc-africa-eye-forensics-dashboard](https://start.me/p/m6OJgv/the-bbc-africa-eye-forensics-dashboard)
 - [https://sector035.nl](https://sector035.nl/articles/2024-29)
 
 #### A list of useful payloads and bypass for Web Application Security and Pentest/CTF 
